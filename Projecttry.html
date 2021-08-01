@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+    <style>
+        .change{
+            margin-left: 75%;
+            width: 250px;
+            
+        }
+        h1{
+            color:orangered;
+            text-align: center;
+            font-size: 20px;
+            background-color: aquamarine;
+        }
+        body{
+            background-repeat: no-repeat;
+            background-color:white;
+            background-image: url("");
+            background-size: cover;    
+        }
+        img{
+        margin-left: 10%;
+        display: block;
+        width:400px;
+        padding-top: 20px;
+        }
+        .hi1{
+            background-color: rosybrown;
+        }
+        .pan{
+            text-align: center;
+            font-size: 2rem;
+            color:sienna;
+        }
+        .navbar{
+            background-color: brown;
+           color: whitesmoke;
+            text-align: center;
+            color:aliceblue;
+            padding:40px;
+            text-decoration: none;
+        }
+        .overall{
+             margin-left: 20%;
+             margin-right: 20%;
+             border:1px solid;
+             margin-top: 1%;
+             margin-bottom: 5%
+        }
+        .h2{
+            color: blue;
+        font-size: 90%;
+        margin-left: 2%;
+        }
+        .applicant{
+            margin-left: 5%;
+        }
+        .residential{
+            color: blue;
+            font-size: 110%
+        }
+        
+    </style>
+    <head> 
+     <title> PAN CARD APPLICATION </title>
+     <img  src="https://pancardsevaa-online.org/assets/img/PAN%20Card%20Logo.png">
+     <br>
+        <img class="change" src="https://pancardsevaa-online.org/assets/img/shopact-msme-gst-swacha-bharat.png">
+        <h1>ONLINE APPLY PAN CARD</h1>
+      
+        </head>
+<body>
+            <header id="header"></header> 
+<script src="jquery.min.js"></script>
+<script>
+    $("#header").load("Header1.html")
+</script>
+   <div class="hi1">
+    <marquee class="mt-5px text-white"><b>Online Portal For PAN Card Application - (Apply Online Easy & Simple Process)</b></marquee>
+</div>
+<div class="overall">
+<div class="personal">
+   <div class="pan" ><p> <b> NEW PAN INDIA </b> </p></div> 
+ <div class="h2">
+     
+   <h2> <b>1.PERSONAL INFORMATION </b> </h2>
+   </div>
+<div class="applicant">
+    <label> <b> Applicacnt Name </b> </label><br>
+ <span class="firstname"> 
+       <input type="text" placeholder="First name" name="first name">
+ </span>
+ <span calss="middlename">
+<input type="text" placeholder="middle name" name="middle name">
+ </span> 
+ <span class="lastname">
+       <input type="text" placeholder="last name" name="last name">
+ </span>
+ <br>
+ <label> <b> Father Name </b> </label><br>
+ <span class="ffirstname"> 
+       <input type="text" placeholder="Father First name" name="father first name">
+ </span>
+ <span class="fmiddlename">
+<input type="text" placeholder="father middle name" name="father middle name">
+ </span> 
+ <span class="flastname">
+       <input type="text" placeholder="father last name" name="father last name">
+ </span>
+ <br>
+ <label> <b> Mather Name </b> </label><br>
+ <span class="mfirstname"> 
+       <input type="text" placeholder="mother First name" name="mother first name">
+ </span>
+ <span class="mmiddlename">
+<input type="text" placeholder="mother middle name" name="mother middle name">
+ </span> 
+ <span class="mlastname">
+       <input type="text" placeholder="mather last name" name="mother last name">
+ </span><br>
+ <label> <b> Mobile No. </b> </label><br>
+ <input type="num" name="Mobile number" placeholder="Mobile number" required>
+<br>
+    <label> <b> Email ID </b> </label><br>
+    <input type="email" name="email"  placeholder="Email" >
+    <br>
+
+    <label> <b>Date Of Birth</b> </label><br>
+    <input type="date" name="date of birth" placeholder="date of birth"> <br>
+    <label> <b> AADHAR NUMBER </b> </label><br>
+    <input type="number" name="number" placeholder="Aadhar number" required><br>
+    
+    <form action="residential.html"
+    <label> <b> Gender </b> </label>
+<br>
+    <select id="gender" name="gender" required>
+    <option value="">Please Select</option>
+    <option value="male">Male</option>
+    <option value="Female">Female</option>
+    <option value="Transgender">Transgender</option>
+    </select> <br>
+<br>
+<input type="submit" value="submit">
+</form>
+    <br>
+<br></div>
+
+
+</div>
+</div>
+</body>
+</html>
