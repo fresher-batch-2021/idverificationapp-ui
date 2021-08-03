@@ -1,68 +1,7 @@
 <!DOCTYPE html>
 <html>
-
-    <style>
-        .change{
-            margin-left: 75%;
-            width: 250px;
-            
-        }
-        h1{
-            color:orangered;
-            text-align: center;
-            font-size: 20px;
-            background-color: aquamarine;
-        }
-        body{
-            background-repeat: no-repeat;
-            background-color:white;
-            background-image: url("");
-            background-size: cover;    
-        }
-        img{
-        margin-left: 10%;
-        display: block;
-        width:400px;
-        padding-top: 20px;
-        }
-        .hi1{
-            background-color: rosybrown;
-        }
-        .pan{
-            text-align: center;
-            font-size: 2rem;
-            color:sienna;
-        }
-        .navbar{
-            background-color: brown;
-           color: whitesmoke;
-            text-align: center;
-            color:aliceblue;
-            padding:40px;
-            text-decoration: none;
-        }
-        .overall{
-             margin-left: 20%;
-             margin-right: 20%;
-             border:1px solid;
-             margin-top: 1%;
-             margin-bottom: 5%
-        }
-        .h2{
-            color: blue;
-        font-size: 90%;
-        margin-left: 2%;
-        }
-        .applicant{
-            margin-left: 5%;
-        }
-        .residential{
-            color: blue;
-            font-size: 110%
-        }
-        
-    </style>
-    <head> 
+ <head>
+     <link rel="stylesheet" href="style.css"> 
      <title> PAN CARD APPLICATION </title>
      <img  src="https://pancardsevaa-online.org/assets/img/PAN%20Card%20Logo.png">
      <br>
@@ -87,64 +26,120 @@
    <h2> <b>1.PERSONAL INFORMATION </b> </h2>
    </div>
 <div class="applicant">
+      <form onsubmit="pan()">
     <label> <b> Applicacnt Name </b> </label><br>
  <span class="firstname"> 
-       <input type="text" placeholder="First name" name="first name">
+       <input type="text" id="first" placeholder="First_name" name="first_name">
  </span>
  <span calss="middlename">
-<input type="text" placeholder="middle name" name="middle name">
+<input type="text" id="middle" placeholder="middle name" name="middle name">
  </span> 
  <span class="lastname">
-       <input type="text" placeholder="last name" name="last name">
+       <input type="text" id="last" placeholder="last name" name="last name">
  </span>
  <br>
  <label> <b> Father Name </b> </label><br>
  <span class="ffirstname"> 
-       <input type="text" placeholder="Father First name" name="father first name">
+       <input type="text" id="ffirst" placeholder="Father First name" name="father first name">
  </span>
  <span class="fmiddlename">
-<input type="text" placeholder="father middle name" name="father middle name">
+<input type="text" id="fmiddle" placeholder="father middle name" name="father middle name">
  </span> 
  <span class="flastname">
-       <input type="text" placeholder="father last name" name="father last name">
+       <input type="text" id="flast" placeholder="father last name" name="father last name">
  </span>
  <br>
  <label> <b> Mather Name </b> </label><br>
  <span class="mfirstname"> 
-       <input type="text" placeholder="mother First name" name="mother first name">
+       <input type="text" id="mfirst" placeholder="mother First name" name="mother first name">
  </span>
  <span class="mmiddlename">
-<input type="text" placeholder="mother middle name" name="mother middle name">
+<input type="text" id="mmiddle" placeholder="mother middle name" name="mother middle name">
  </span> 
  <span class="mlastname">
-       <input type="text" placeholder="mather last name" name="mother last name">
+       <input type="text" id="mlast" placeholder="mather last name" name="mother last name">
  </span><br>
- <label> <b> Mobile No. </b> </label><br>
- <input type="num" name="Mobile number" placeholder="Mobile number" required>
+ <label> <b> Mobile No </b> </label><br>
+ <input type="number" name="Mobile number" id="mobilenumber" pattern="[0-9]{10}" placeholder="Mobile number" >
 <br>
     <label> <b> Email ID </b> </label><br>
-    <input type="email" name="email"  placeholder="Email" >
+    <input type="email" name="email" id="Email" placeholder="Email" >
     <br>
 
     <label> <b>Date Of Birth</b> </label><br>
-    <input type="date" name="date of birth" placeholder="date of birth"> <br>
-    <label> <b> AADHAR NUMBER </b> </label><br>
-    <input type="number" name="number" placeholder="Aadhar number" required><br>
-    
-    <form action="residential.html"
+    <input type="date" name="date of birth" id="dob" placeholder="date of birth"> <br>
+    <label> <b> Aadhar Number </b> </label><br>
+    <input type="number" name="number" id="aadharnumber" placeholder="Aadhar number" ><br>
+
     <label> <b> Gender </b> </label>
 <br>
-    <select id="gender" name="gender" required>
+    <select id="gender" name="gender" >
     <option value="">Please Select</option>
     <option value="male">Male</option>
     <option value="Female">Female</option>
     <option value="Transgender">Transgender</option>
     </select> <br>
 <br>
-<input type="submit" value="submit">
+ <input class="submit" type="submit" value="submit">
 </form>
     <br>
 <br></div>
+<script>
+      function pan(){
+            event.preventDefault();
+            const name =document.querySelector("#first").value;
+            if (name == "" || name == null || name.trim=="" ){ 
+                  alert("Invalid Name")
+                  return false;
+            }
+            const middle=document.querySelector("#middle").value;
+            const last=document.querySelector("#last").value;
+            const father_first=document.querySelector("#ffirst").value;
+            if( father_first =="" || father_first == null || father_first.trim=="" ){
+                  alert("Fill_The_Fathername")
+                  return false;
+            }
+            const father_middle=document.querySelector("#fmiddle").value;
+            const father_last=document.querySelector("#flast").value;
+            const mother_first=document.querySelector("#mfirst").value;
+            if(mother_first==""){
+                  alert("Fill The Mothername")
+                  return false;
+            }
+            const mother_middle=document.querySelector("#mmiddle").value;
+            const mother_last=document.querySelector("#mlast").value;
+            const mobile=document.querySelector("#mobilenumber").value;
+            if( mobile==""){
+                  alert("Enter mobile_number")
+                  return false;
+            }
+
+            const email=document.querySelector("#Email").value;
+            if( email=="" ){
+                  alert("Enter_mail.ID")
+                  return false;
+            }
+           const dob=document.querySelector("#dob").value 
+           if(dob== ""){
+                 alert("Enter_date_if_birth")
+                 return false;
+           }
+           const aadharnumber=document.querySelector("#aadharnumber").value;
+           if(aadharnumber == ""){
+                 alert("Enter_your_Aadhar_number")
+                  return false;
+           }
+           const gender=document.querySelector("#gender").value;
+           if(gender==""){
+                 alert("Please_Select_gender")
+                   return false;
+           }
+               
+               console.log( name + " " + father_first + " " + mother_first + " " + mobile + " " + email + " " + dob + " " + aadharnumber + " " + gender)
+              alert("verified");
+             window.location.href="residential.html";
+   }
+</script>
 
 
 </div>
