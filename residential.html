@@ -1,6 +1,6 @@
 <html>
     <head>
-    
+<title>RESIDENTIAL</title>    
 <style>
 
     h2{
@@ -63,75 +63,75 @@ margin-left: 8.5%;
         <form onsubmit="residential()">
         <div class="house">
         <label> <b> No./ Building / Village </b> </label>
-        <input  class="no" id="no" type="text" placeholder="No./ Building / Village">
+        <input  class="no" id="no" type="text" placeholder="No./ Building / Village" required>
    <br>
 <label> <b> Area/ Road/ P.O. </b> </label> 
-<input class="area" id="area" type="text" name="Area/ Road/ P.O." placeholder="Area/ Road/ P.O.">
+<input class="area" id="area" type="text" name="Area" placeholder="Area/ Road/ P.O." required>
 <br>
 <label>  <b> City/ Town/ District</b> </label>
-<input class="city" id="city" type="text" name=" City/ Town/ District" placeholder=" City/ Town/ District"> <br>
+<input class="city" id="city" type="text" name=" City" placeholder=" City/ Town/ District" required> <br>
 <label> <b> State </b> </label>
-<input class="state" id="state" type="text" name="State" placeholder="state">
+<input class="state" id="state" type="text" name="State" placeholder="state" required>
 <br>
 <label> <b> Pin Code </b> </label>
-<input class="pin" id="pin" type="text" name="Pin Code" placeholder="Pin Code">
+<input class="pin" id="pin" type="text" name="Pin Code" placeholder="Pin Code" required>
 <br>
 </div>
 <div class=" DOCUMENTPROOF">
     <h3>3.DOCUMENT PROOF</h3>
 </div>
 <div class="select_address_proof">
-<label> <b> Select Address Proof </b> </label><br>
+<label> <b> Select Address Proof  </b>  </label><br>
 <select name="Select Address Proof"  id="Select Address Proof">
-    <option value="Aadhaar Card">Aadhaar Card</option>
+    <option value="Aadhaar">Aadhaar Card</option>
     <option value="PASSPORT">PASSPORT</option>
-    <option value="VOTER ID card which is having complete Date of Birth">VOTER ID card which is having complete Date of Birth</option>
+    <option value="VOTER ID">VOTER ID card which is having complete Date of Birth</option>
     <option value="Driving License">Driving License</option>
-    <option value="Bank Account Statement not more than 3 months old">Bank Account Statement not more than 3 months old</option>
-    <option value="Gas bill not more than 3 months old">Gas bill not more than 3 months old</option>
-    <option value="Employer certificate in ORIGINAL">Employer certificate in ORIGINAL</option>
+    <option value="Bank Account">Bank Account Statement not more than 3 months old</option>
+    <option value="Gas bill ">Gas bill not more than 3 months old</option>
+    <option value="Employer certificate">Employer certificate in ORIGINAL</option>
     <option value="Passport of the Spouse">Passport of the Spouse</option>
-    <option value="Property registration document">Property registration document</option>
+    <option value="Property registration">Property registration document</option>
 </select><br>
 <br>
-<form action="">
+
         <label> <b> Upload Your Select Address Proof </b> </label>
         <br>
-        <input type="file" name"address" id="myfile1"><br><br>
-    </form>
+        <input type="file" name="address" id="myfile1"><br><br>
+
 <br>
 <label> <b> Identity Proof </b> </label><br>
 <select name="Identity_Proof" id="Identity_Proof" placeholder="Identity Proof">
-    <option value="Aadhaar_Card">Aadhaar Card</option>
+    <option value="Aadhaar">Aadhaar Card</option>
     <option value="PASSPORT">PASSPORT</option>
-    <option value="VOTER_ID_card_which_is_having_complete_Date_of_Birth">VOTER ID card which is having complete Date of Birth
+    <option value="VOTER_ID">VOTER ID card which is having complete Date of Birth
 </select>
 <br>
 <br>
-<form action="">
+
         <label> <b> Upload Your Identity Proof </b> </label><br>
-        <input type="file" name"identity" id="myfile2"><br><br>
-    </form>
+        <input type="file" name="identity" id="myfile2"><br><br>
+
 <br>
 <label> <b> DOB Proof </b> </label>
 <select name="Dob" id="dob" placeholder="Date of birth">
-    <option value="Aadhaar_Card">Aadhaar Card</option>
+    <option value="Aadhaar">Aadhaar Card</option>
     <option value="Passport">Passport</option>
     <option value="Driving License">Driving License</option>
-    <option value="Pension payment order">Pension payment order</option>
+    <option value="Pension_payment">Pension payment order</option>
     </select>
     <br>
-    <form action="">
+    
         <br>
             <label> <b> Uplaod Your Dob Proof </b> </label><br>
-            <input type="file" name"dob" id="myfile3"><br><br>
-        </form>
+            <input type="file" name="dob" id="myfile3"><br><br>
+
     <br> 
-   <form action="">
+   
        <label> <b> Upload Your Photo </b> </label>
        <br>
-       <input type="file" name"myphoto" id="myfile4"><br><br>
-   </form>
+       <input type="file" name="myphoto" id="myfile4"><br><br>
+
    <br>
 <button name="pan_form" type="submit" class="submit_pay" >SUBMIT AND PAY SECURELY</button>
 </form>
@@ -140,14 +140,18 @@ margin-left: 8.5%;
 <script>
     function residential(){
         event.preventDefault();
-      const  number=document.querySelector("#no").Value;
-      const area_road=document.querySelector("#area").Value;
-      const city_down=document.querySelector("#city").Value;
+      const homenumber =document.querySelector("#no").Value;
+    if(homenumber==""){
+        alert("Enter_Your_Door_Numbr")
+        return false;
+    }
+      const arearoad=document.querySelector("#area").Value;
+      const citydown=document.querySelector("#city").Value;
       const state=document.querySelector("#state").Value;
-      const pin_number=document.querySelector("#pin").Value;
+      const pinnumber=document.querySelector("#pin").Value;
 
-      console.log(number+ " " + area_road+ " " + city_down + " " +state+ " " +pin_number)
-      alert("successful")
+      console.log( homenumber+ " " + arearoad  + " " + citydown + " " + state + " " +  pinnumber)
+      alert("successful");
       window.location.href="lastpage.html";
     }
 </script>
