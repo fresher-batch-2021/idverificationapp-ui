@@ -1,159 +1,194 @@
-<html>
-    <head>
-<title>RESIDENTIAL</title>    
-<style>
+<html lang="en">
 
-    h2{
-        margin-left: 4%;
-        color:chartreuse;
-    }
-    .overall{
-        color: whitesmoke;
-        padding-bottom: 2%;
-        border-radius: 20px;
-        border: 1px solid;
-        margin-left: 20%;
-        margin-right: 30%;
-        font-size: 20px;
-        background:rgba(0, 0, 0, 0.5) ;
-            }
-    .house{
-        margin-left: 15%;
-    }
-    body{
-        background-repeat: no-repeat;
-        background-size:  cover;
-        background-image: url("download12.jpg")
-          }
-    .DOCUMENTPROOF{
-        font-size: 20px;
-        color:chartreuse;
-        margin-left: 4%;
-    }
-    .select_address_proof{
-        margin-left: 90px;
-    }
-    .submit_pay{
-        background-color:whitesmoke;
-        width: 20%;
-        height: 10%;
-    }
-    .no{
-        margin-left:5%;
-    }
-    .area{
-        margin-left:12.5%
-    }
-    .city{
-margin-left: 8.5%;
-}
-.pin{
-    margin-left: 24.2%;
-}
-.state{
-    margin-left: 30.5%;
-}
-</style>
+<head>
+    <title>RESIDENTIAL</title>
+    <style>
+        h2 {
+            margin-left: 4%;
+            color: chartreuse;
+        }
+
+        .overall {
+            color: whitesmoke;
+            padding-bottom: 2%;
+            border-radius: 20px;
+            border: 1px solid;
+            margin-left: 20%;
+            margin-right: 30%;
+            font-size: 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .house {
+            margin-left: 15%;
+        }
+
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("download12.jpg")
+        }
+
+        .DOCUMENTPROOF {
+            font-size: 20px;
+            color: chartreuse;
+            margin-left: 4%;
+        }
+
+        .select_address_proof {
+            margin-left: 90px;
+        }
+
+        .submit_pay {
+            background-color: whitesmoke;
+            width: 20%;
+            height: 10%;
+        }
+
+        .no {
+            margin-left: 5%;
+        }
+
+        .area {
+            margin-left: 12.5%
+        }
+
+        .city {
+            margin-left: 8.5%;
+        }
+
+        .pin {
+            margin-left: 24.2%;
+        }
+
+        .state {
+            margin-left: 30.5%;
+        }
+    </style>
 </head>
+
 <body>
-        <div class="overall">
-            
-        <h2> 2.RESIDENTIAL ADDRESS OF APPLICANT</h2> 
+    <div class="overall">
+
+        <h2> 2.RESIDENTIAL ADDRESS OF APPLICANT</h2>
         <br>
         <form onsubmit="residential()">
-        <div class="house">
-        <label> <b> No./ Building / Village </b> </label>
-        <input  class="no" id="no" type="text" placeholder="No./ Building / Village" required>
-   <br>
-<label> <b> Area/ Road/ P.O. </b> </label> 
-<input class="area" id="area" type="text" name="Area" placeholder="Area/ Road/ P.O." required>
-<br>
-<label>  <b> City/ Town/ District</b> </label>
-<input class="city" id="city" type="text" name=" City" placeholder=" City/ Town/ District" required> <br>
-<label> <b> State </b> </label>
-<input class="state" id="state" type="text" name="State" placeholder="state" required>
-<br>
-<label> <b> Pin Code </b> </label>
-<input class="pin" id="pin" type="text" name="Pin Code" placeholder="Pin Code" required>
-<br>
-</div>
-<div class=" DOCUMENTPROOF">
-    <h3>3.DOCUMENT PROOF</h3>
-</div>
-<div class="select_address_proof">
-<label> <b> Select Address Proof  </b>  </label><br>
-<select name="Select Address Proof"  id="Select Address Proof">
-    <option value="Aadhaar">Aadhaar Card</option>
-    <option value="PASSPORT">PASSPORT</option>
-    <option value="VOTER ID">VOTER ID card which is having complete Date of Birth</option>
-    <option value="Driving License">Driving License</option>
-    <option value="Bank Account">Bank Account Statement not more than 3 months old</option>
-    <option value="Gas bill ">Gas bill not more than 3 months old</option>
-    <option value="Employer certificate">Employer certificate in ORIGINAL</option>
-    <option value="Passport of the Spouse">Passport of the Spouse</option>
-    <option value="Property registration">Property registration document</option>
-</select><br>
-<br>
+            <div class="house">
+                <label> <strong> No./ Building / Village </strong> </label>
+                <input class="no" id="no" type="text" placeholder="No./ Building / Village" required>
+                <br>
+                <label> <strong> Area/ Road/ P.O. </strong> </label>
+                <input class="area" id="area" type="text" name="Area" placeholder="Area/ Road/ P.O." required>
+                <br>
+                <label> <strong> City/ Town/ District</strong> </label>
+                <input class="city" id="city" type="text" name=" City" placeholder=" City/ Town/ District" required>
+                <br>
+                <label> <strong> State </strong> </label>
+                <input class="state" id="state" type="text" name="State" placeholder="state" required>
+                <br>
+                <label> <strong> Pin Code </strong> </label>
+                <input class="pin" id="pin" type="text" name="Pin Code" placeholder="Pin Code" required>
+                <br>
+            </div>
+            <div class=" DOCUMENTPROOF">
+                <h3>3.DOCUMENT PROOF</h3>
+            </div>
+            <div class="select_address_proof">
+                <label> <strong> Select Address Proof </strong> </label><br>
+                <select name="Select Address Proof" id="Select Address Proof">
+                    <option value="Aadhaar">Aadhaar Card</option>
+                    <option value="PASSPORT">PASSPORT</option>
+                    <option value="VOTER ID">VOTER ID card which is having complete Date of Birth</option>
+                    <option value="Driving License">Driving License</option>
+                    <option value="Bank Account">Bank Account Statement not more than 3 months old</option>
+                    <option value="Gas bill ">Gas bill not more than 3 months old</option>
+                    <option value="Employer certificate">Employer certificate in ORIGINAL</option>
+                    <option value="Passport of the Spouse">Passport of the Spouse</option>
+                    <option value="Property registration">Property registration document</option>
+                </select><br>
+                <br>
 
-        <label> <b> Upload Your Select Address Proof </b> </label>
-        <br>
-        <input type="file" name="address" id="myfile1"><br><br>
+                <label> <strong> Upload Your Select Address Proof </strong> </label>
+                <br>
+                <input type="file" name="address" id="myfile1"><br><br>
 
-<br>
-<label> <b> Identity Proof </b> </label><br>
-<select name="Identity_Proof" id="Identity_Proof" placeholder="Identity Proof">
-    <option value="Aadhaar">Aadhaar Card</option>
-    <option value="PASSPORT">PASSPORT</option>
-    <option value="VOTER_ID">VOTER ID card which is having complete Date of Birth
-</select>
-<br>
-<br>
+                <br>
+                <label> <strong> Identity Proof </strong> </label><br>
+                <select name="Identity_Proof" id="Identity_Proof" placeholder="Identity Proof">
+                    <option value="Aadhaar">Aadhaar Card</option>
+                    <option value="PASSPORT">PASSPORT</option>
+                    <option value="VOTER_ID">VOTER ID card which is having complete Date of Birth
+                </select>
+                <br>
+                <br>
 
-        <label> <b> Upload Your Identity Proof </b> </label><br>
-        <input type="file" name="identity" id="myfile2"><br><br>
+                <label> <strong> Upload Your Identity Proof </strong> </label><br>
+                <input type="file" name="identity" id="myfile2"><br><br>
 
-<br>
-<label> <b> DOB Proof </b> </label>
-<select name="Dob" id="dob" placeholder="Date of birth">
-    <option value="Aadhaar">Aadhaar Card</option>
-    <option value="Passport">Passport</option>
-    <option value="Driving License">Driving License</option>
-    <option value="Pension_payment">Pension payment order</option>
-    </select>
-    <br>
-    
-        <br>
-            <label> <b> Uplaod Your Dob Proof </b> </label><br>
-            <input type="file" name="dob" id="myfile3"><br><br>
+                <br>
+                <label> <strong> DOB Proof </strong> </label>
+                <select name="Dob" id="dob" placeholder="Date of birth">
+                    <option value="Aadhaar">Aadhaar Card</option>
+                    <option value="Passport">Passport</option>
+                    <option value="Driving License">Driving License</option>
+                    <option value="Pension_payment">Pension payment order</option>
+                </select>
+                <br>
 
-    <br> 
-   
-       <label> <b> Upload Your Photo </b> </label>
-       <br>
-       <input type="file" name="myphoto" id="myfile4"><br><br>
+                <br>
+                <label> <strong> Uplaod Your Dob Proof </strong> </label><br>
+                <input type="file" name="dob" id="myfile3"><br><br>
 
-   <br>
-<button name="pan_form" type="submit" class="submit_pay" >SUBMIT AND PAY SECURELY</button>
-</form>
-</div>
-</div>
-<script>
-    function residential(){
-        event.preventDefault();
-      const homenumber =document.querySelector("#no").Value;
-    if(homenumber==""){
-        alert("Enter_Your_Door_Numbr")
-        return false;
-    }
-      const arearoad=document.querySelector("#area").Value;
-      const citydown=document.querySelector("#city").Value;
-      const state=document.querySelector("#state").Value;
-      const pinnumber=document.querySelector("#pin").Value;
+                <br>
 
-      console.log( homenumber+ " " + arearoad  + " " + citydown + " " + state + " " +  pinnumber)
-      alert("successful");
-      window.location.href="lastpage.html";
-    }
-</script>
+                <label> <strong> Upload Your Photo </strong> </label>
+                <br>
+                <input type="file" name="myphoto" id="myfile4"><br><br>
+
+                <br>
+                <button name="pan_form" type="submit" class="submit_pay">SUBMIT AND PAY SECURELY</button>
+        </form>
+    </div>
+    </div>
+    <script>
+        function residential() {
+            event.preventDefault();
+            const homenumber = document.querySelector("#no").value;
+            if (homenumber == "") {
+                alert("Enter the Door Number")
+                return false;
+            }
+
+            const arearoad = document.querySelector("#area").value;
+            if (arearoad == "") {
+                alert("Enter street Name")
+                return false;
+            }
+            const citydown = document.querySelector("#city").value;
+            if (citydown == "") {
+                alert("Enter the city name")
+                return false;
+            }
+            const state = document.querySelector("#state").value;
+            if (state == "") {
+                alert("Enter the state")
+                return false;
+            }
+            const pinnumber = document.querySelector("#pin").value;
+            if (pinnumber == "") {
+                alert("Enter the pin number")
+                return false;
+            }
+
+            console.log(homenumber + " " + arearoad + " " + citydown + " " + state + " " + pinnumber)
+            alert("successful");
+            window.location.href = "lastpage.html";
+
+        }
+
+
+
+    </script>
 </body>
-    </html>
+
+</html>
