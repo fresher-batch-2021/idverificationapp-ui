@@ -110,22 +110,17 @@
                                     alert("Invalid Name")
                                     return false;
                               }
-                              const middle = document.querySelector("#middle").value;
-                              const last = document.querySelector("#last").value;
                               const father_first = document.querySelector("#ffirst").value;
                               if (father_first == "" || father_first == null || father_first.trim == "") {
                                     alert("Fill_The_Fathername")
                                     return false;
                               }
-                              const father_middle = document.querySelector("#fmiddle").value;
-                              const father_last = document.querySelector("#flast").value;
                               const mother_first = document.querySelector("#mfirst").value;
                               if (mother_first == "") {
                                     alert("Fill The Mothername")
                                     return false;
                               }
-                              const mother_middle = document.querySelector("#mmiddle").value;
-                              const mother_last = document.querySelector("#mlast").value;
+                              
                               const mobile = document.querySelector("#mobilenumber").value;
                               if (mobile == "") {
                                     alert("Enter mobile_number")
@@ -152,10 +147,7 @@
                                     alert("Please_Select_gender")
                                     return false;
                               }
-                              // else{
-                              //   collectdata()
-                              //   }
-
+                             
                               console.log(name + " " + father_first + " " + mother_first + " " + mobile + " " + email + " " + dob + " " + aadharnumber + " " + gender)
                               alert("verified");
                               window.location.href = "residential.html";  
@@ -163,23 +155,7 @@
                   </script>
             </div>
       </div>
-      <table class="collectingdata">
-            <thead>
-                  <tr>
-                        <th>Name</th>
-                        <th>fatherName</th>
-                        <th>MotherName</th>
-                        <th>mobilenumber</th>
-                        <th>EmailID</th>
-                        <th>Data Of Birth</th>
-                        <th>Aadharnumber</th>
-                        <th>Gender</th>
-                  </tr>
-            </thead>
-            <tbody id="Collect_detail">
-
-            </tbody>
-      </table>
+     
 </body>
 
 </html>
