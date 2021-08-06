@@ -1,150 +1,217 @@
 <!DOCTYPE html>
-<html  lang="en">
- <head>
+<html lang="en">
+
+<head>
       <title> PAN CARD APPLICATION </title>
-      
-  </head>
+
+</head>
+
 <body>
-      <link rel="stylesheet" href="style.css"> 
-      
-      <img  src="https://pancardsevaa-online.org/assets/img/PAN%20Card%20Logo.png" alt="pancard">
+      <link rel="stylesheet" href="style.css">
+
+      <img src="https://pancardsevaa-online.org/assets/img/PAN%20Card%20Logo.png" alt="pancard">
       <br>
-         <img class="change" src="https://pancardsevaa-online.org/assets/img/shopact-msme-gst-swacha-bharat.png" alt="pancard1">
-         <h1>ONLINE APPLY PAN CARD</h1>
-       
-         <header id="header"></header> 
-         <script src="jquery.min.js"></script>
-         <script>
-             $("#header").load("Header1.html")
-         </script>
-           
-   <div class="hi1">
-    <marquee> On account of COVID-19 pandemic and subsequent Govt. advisories there will be delays in processing of PAN applications.</marquee>
-</div>
-<div class="overall">
-<div class="personal">
-   <div class="pan" ><p> <strong> NEW PAN INDIA </strong> </p></div> 
- <div class="h2">
-     
-   <h2> <strong>1.PERSONAL INFORMATION </strong> </h2>
-   </div>
-<div class="applicant">
-      <form onsubmit="pan()">
-    <label> <strong> Applicacnt Name </strong> </label><br>
- <span class="firstname"> 
-       <input type="text" id="first" placeholder="First_name" name="first_name">
- </span>
- <span calss="middlename">
-<input type="text" id="middle" placeholder="middle name" name="middle name">
- </span> 
- <span class="lastname">
-       <input type="text" id="last" placeholder="last name" name="last name">
- </span>
- <br>
- <label> <strong> Father Name </strong> </label><br>
- <span class="ffirstname"> 
-       <input type="text" id="ffirst" placeholder="Father First name" name="father first name">
- </span>
- <span class="fmiddlename">
-<input type="text" id="fmiddle" placeholder="father middle name" name="father middle name">
- </span> 
- <span class="flastname">
-       <input type="text" id="flast" placeholder="father last name" name="father last name">
- </span>
- <br>
- <label> <strong> Mather Name </strong> </label><br>
- <span class="mfirstname"> 
-       <input type="text" id="mfirst" placeholder="mother First name" name="mother first name">
- </span>
- <span class="mmiddlename">
-<input type="text" id="mmiddle" placeholder="mother middle name" name="mother middle name">
- </span> 
- <span class="mlastname">
-       <input type="text" id="mlast" placeholder="mather last name" name="mother last name">
- </span><br>
- <label> <strong> Mobile No </strong> </label><br>
- <input type="number" name="Mobile number" id="mobilenumber" pattern="[0-9]{10}" placeholder="Mobile number" >
-<br>
-    <label> <strong> Email ID </strong> </label><br>
-    <input type="email" name="email" id="Email" placeholder="Email" >
-    <br>
+      <img class="change" src="https://pancardsevaa-online.org/assets/img/shopact-msme-gst-swacha-bharat.png"
+            alt="pancard1">
+      <h1>ONLINE APPLY PAN CARD</h1>
 
-    <label> <strong>Date Of Birth</strong> </label><br>
-    <input type="date" name="date of birth" id="dob" placeholder="date of birth"> <br>
-    <label> <strong> Aadhar Number </strong> </label><br>
-    <input type="number" name="number" id="aadharnumber" placeholder="Aadhar number" ><br>
+      <header id="header"></header>
+      <script src="jquery.min.js"></script>
+      <script>
+            $("#header").load("Header1.html")
+      </script>
 
-    <label> <strong> Gender </strong> </label>
-<br>
-    <select id="gender" name="gender" >
-    <option value="">Please Select</option>
-    <option value="male">Male</option>
-    <option value="Female">Female</option>
-    <option value="Transgender">Transgender</option>
-    </select> <br>
-<br>
- <input class="submit" type="submit" value="submit">
-</form>
-    <br>
-<br></div>
-<script>
-      function pan(){
-            event.preventDefault();
-            const name =document.querySelector("#first").value;
-            if (name == "" || name == null || name.trim=="" ){ 
-                  alert("Invalid Name")
-                  return false;
-            }
-            const middle=document.querySelector("#middle").value;
-            const last=document.querySelector("#last").value;
-            const father_first=document.querySelector("#ffirst").value;
-            if( father_first =="" || father_first == null || father_first.trim=="" ){
-                  alert("Fill_The_Fathername")
-                  return false;
-            }
-            const father_middle=document.querySelector("#fmiddle").value;
-            const father_last=document.querySelector("#flast").value;
-            const mother_first=document.querySelector("#mfirst").value;
-            if(mother_first==""){
-                  alert("Fill The Mothername")
-                  return false;
-            }
-            const mother_middle=document.querySelector("#mmiddle").value;
-            const mother_last=document.querySelector("#mlast").value;
-            const mobile=document.querySelector("#mobilenumber").value;
-            if( mobile==""){
-                  alert("Enter mobile_number")
-                  return false;
-            }
+      <div class="hi1">
+            <marquee> On account of COVID-19 pandemic and subsequent Govt. advisories there will be delays in processing
+                  of PAN applications.</marquee>
+      </div>
+      <div class="overall">
+            <div class="personal">
+                  <div class="pan">
+                        <p> <strong> NEW PAN INDIA </strong> </p>
+                  </div>
+                  <div class="h2">
 
-            const email=document.querySelector("#Email").value;
-            if( email=="" ){
-                  alert("Enter_mail.ID")
-                  return false;
-            }
-           const dob=document.querySelector("#dob").value 
-           if(dob== ""){
-                 alert("Enter_date_if_birth")
-                 return false;
-           }
-           const aadharnumber=document.querySelector("#aadharnumber").value;
-           if(aadharnumber == ""){
-                 alert("Enter_your_Aadhar_number")
-                  return false;
-           }
-           const gender=document.querySelector("#gender").value;
-           if(gender==""){
-                 alert("Please_Select_gender")
-                   return false;
-           }
-               
-               console.log( name + " " + father_first + " " + mother_first + " " + mobile + " " + email + " " + dob + " " + aadharnumber + " " + gender)
-              alert("verified");
-             window.location.href="residential.html";
-   }
-</script>
-</div>
-</div>
+                        <h2> <strong>1.PERSONAL INFORMATION </strong> </h2>
+                  </div>
+                  <div class="applicant">
+                        <form onsubmit="pan()">
+                              <label> <strong> Applicacnt Name </strong> </label><br>
+                              <span class="firstname">
+                                    <input type="text" id="first" placeholder="First_name" name="first_name">
+                              </span>
+                              <span calss="middlename">
+                                    <input type="text" id="middle" placeholder="middle name" name="middle name">
+                              </span>
+                              <span class="lastname">
+                                    <input type="text" id="last" placeholder="last name" name="last name">
+                              </span>
+                              <br>
+                              <label> <strong> Father Name </strong> </label><br>
+                              <span class="ffirstname">
+                                    <input type="text" id="ffirst" placeholder="Father First name"
+                                          name="father first name">
+                              </span>
+                              <span class="fmiddlename">
+                                    <input type="text" id="fmiddle" placeholder="father middle name"
+                                          name="father middle name">
+                              </span>
+                              <span class="flastname">
+                                    <input type="text" id="flast" placeholder="father last name"
+                                          name="father last name">
+                              </span>
+                              <br>
+                              <label> <strong> Mather Name </strong> </label><br>
+                              <span class="mfirstname">
+                                    <input type="text" id="mfirst" placeholder="mother First name"
+                                          name="mother first name">
+                              </span>
+                              <span class="mmiddlename">
+                                    <input type="text" id="mmiddle" placeholder="mother middle name"
+                                          name="mother middle name">
+                              </span>
+                              <span class="mlastname">
+                                    <input type="text" id="mlast" placeholder="mather last name"
+                                          name="mother last name">
+                              </span><br>
+                              <label> <strong> Mobile No </strong> </label><br>
+                              <input type="number" name="Mobile number" id="mobilenumber" pattern="[0-9]{10}"
+                                    placeholder="Mobile number">
+                              <br>
+                              <label> <strong> Email ID </strong> </label><br>
+                              <input type="email" name="email" id="Email" placeholder="Email">
+                              <br>
 
+                              <label> <strong>Date Of Birth</strong> </label><br>
+                              <input type="date" name="date of birth" id="dob" placeholder="date of birth"> <br>
+                              <label> <strong> Aadhar Number </strong> </label><br>
+                              <input type="number" name="number" id="aadharnumber" placeholder="Aadhar number"><br>
+
+                              <label> <strong> Gender </strong> </label>
+                              <br>
+                              <select id="gender" name="gender">
+                                    <option value="">Please Select</option>
+                                    <option value="male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Transgender">Transgender</option>
+                              </select> <br>
+                              <br>
+                              <input class="submit" type="submit" value="submit">
+                        </form>
+                        <br>
+                        <br>
+                  </div>
+
+                  <script>
+                        function pan() {
+                              event.preventDefault();
+                              const name = document.querySelector("#first").value;
+                              if (name == "" || name == null || name.trim == "") {
+                                    alert("Invalid Name")
+                                    return false;
+                              }
+                              const middle = document.querySelector("#middle").value;
+                              const last = document.querySelector("#last").value;
+                              const father_first = document.querySelector("#ffirst").value;
+                              if (father_first == "" || father_first == null || father_first.trim == "") {
+                                    alert("Fill_The_Fathername")
+                                    return false;
+                              }
+                              const father_middle = document.querySelector("#fmiddle").value;
+                              const father_last = document.querySelector("#flast").value;
+                              const mother_first = document.querySelector("#mfirst").value;
+                              if (mother_first == "") {
+                                    alert("Fill The Mothername")
+                                    return false;
+                              }
+                              const mother_middle = document.querySelector("#mmiddle").value;
+                              const mother_last = document.querySelector("#mlast").value;
+                              const mobile = document.querySelector("#mobilenumber").value;
+                              if (mobile == "") {
+                                    alert("Enter mobile_number")
+                                    return false;
+                              }
+
+                              const email = document.querySelector("#Email").value;
+                              if (email == "") {
+                                    alert("Enter_mail.ID")
+                                    return false;
+                              }
+                              const dob = document.querySelector("#dob").value
+                              if (dob == "") {
+                                    alert("Enter_date_if_birth")
+                                    return false;
+                              }
+                              const aadharnumber = document.querySelector("#aadharnumber").value;
+                              if (aadharnumber == "") {
+                                    alert("Enter_your_Aadhar_number")
+                                    return false;
+                              }
+                              const gender = document.querySelector("#gender").value;
+                              if (gender == "") {
+                                    alert("Please_Select_gender")
+                                    return false;
+                              }
+                              // else{
+                              //   collectdata()
+                              //   }
+
+                              console.log(name + " " + father_first + " " + mother_first + " " + mobile + " " + email + " " + dob + " " + aadharnumber + " " + gender)
+                              alert("verified");
+                              window.location.href = "residential.html";
+
+                              /* function collectdata() {
+                                                 event.preventDefault();
+                                                 var first = document.querySelector("#Collect_detail");
+                                                 var row = document.createElement("tr");
+                                                 var data_name = document.createElement("td");
+                                                   var data_father = document.createElement("td");
+                                                   var data_mother = document.createElement("td");
+                                                   var data_mobile = document.createElement("td");
+                                                   var data_Email = document.createElement("td");
+                                                   var data_dob = document.createElement("td");
+                                                   var data_aadhar = document.createElement("td");
+                                                   var data_gender = document.createElement("td");
+                                                 data_name.textContent = document.getElementById("first").value;
+                                                  data_father.textContent = document.getElementById("ffirst").value;
+                                                  data_mother.textContent = document.getElementById("mfirst").value;
+                                                  data_mobile.textContent = document.getElementById("mobilenumber").value;
+                                                  data_Email.textContent = document.getElementById("Email").value;
+                                                  data_dob.textContent = document.getElementById("dob").value;
+                                                  data_aadhar.textContent = document.getElementById("aadharnumber").value;
+                                                  data_gender.textContent = document.getElementById("gender").value;
+                                                 row.appendChild(data_name);
+                                                  row.appendChild(data_father);
+                                                  row.appendChild(data_mother);
+                                                  row.appendChild(data_mobile);
+                                                  row.appendChild(data_Email);
+                                                  row.appendChild(data_dob);
+                                                  row.appendChild(data_aadhar);
+                                                 row.appendChild(data_gender);
+                                                 first.append(row);
+                                                 return false;
+                                           }*/
+                        }
+                  </script>
+            </div>
+      </div>
+      <table class="collectingdata">
+            <thead>
+                  <tr>
+                        <th>Name</th>
+                        <th>fatherName</th>
+                        <th>MotherName</th>
+                        <th>mobilenumber</th>
+                        <th>EmailID</th>
+                        <th>Data Of Birth</th>
+                        <th>Aadharnumber</th>
+                        <th>Gender</th>
+                  </tr>
+            </thead>
+            <tbody id="Collect_detail">
+
+            </tbody>
+      </table>
 </body>
+
 </html>

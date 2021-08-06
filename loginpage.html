@@ -1,94 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
   <title>LOGINPAGE</title>
-<style>
-body
- {font-family: Arial, Helvetica, sans-serif;}
-form
- {border: 3px solid #f1f1f1;}
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: lightsalmon;
+    }
 
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px ;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-.overall{
-    margin-left: 30%;
-    margin-right: 30%;
-}
-h2{
-    text-align: center;
-}
-button {
-  background-color: #04AA6D;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-}
+    form {
+      border: 3px solid #f1f1f1;
+    }
 
-button:hover {
-  opacity: 0.8;
-}
+    input[type=text],
+    input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
 
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-}
+    .overall {
+      margin-left: 30%;
+      margin-right: 30%;
+    }
 
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
-}
+    h2 {
+      text-align: center;
+    }
 
-img.avatar {
-  width: 40%;
-  border-radius: 50%;
-}
+    button {
+      background-color: #04AA6D;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
 
-.container {
-  padding: 16px;
-}
+    button:hover {
+      opacity: 0.8;
+    }
 
-span.psw {
-  float: right;
-  padding-top: 16px;
-}
-</style>
+    .cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      background-color: #f44336;
+    }
+
+    .imgcontainer {
+      text-align: center;
+      margin: 24px 0 12px 0;
+    }
+
+    img.avatar {
+      width: 40%;
+      border-radius: 50%;
+    }
+
+    .container {
+      padding: 16px;
+    }
+
+    span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+  </style>
 </head>
+
 <body>
 
-<h2>Login Form</h2>
-<div class="overall">
-<form action="index.html">
-  <div class="imgcontainer">
-    <img src="image1.png" alt="Avatar" class="avatar">
-  </div>
+  <h2>Login Form</h2>
+  <div class="overall">
+    <form onsubmit="loginpage()">
+      <div class="imgcontainer">
+        <img src="image1.png" alt="Avatar" class="avatar">
+      </div>
 
-  <div class="container">
-    <label for="uname"><strong>Username</strong></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+      <div class="container">
+        <label for="uname"><strong>Username</strong></label>
+        <input type="text" id="username" placeholder="Enter Username" name="uname">
 
-    <label for="psw"><strong>Password</strong></label>
-    <input type="password" minlength="6" placeholder="Enter Password" name="psw" required>
-        
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-  </div>
+        <label for="psw"><strong>Password</strong></label>
+        <input type="password" minlength="6" id="password" placeholder="Enter Password" name="psw">
 
-  <div class="container" style="background-color:#f1f1f1">
-    <span class="psw">Forgot <a href="#">password?</a></span>
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+    <script>
+      function loginpage() {
+        event.preventDefault();
+        const Username1 = "Ganeshkumar1011";
+        const Password2 = "Ganesh1011";
+        const user = document.querySelector("#username").value;
+        if (user == "" || user == null || user.trim == "") {
+          alert("Enter_User_Name");
+          return false;
+        }
+        const password = document.querySelector("#password").value;
+        if (password == " " || password == null) {
+          alert("invalid_password");
+          return false;
+        }
+
+        if (user == Username1 && password == Password2) {
+          alert("Correct");
+          window.location.href = "index.html";
+        }
+        else {
+          alert("invalid_user_and _Password")
+        }
+        console.log(user + " " + password)
+        // window.location.href="index.html";
+      }
+    </script>
   </div>
-</form>
-</div>
 </body>
+
 </html>

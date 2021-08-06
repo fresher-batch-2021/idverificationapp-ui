@@ -13,7 +13,6 @@
         body{
             background-repeat: no-repeat;
             background-color: white;
-            background-image: url("");
             background-size: cover;    
         }
         img{
@@ -52,7 +51,7 @@
         }
         .applicant{
             margin-left: 1%;
-            background-color:rgb(169, 190, 138);
+            background-color:;
             margin-right: 1%;
             margin-top: 2%;
             margin-bottom: 8%;
@@ -61,9 +60,13 @@
             color: blue;
             font-size: 110%
         }
-        .submit:hover{
+        .submit{
             background: rgb(96, 160, 44);
-            color: bisque; 
+            color:black; 
+            margin-left: 30%;
+            width: 20%;
+            height: 20px;
+            
         }
         .submit{
             border: 80%;
@@ -72,8 +75,19 @@
             background-color:white;
             border-radius: 10px;
         }
-        aside{
-            margin-left: 75% ;
-            width: 25%;
-            height: 50px;
-        }
+        .collectingdata {
+            text-align: center;
+            width: 90%;
+            color: blue;
+      }
+      #collectingdata,
+      table,
+      thead,
+      tbody,
+      th,
+      td {
+            border: 1px solid;
+            color: black;
+            margin-left: 5%;
+      }
+        
