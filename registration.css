@@ -1,0 +1,71 @@
+* {
+    color: black
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: rgb(109, 167, 63);
+    align-items: center;
+    background-size: cover;
+    margin-left: 5rem;
+    background-repeat: no-repeat;
+    background-image: url("image/d.jpg");
+}
+
+.overall {
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 2px solid;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    background-color: unset;
+}
+
+.button {
+    height: 30px;
+    margin-left: 25%;
+    width: 20%;
+}
+
+#yname {
+    margin-left: 20%;
+    padding: 1%;
+    border-radius: 2%;
+}
+
+#datebirth {
+    margin-left: 16.5%;
+    padding: 1.2%;
+    border-radius: 2%;
+}
+
+#email1 {
+    margin-left: 24%;
+    padding: 1.2%;
+    border-radius: 2%;
+}
+
+#password {
+    margin-left: 11%;
+    border-radius: 2%;
+    padding: 2%;
+}
+
+#Username {
+    margin-left: 21.5%;
+    padding: 2%;
+    border-radius: 2%;
+}
+
+#confirmpassword {
+    border-radius: 2%;
+    margin-left: 9%;
+    padding: 2%;
+}

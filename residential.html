@@ -3,75 +3,10 @@
 
 <head>
     <title>RESIDENTIAL</title>
-    <style>
-        h2 {
-            margin-left: 4%;
-            color: chartreuse;
-        }
-
-        .overall {
-            box-sizing: border-box;
-            color: whitesmoke;
-            padding-bottom: 2%;
-            border-radius: 20px;
-            border: 1px solid;
-            margin-left: 20%;
-            margin-right: 30%;
-            font-size: 20px;
-            background: rgba(0, 0, 0, 0.5);
-        }
-
-        .house {
-            margin-left: 15%;
-        }
-
-        body {
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-image: url("download12.jpg")
-        }
-
-        .DOCUMENTPROOF {
-            font-size: 20px;
-            color: chartreuse;
-            margin-left: 4%;
-        }
-
-        .select_address_proof {
-            margin-left: 90px;
-        }
-
-        .submit_pay {
-            background-color: whitesmoke;
-            width: 20%;
-            height: 10%;
-        }
-
-        .no {
-            margin-left: 5%;
-        }
-
-        .area {
-            margin-left: 12.5%
-        }
-
-        .city {
-            margin-left: 8.5%;
-        }
-
-        .pin {
-            margin-left: 24.2%;
-        }
-
-        .state {
-            margin-left: 30.5%;
-        }
-    </style>
 </head>
-
+<link rel="stylesheet" href="residential.css">
 <body>
     <div class="overall">
-
         <h2> 2.RESIDENTIAL ADDRESS OF APPLICANT</h2>
         <br>
         <form onsubmit="residential()">
@@ -136,7 +71,6 @@
                     <option value="Pension_payment">Pension payment order</option>
                 </select>
                 <br>
-
                 <br>
                 <label> <strong> Uplaod Your Dob Proof </strong> </label><br>
                 <input type="file" name="dob" id="myfile3"><br><br>
@@ -152,45 +86,6 @@
         </form>
     </div>
     </div>
-    <script>
-        function residential() {
-            event.preventDefault();
-            const homenumber = document.querySelector("#no").value;
-            if (homenumber == "") {
-                alert("Enter the Door Number")
-                return false;
-            }
-
-            const arearoad = document.querySelector("#area").value;
-            if (arearoad == "") {
-                alert("Enter street Name")
-                return false;
-            }
-            const citydown = document.querySelector("#city").value;
-            if (citydown == "") {
-                alert("Enter the city name")
-                return false;
-            }
-            const state = document.querySelector("#state").value;
-            if (state == "") {
-                alert("Enter the state")
-                return false;
-            }
-            const pinnumber = document.querySelector("#pin").value;
-            if (pinnumber == "") {
-                alert("Enter the pin number")
-                return false;
-            }
-
-            console.log(homenumber + " " + arearoad + " " + citydown + " " + state + " " + pinnumber)
-            alert("successful");
-            window.location.href = "lastpage.html";
-
-        }
-
-
-
-    </script>
+    <script src="residential.js"></script>
 </body>
-
 </html>

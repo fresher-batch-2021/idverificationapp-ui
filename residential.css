@@ -1,0 +1,61 @@
+h2 {
+    margin-left: 4%;
+    color: chartreuse;
+}
+.overall {
+    box-sizing: border-box;
+    color: whitesmoke;
+    padding-bottom: 2%;
+    border-radius: 20px;
+    border: 1px solid;
+    margin-left: 20%;
+    margin-right: 30%;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.house {
+    margin-left: 15%;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("download12.jpg")
+}
+
+.DOCUMENTPROOF {
+    font-size: 20px;
+    color: chartreuse;
+    margin-left: 4%;
+}
+
+.select_address_proof {
+    margin-left: 90px;
+}
+
+.submit_pay {
+    background-color: whitesmoke;
+    width: 20%;
+    height: 10%;
+}
+
+.no {
+    margin-left: 5%;
+}
+
+.area {
+    margin-left: 12.5%
+}
+
+.city {
+    margin-left: 8.5%;
+}
+
+.pin {
+    margin-left: 24.2%;
+}
+
+.state {
+    margin-left: 30.5%;
+}
