@@ -1,24 +1,28 @@
 function loginpage() {
-    event.preventDefault();
-    const Username1 = "Ganeshkumar1011";
-    const Password2 = "Ganesh1011";
-    const user = document.querySelector("#username").value;
-    if (user == "" || user == null || user.trim == "") {
-      alert("Enter_User_Name");
-      return false;
-    }
-    const password = document.querySelector("#password").value;
-    if (password == " " || password == null) {
-      alert("invalid_password");
-      return false;
+  event.preventDefault();
+
+  const user = document.querySelector("#username").value;
+   const password = document.querySelector("#password").value;
+  if (user == "" || user == null || user.trim == "") {
+    alert("Enter_User_Name");
+    return false;
+  }
+ 
+  else if (password == " " || password == null) {
+    alert("invalid_password");
+    return false;
+  }
+  else{
+  const url = "https://product-mock-api.herokuapp.com/identityapp/api/v1/auth/login"
+    const loginData = {
+        username: user,
+        password: password
     }
 
-    if (user == Username1 && password == Password2) {
-      alert("Correct");
-      window.location.href = "index.html";
+    axios.post(url, loginData).then(res => {
+        console.log(loginData);
+        alert("successfull")
+        window.location.href = "index.html";
+      }).catch(err => alert(" invalid details"))
     }
-    else {
-      alert("invalid_user_and _Password")
-    }
-    console.log(user + " " + password)
-  }
+}

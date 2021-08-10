@@ -45,6 +45,11 @@ body {
     padding: 1.2%;
     border-radius: 2%;
 }
+#number {
+    margin-left: 14%;
+    padding: 1.2%;
+    border-radius: 2%;
+}
 
 #email1 {
     margin-left: 24%;
