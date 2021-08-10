@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DETAILS</title>
+    <style>
+.align{
+    border:5px solid;
+    border-radius: 1px;
+    height: 500px;
+    margin-left: 20%;
+    margin-right: 30%;
+    padding-top:  5%;
+    padding-left: 5%;
+}
+    </style>
+</head>
+
+<body>
+    <div class="align">
+    <table>
+        <tr>
+            <th scope="row"> NAME:</th>
+            <td id="username"></td>
+        </tr>
+        <tr>
+            <th scope="row"> FATHERNAME:</th>
+            <td id="fathername"></td>
+        </tr>
+        <tr>
+            <th scope="row"> MOTHERNAME:</th>
+            <td id="mothername"></td>
+        </tr>
+        <tr>
+            <th scope="row"> MOBILENUMBER:</th>
+            <td id="mobilenumber"></td>
+        </tr>
+        <tr>
+            <th scope="row"> EMAILID:</th>
+            <td id="emailid"></td>
+        </tr>
+        <tr>
+            <th scope="row"> DATEOFBIRTH:</th>
+            <td id="dateofbirth"></td>
+        </tr>
+        <tr>
+            <th scope="row"> AADHARNUMBER:</th>
+            <td id="aadharnumber"></td>
+        </tr>
+        <tr>
+            <th scope="row"> GENDER:</th>
+            <td id="gender"></td>
+        </tr>
+        <tr>
+            <th scope="row"> ADDRESS:</th>
+            
+            <td id="house"></td>
+            <td id="street"></td>
+            <td id="city"></td>
+            <td id="state"></td>
+            <td id="pin"></td>
+        </tr>
+    </table>
+</div>
+<script>
+        let indexfile=JSON.parse(localStorage.getItem('indexform'));
+        console.log(indexfile);
+       let addressFile=JSON.parse(localStorage.getItem('address'));
+        console.log(addressFile);
+
+document.querySelector("#username").innerHTML = indexfile.Name;
+document.querySelector("#fathername").innerHTML = indexfile.FatherName;
+document.querySelector("#mothername").innerHTML=indexfile.MotherName;
+document.querySelector("#mobilenumber").innerHTML=indexfile.MobileNumber;
+document.querySelector("#emailid").innerHTML=indexfile.EmailID;
+document.querySelector("#dateofbirth").innerHTML=indexfile.DateOfBirth;
+document.querySelector("#aadharnumber").innerHTML=indexfile.AadharNumber;
+document.querySelector("#gender").innerHTML=indexfile.Gender;
+
+document.querySelector("#house").innerHTML = addressFile.HouseNumber;
+document.querySelector("#street").innerHTML = addressFile.StreetName;
+document.querySelector("#city").innerHTML = addressFile.CityName;
+document.querySelector("#state").innerHTML = addressFile.State;
+document.querySelector("#pin").innerHTML = addressFile.pinNumber;
+</script>
+</body>
+</html> 

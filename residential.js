@@ -26,9 +26,17 @@ function residential() {
         alert("Enter the pin number")
         return false;
     }
-
-    console.log(homenumber + " " + arearoad + " " + citydown + " " + state + " " + pinnumber)
+    let userobj={
+        "HouseNumber":homenumber,
+        "StreetName":arearoad,
+        "CityName":citydown,
+        "State":state,
+        "pinNumber":pinnumber,
+    };
+    console.log(userobj)
+   // console.log(homenumber + " " + arearoad + " " + citydown + " " + state + " " + pinnumber)
+    localStorage.setItem('address', JSON.stringify(userobj));
     alert("successful");
     window.location.href = "lastpage.html";
-
+    
 }
