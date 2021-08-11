@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REGISTRATION</title>
 </head>
 <body>
@@ -14,26 +16,26 @@
     <div class="overall">
         <form onsubmit="registration()">
             <label> <strong> YOUR NAME </strong> </label>
-            <input type="text" id="yname" placeholder="your name"><br>
+            <input type="text" id="yourname" placeholder="your name" required> <br>
             <br>
             <label> <strong> DATE OF BIRTH </strong> </label>
-            <input type="date" id="datebirth"><br>
+            <input type="date" id="datebirth" placeholder="DateOfBirth" ><br>
             <br>
 
             <label> <strong> EMAIL ID </strong> </label>
-            <input type="email" id="email1">
+            <input type="email" id="email1" placeholder="EmailID" required>
             <br>
             <br>
             <label> <strong> MOBILE NUMBER </strong> </label>
-            <input type="tel" id="number" minlength="10" maxlength="10" required>
+            <input type="tel" id="number" pattern="[0-9]{10}"  placeholder="MobileNumber" required>
             <br>
             <br>
             <label> <strong>USERNAME</strong> </label>
-            <input type="text" id="Username">
+            <input type="text" id="Username" placeholder="UserName" required>
             <br>
             <br>
             <label> <strong>CREATE PASSWORD</strong> </label>
-            <input type="password" id="password" name="password" placeholder="Password">
+            <input type="password" id="password" name="password" placeholder="Password" required>
             <br>
             <br>
             <label> <strong>CONFIRM PASSWORD </strong> </label>

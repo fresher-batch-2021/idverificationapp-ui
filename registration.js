@@ -1,6 +1,6 @@
 function registration() {
     event.preventDefault();
-    const name = document.querySelector("#yname").value;
+    const name = document.querySelector("#yourname").value;
     if (name == "" || name == null) {
         alert("Enther_Your_Name")
         return false;

@@ -1,0 +1,17 @@
+.container{
+border: 1px solid;
+margin-left: 5%;
+margin-right: 5%;
+text-align: left;
+box-shadow: 0 0 5px 1px ;
+padding: 2%;
+}
+.overall{
+    margin-top: 8%;
+    border: 1px solid;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow: 0 0 5px 1px ;
+    text-align: center;
+ }
+    
