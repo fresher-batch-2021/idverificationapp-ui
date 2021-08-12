@@ -4,22 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DETAILS</title>
+    <title>APPLICANTDETAILS</title>
     <style>
-.align{
-    border:5px solid;
-    border-radius: 1px;
-    height: 500px;
-    margin-left: 20%;
-    margin-right: 30%;
-    padding-top:  5%;
-    padding-left: 5%;
+table{
+    width: 850px;
+    height: 580px;
+    margin: auto;
+    padding: 20px 20px 20px 20px;
+    border-radius: 20px;
+    border-style: solid;
 }
-    </style>
+.buttonplace{
+    margin-top: 1%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+ </style>
 </head>
 
 <body>
+    <form action="lastpage.html">
     <div class="align">
+        <h3>APPLICANTDETAILS</h3>
     <table>
         <tr>
             <th scope="row"> NAME:</th>
@@ -54,21 +63,37 @@
             <td id="gender"></td>
         </tr>
         <tr>
-            <th scope="row"> ADDRESS:</th>
-            
-            <td id="house"></td>
+            <th scope="row">HOUSENUMBER :</th>
+            <td id="house"></td> 
+        </tr>
+        <tr>
+            <th scope="row"> STREET NAME:</th> 
             <td id="street"></td>
+        </tr>
+    <tr>
+        <th scope="row"> CITY :</th>
             <td id="city"></td>
+        </tr>
+        <tr>
+            <th scope="row"> STATE:</th>
             <td id="state"></td>
+        </tr>
+        <tr>
+            <th scope="row"> PINCODE:</th>
             <td id="pin"></td>
         </tr>
     </table>
+<div class="buttonplace">
+   <button> <a href="editdetails.html" >EDIT</a>&nbsp;&nbsp;&nbsp;&nbsp;</button>
+    <input type="submit" id="submit" onclick="alert('Your Application Is Successfull Submitted')" >
+
+</div>
+</form>
 </div>
 <script>
         let indexfile=JSON.parse(localStorage.getItem('indexform'));
         console.log(indexfile);
-       let addressFile=JSON.parse(localStorage.getItem('address'));
-        console.log(addressFile);
+       
 
 document.querySelector("#username").innerHTML = indexfile.Name;
 document.querySelector("#fathername").innerHTML = indexfile.FatherName;
@@ -79,11 +104,34 @@ document.querySelector("#dateofbirth").innerHTML=indexfile.DateOfBirth;
 document.querySelector("#aadharnumber").innerHTML=indexfile.AadharNumber;
 document.querySelector("#gender").innerHTML=indexfile.Gender;
 
+let addressFile=JSON.parse(localStorage.getItem('address'));
+        console.log(addressFile);
+
 document.querySelector("#house").innerHTML = addressFile.HouseNumber;
 document.querySelector("#street").innerHTML = addressFile.StreetName;
 document.querySelector("#city").innerHTML = addressFile.CityName;
 document.querySelector("#state").innerHTML = addressFile.State;
 document.querySelector("#pin").innerHTML = addressFile.pinNumber;
+
+let modifydetailfile=JSON.parse(localStorage.getItem('modifyform'));
+     console.log(modifydetailfile)
+ 
+document.querySelector("#username").innerHTML =modifydetailfile.Name;    
+document.querySelector("#fathername").innerHTML = modifydetailfile.Fathername;
+document.querySelector("#mothername").innerHTML = modifydetailfile.Mothername;
+document.querySelector("#mobilenumber").innerHTML = modifydetailfile.MobileNumber;
+document.querySelector("#emailid").innerHTML = modifydetailfile.EmailId;
+document.querySelector("#dateofbirth").innerHTML = modifydetailfile.DateOfbirth;
+document.querySelector("#aadharnumber").innerHTML = modifydetailfile.AadharNumber;
+document.querySelector("#gender").innerHTML = modifydetailfile.Gender;
+
+
+document.querySelector("#house").innerHTML = modifydetailfile.HouseNo;
+document.querySelector("#street").innerHTML = modifydetailfile.StreetName;
+document.querySelector("#city").innerHTML = modifydetailfile.CityName;
+document.querySelector("#state").innerHTML = modifydetailfile.StateName;
+document.querySelector("#pin").innerHTML = modifydetailfile.PinCode;
 </script>
+
 </body>
 </html> 

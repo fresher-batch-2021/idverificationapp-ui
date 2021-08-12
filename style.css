@@ -11,6 +11,7 @@
             background-color: aquamarine;
         }
         body{
+            box-shadow: 3px;
             background-repeat: no-repeat;
             background-color: white;
             background-size: cover;    
@@ -25,6 +26,7 @@
             background-color: rosybrown;
         }
         .pan{
+            box-shadow: 3px;
             text-align: center;
             font-size: 2rem;
             color:sienna;
@@ -37,6 +39,7 @@
             text-decoration: none;
         }
         .overall{
+            box-shadow: 3px;
             border-radius: 20px;
              margin-left: 10%;
              margin-right: 30%;

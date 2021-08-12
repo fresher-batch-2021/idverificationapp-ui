@@ -37,6 +37,6 @@ function residential() {
    // console.log(homenumber + " " + arearoad + " " + citydown + " " + state + " " + pinnumber)
     localStorage.setItem('address', JSON.stringify(userobj));
     alert("successful");
-    window.location.href = "lastpage.html";
+    window.location.href = "details.html";
     
 }

@@ -51,6 +51,5 @@ function registration() {
         alert("successfull")
         window.location.href = "loginpage.html";
       }).catch(err => alert("error "))
-    }
-      
+    }    
 }
