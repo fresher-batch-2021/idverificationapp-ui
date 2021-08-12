@@ -19,6 +19,10 @@ table{
     margin-bottom: 2%;
     text-align: center;
 }
+h4{
+    float: right;
+    margin-right: 5%;
+}
 h3{
     text-align: center;
 }
@@ -26,6 +30,7 @@ h3{
 </head>
 
 <body>
+    <a href="logoutpage.html"> <h4>LOGOUT</h4> </a>
     <form action="lastpage.html">
     <div class="align">
         <h3>APPLICANTDETAILS</h3>
@@ -125,12 +130,29 @@ document.querySelector("#dateofbirth").innerHTML = modifydetailfile.DateOfbirth;
 document.querySelector("#aadharnumber").innerHTML = modifydetailfile.AadharNumber;
 document.querySelector("#gender").innerHTML = modifydetailfile.Gender;
 
-
 document.querySelector("#house").innerHTML = modifydetailfile.HouseNo;
 document.querySelector("#street").innerHTML = modifydetailfile.StreetName;
 document.querySelector("#city").innerHTML = modifydetailfile.CityName;
 document.querySelector("#state").innerHTML = modifydetailfile.StateName;
 document.querySelector("#pin").innerHTML = modifydetailfile.PinCode;
+
+let personobj={
+    "FirstName":modifydetailfile.Name,
+    "FatherName":modifydetailfile.Fathername,
+    "MotherName":modifydetailfile.Mothername,
+    "MobileNumber":modifydetailfile.MobileNumber,
+    "EmailID":modifydetailfile.EmailId,
+    "DataOfBirth": modifydetailfile.DateOfbirth,
+    "AadharNumber": modifydetailfile.AadharNumber,
+    "Gender":modifydetailfile.Gender,
+
+    "HouseNumber":modifydetailfile.HouseNo,
+    "StreetName":modifydetailfile.StreetName,
+    "CityName": modifydetailfile.CityName,
+    "StateName":modifydetailfile.StateName,
+    "PinCode":modifydetailfile.PinCode
+    }
+    console.log(personobj)
 </script>
 
 </body>

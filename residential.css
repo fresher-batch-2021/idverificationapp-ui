@@ -13,7 +13,12 @@ h2 {
     font-size: 20px;
     background: rgba(0, 0, 0, 0.5);
 }
-
+h5{
+    float: right;
+    margin-right: 5%;
+    color: seashell;
+    font-size: 20px;
+}
 .house {
     margin-left: 15%;
 }
