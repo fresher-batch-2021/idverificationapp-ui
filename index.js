@@ -41,7 +41,7 @@
         alert("Please_Select_Gender")
                 return false;
           }
-         
+
           let userobj={
             "Name" : name,
             "FatherName": father_name,
