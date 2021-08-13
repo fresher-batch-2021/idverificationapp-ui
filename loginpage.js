@@ -18,6 +18,11 @@ function loginpage() {
         username: user,
         password: password
     }
+    const usernameobj={
+      "userName":user
+    }
+    console.log(usernameobj);
+    localStorage.setItem('nameform' , JSON.stringify(usernameobj));
 
     axios.post(url, loginData).then(res => {
         console.log(loginData);

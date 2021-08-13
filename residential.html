@@ -8,10 +8,15 @@
 </head>
 <link rel="stylesheet" href="residential.css">
 <body>
+    <div class="usernametopview">
+        <label>USERNAME :</label>
+        <label id="userNameView"></label>
+    </div>
     <a href="logoutpage.html"><h5> LOGOUT </h5> </a>
     <div class="overall">
         <h2> 2.RESIDENTIAL ADDRESS OF APPLICANT</h2>
         <br>
+        
         <form onsubmit="residential()">
             <div class="house">
                 <label> <strong> No./ Building / Village </strong> </label>
@@ -55,5 +60,10 @@
     </div>
     </div>
     <script src="residential.js"></script>
+    <script>
+        let nameFile = JSON.parse(localStorage.getItem('nameform'));
+        console.log(nameFile);
+        document.querySelector("#userNameView").innerHTML = nameFile.userName;
+  </script>
 </body>
 </html>

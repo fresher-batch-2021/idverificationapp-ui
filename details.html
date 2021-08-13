@@ -26,10 +26,15 @@ h4{
 h3{
     text-align: center;
 }
+
  </style>
 </head>
 
 <body>
+    <div class="usernametopview">
+        <label>USERNAME :</label>
+        <label id="userNameView"></label>
+  </div>
     <a href="logoutpage.html"> <h4>LOGOUT</h4> </a>
     <form action="lastpage.html">
     <div class="align">
@@ -154,6 +159,11 @@ let personobj={
     "PinCode":modifydetailfile.PinCode
     }
     console.log(personobj)
+</script>
+<script>
+    let nameFile = JSON.parse(localStorage.getItem('nameform'));
+    console.log(nameFile);
+    document.querySelector("#userNameView").innerHTML = nameFile.userName;
 </script>
 
 </body>

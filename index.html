@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
       <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title> PAN CARD APPLICATION </title>
 </head>
+
 <body>
       <link rel="stylesheet" href="style.css">
 
       <img src="asset/image/PANCardLogo.png" alt="pancard">
       <br>
-      <img class="change" src="asset/image/glass.png"  alt="pancard1">
+      <img class="change" src="asset/image/glass.png" alt="pancard1">
       <h1>ONLINE APPLY PAN CARD</h1>
 
       <header id="header"></header>
@@ -24,6 +26,10 @@
             <marquee> On account of COVID-19 pandemic and subsequent Govt. advisories there will be delays in processing
                   of PAN applications.</marquee>
       </div>
+      <div class="usernametopview">
+      <label>USERNAME :</label>
+      <label id="userNameView"></label>
+</div>
       <div class="overall">
             <div class="personal">
                   <div class="pan">
@@ -83,7 +89,8 @@
                               <label> <strong>Date Of Birth</strong> </label><br>
                               <input type="date" name="date of birth" id="dob" placeholder="date of birth"> <br>
                               <label> <strong> Aadhar Number </strong> </label><br>
-                              <input type="tel" name="number" id="aadharnumber" minlength="12" placeholder="Aadhar Number"><br>
+                              <input type="tel" name="number" id="aadharnumber" minlength="12"
+                                    placeholder="Aadhar Number"><br>
 
                               <label> <strong> Gender </strong> </label>
                               <br>
@@ -99,8 +106,15 @@
                         <br>
                         <br>
                   </div>
-            
-                  <script src="index.js"></script>
+
+                  <script src="index.js">
+
+                  </script>
+                  <script>
+                        let nameFile = JSON.parse(localStorage.getItem('nameform'));
+                        console.log(nameFile);
+                        document.querySelector("#userNameView").innerHTML = nameFile.userName;
+                  </script>
             </div>
       </div>
 
