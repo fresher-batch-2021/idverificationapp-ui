@@ -34,7 +34,6 @@ function residential() {
         "pinNumber":pinnumber,
     };
     console.log(userobj)
-   // console.log(homenumber + " " + arearoad + " " + citydown + " " + state + " " + pinnumber)
     localStorage.setItem('address', JSON.stringify(userobj));
     alert("successful");
     window.location.href = "details.html";
