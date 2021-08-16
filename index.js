@@ -42,7 +42,6 @@
                 return false;
           }
 
- 
              let userobj={
             "Name" : name,
             "FatherName": father_name,
@@ -52,8 +51,9 @@
             "DateOfBirth":dob,
             "AadharNumber":aadharnumber,
              "Gender":gender,
-        };
-        console.log(userobj);
+        };        
+
+    console.log(userobj);
     localStorage.setItem('indexform' , JSON.stringify(userobj)); 
     alert("verified");
     window.location.href = "residential.html";  

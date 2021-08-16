@@ -26,6 +26,7 @@ function residential() {
         alert("Enter the pin number")
         return false;
     }
+  
     let userobj={
         "HouseNumber":homenumber,
         "StreetName":arearoad,
@@ -33,9 +34,10 @@ function residential() {
         "State":state,
         "pinNumber":pinnumber,
     };
-    console.log(userobj)
-    localStorage.setItem('address', JSON.stringify(userobj));
-    alert("successful");
-    window.location.href = "details.html";
-    
+
+  console.log(userobj)
+  localStorage.setItem('address', JSON.stringify(userobj));
+  alert("successful");
+  window.location.href = "details.html";
+
 }
