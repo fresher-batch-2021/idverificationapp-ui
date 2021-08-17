@@ -27,11 +27,11 @@ const url = "https://aacd9391-7b8b-4ac4-b12c-6b785e540ced-bluemix.cloudantnosqld
       },fields:['id','username']
        
     }
-    const usernameobj={
-      "userName":user
-    }
-    console.log(usernameobj);
-    localStorage.setItem('nameform' , JSON.stringify(usernameobj));
+     const usernameobj={
+       "userName":user
+     }
+     console.log(usernameobj);
+     localStorage.setItem('nameform' , JSON.stringify(usernameobj));
 
     axios.post(url, loginData,{ headers: {'Authorization': basicAuth }}).then(res => {
        let data = res.data.docs;
