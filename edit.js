@@ -16,15 +16,15 @@ function editDetails(id) {
         console.log(res.data)
         const details = res.data
 
-        document.querySelector("#username").value = details.FirstName;
-        document.querySelector("#fathername").value = details.FatherName;
-        document.querySelector("#mothername").value = details.MotherName;
+        document.querySelector("#username").value = details.Name;
+        document.querySelector("#fathername").value = details.Fathername;
+        document.querySelector("#mothername").value = details.Mothername;
         document.querySelector("#mobilenumber").value = details.MobileNumber;
-        document.querySelector("#emailid").value = details.EmailID;
-        document.querySelector("#dateofbirth").value = details.DataOfBirth;
+        document.querySelector("#emailid").value = details.EmailId;
+        document.querySelector("#dateofbirth").value = details.DateOfbirth;
         document.querySelector("#aadharnumber").value = details.AadharNumber;
         document.querySelector("#gender").value = details.Gender;
-        document.querySelector("#housenumber").value = details.HouseNumber;
+        document.querySelector("#housenumber").value = details.HouseNo;
         document.querySelector("#streetname").value = details.StreetName;
         document.querySelector("#cityname").value = details.CityName;
         document.querySelector("#state").value = details.StateName;
