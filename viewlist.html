@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTAPPLICATION</title>
+    <style>
+        table {
+            margin-left: 5%;
+            margin-top: 10%;
+            border-radius: 1px solid;
+            border: 1px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+        integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <script src="viewlist.js"></script>
+    <table border="1">
+        <caption></caption>
+        <thead>
+            <tr>
+                <th scope="col" id="serialnumber">ID</th>
+                <th scope="col" id="name">NAME</th>
+                <th scope="col" id="mobilenumber">MOBILENUMBER</th>
+                <th scope="col" id="emailid">EMAILID</th>
+                <th scope="col" id="adharnumber">AADHARNUMBER</th>
+                <th scope="col" id="gender">GENDER</th>
+            </tr>
+        </thead>
+        <tbody id="applicationTable"></tbody>
+    </table>
+</body>
+
+</html>
