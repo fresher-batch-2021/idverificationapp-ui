@@ -28,9 +28,9 @@ console.log("Details", name, dateofbirth, emailid, mobilenumber, user_name, pass
                 username: user_name,
                 mobileNo: mobilenumber,
                 password: password1,
-                password2:password2
+                confirmpassword:password2
         };
-
+        console.log(registerData);
         const dbUsername = 'apikey-v2-2q4ay3thu4r9w4i4o1vr74ypzd4tyr1lzxlt9916cky2';
         const dbPassword = 'bd763fb0b51e2d8e968a8154ae9b7869';
         const basicAuth = 'Basic ' + btoa(dbUsername + ':' + dbPassword);
