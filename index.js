@@ -91,7 +91,6 @@ function pan() {
     const url = "https://aacd9391-7b8b-4ac4-b12c-6b785e540ced-bluemix.cloudantnosqldb.appdomain.cloud/idproof_personaldetails";
     axios.post(url, userobj, { headers: { 'Authorization': basicAuth } }).then(res => console.log(res.data))
     console.log(userobj);
-    window
     alert("verified");
 }
 
