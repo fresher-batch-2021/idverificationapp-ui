@@ -1,6 +1,6 @@
 function setdate(){
     let today = new Date().toJSON().substr(0,10);
-    document.querySelector("#datebirth").setAttribute("max",today);
+    // document.querySelector("#datebirth").setAttribute("max",today);
 }
 setdate();
 
@@ -32,7 +32,8 @@ console.log("Details", name, dateofbirth, emailid, mobilenumber, user_name, pass
                 email: emailid,
                 username: user_name,
                 mobileNo: mobilenumber,
-                password: password1
+                password: password1,
+                password2:password2
         };
 
         const dbUsername = 'apikey-v2-2q4ay3thu4r9w4i4o1vr74ypzd4tyr1lzxlt9916cky2';

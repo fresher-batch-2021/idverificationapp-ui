@@ -20,7 +20,7 @@ const dbUsername = 'apikey-v2-2q4ay3thu4r9w4i4o1vr74ypzd4tyr1lzxlt9916cky2';
                 content =
                     content +
                     `<tr><td>${userObj.doc._id}</td><td>${userObj.doc.Name}</td><td>${userObj.doc.MobileNumber}
-                        </td><td>${userObj.doc.EmailId}</td><td>${userObj.doc.AadharNumber}</td><td>${userObj.doc.Gender}</td><td><a href="editpage.html?id=${userObj.doc._id}">Edit</a></td>
+                        </td><td>${userObj.doc.EmailID}</td><td>${userObj.doc.AadharNumber}</td><td>${userObj.doc.Gender}</td><td><a href="editpage.html?id=${userObj.doc._id}">Edit</a></td>
                         </tr>`; 
                 console.log(content);
                 document.querySelector("#applicationTable").innerHTML = content;

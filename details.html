@@ -36,7 +36,7 @@ h3{
         <label id="userNameView"></label>
   </div>
     <a href="logoutpage.html"> <h4>LOGOUT</h4> </a>
-    <form action="lastpage.html">
+    <form onsubmit="submit()">
     <div class="align">
         <h3>APPLICANTDETAILS</h3>
     <table>
@@ -96,7 +96,8 @@ h3{
     </table>
 <div class="buttonplace">
    <button> <a href="editdetails.html" >EDIT</a>&nbsp;&nbsp;&nbsp;&nbsp;</button>
-    <input type="submit" id="submit" onclick="alert('Your Application Is Successfull Submitted')" >
+    <!-- <input type="submit" id="submit" onclick="alert('Your Application Is Successfull Submitted')" > -->
+    <button>submit</button>
 
     <button onclick="window.print()">Print this page</button>
 
@@ -110,7 +111,7 @@ h3{
 </div>
 <script>
         let indexfile=JSON.parse(localStorage.getItem('indexform'));
-        console.log(indexfile);
+        console.log(indexfile.Name);
        
 
 document.querySelector("#username").innerHTML = indexfile.Name;
@@ -150,31 +151,22 @@ document.querySelector("#state").innerHTML = modifydetailfile.StateName;
 document.querySelector("#pin").innerHTML = modifydetailfile.PinCode;
 
 let personobj={
-    "FirstName":modifydetailfile.Name,
-    "FatherName":modifydetailfile.Fathername,
-    "MotherName":modifydetailfile.Mothername,
-    "MobileNumber":modifydetailfile.MobileNumber,
-    "EmailID":modifydetailfile.EmailId,
-    "DataOfBirth": modifydetailfile.DateOfbirth,
-    "AadharNumber": modifydetailfile.AadharNumber,
-    "Gender":modifydetailfile.Gender,
-
-    "HouseNumber":modifydetailfile.HouseNo,
-    "StreetName":modifydetailfile.StreetName,
-    "CityName": modifydetailfile.CityName,
-    "StateName":modifydetailfile.StateName,
-    "PinCode":modifydetailfile.PinCode
+    "name":modifydetailfile.Name,
+    "fatherName":modifydetailfile.Fathername,
+    "motherName":modifydetailfile.Mothername,
+    "mobileNumber":modifydetailfile.MobileNumber,
+    "emailId":modifydetailfile.EmailId,
+    "dataOfBirth": modifydetailfile.DateOfbirth,
+    "aadharNumber": modifydetailfile.AadharNumber,
+    "gender":modifydetailfile.Gender,
+    "houseNumber":modifydetailfile.HouseNo,
+    "streetName":modifydetailfile.StreetName,
+    "cityName": modifydetailfile.CityName,
+    "stateName":modifydetailfile.StateName,
+    "pinCode":modifydetailfile.PinCode
     }
     console.log(personobj)
-</script>
-
-
-<script>
-    let nameFile = JSON.parse(localStorage.getItem('nameform'));
-    console.log(nameFile);
-    document.querySelector("#userNameView").innerHTML = nameFile.userName;
-
-
+function submit(){
     const dbUsername = 'apikey-v2-2q4ay3thu4r9w4i4o1vr74ypzd4tyr1lzxlt9916cky2';
         const dbPassword = 'bd763fb0b51e2d8e968a8154ae9b7869';
         const basicAuth = 'Basic ' + btoa(dbUsername + ':' + dbPassword);
@@ -185,6 +177,14 @@ let personobj={
             console.log(personobj);
             alert("successfull")
           }).catch(err => alert("error "))
+}
+
+    let nameFile = JSON.parse(localStorage.getItem('nameform'));
+    console.log(nameFile);
+    document.querySelector("#userNameView").innerHTML = nameFile.userName;
+
+
+   
 </script>
 </body>
 </html> 

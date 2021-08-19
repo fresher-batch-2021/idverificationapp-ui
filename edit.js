@@ -17,23 +17,23 @@ function editDetails(id) {
         const details = res.data
 
         document.querySelector("#username").value = details.Name;
-        document.querySelector("#fathername").value = details.Fathername;
-        document.querySelector("#mothername").value = details.Mothername;
+        document.querySelector("#fathername").value = details.FatherName;
+        document.querySelector("#mothername").value = details.MotherName;
         document.querySelector("#mobilenumber").value = details.MobileNumber;
-        document.querySelector("#emailid").value = details.EmailId;
-        document.querySelector("#dateofbirth").value = details.DateOfbirth;
+        document.querySelector("#emailid").value = details.EmailID;
+        document.querySelector("#dateofbirth").value = details.DateOfBirth;
         document.querySelector("#aadharnumber").value = details.AadharNumber;
         document.querySelector("#gender").value = details.Gender;
-        document.querySelector("#housenumber").value = details.HouseNo;
+        document.querySelector("#housenumber").value = details.HouseNumber;
         document.querySelector("#streetname").value = details.StreetName;
         document.querySelector("#cityname").value = details.CityName;
-        document.querySelector("#state").value = details.StateName;
-        document.querySelector("#pincode").value = details.PinCode;
+        document.querySelector("#state").value = details.State;
+        document.querySelector("#pincode").value = details.pinNumber;
 
     })
         .catch(err => console.error(err))
 }
-function modifyinformation(){
+function modifyInformation(){
 let applicantName = document.querySelector("#username").value;
 let father_Name = document.querySelector("#fathername").value;
 let mother_Name = document.querySelector("#mothername").value;
@@ -50,18 +50,18 @@ let pin_Code = document.querySelector("#pincode").value;
 
 let modifyinformation = {
     "Name": applicantName,
-    "Fathername": father_Name,
-    "Mothername": mother_Name,
+    "FatherName": father_Name,
+    "MotherName": mother_Name,
     "MobileNumber": mobile_Number,
-    "EmailId": emaid_Id,
-    "DateOfbirth": dateOfBirth,
+    "EmailID": emaid_Id,
+    "DateOfBirth": dateOfBirth,
     "AadharNumber": aadhar_Number,
     "Gender": genderSelect,
-    "HouseNo": house_Number,
+    "HouseNumber": house_Number,
     "StreetName": street_Name,
     "CityName": city_Name,
-    "StateName": statename,
-    "PinCode": pin_Code
+    "State": statename,
+    "pinNumber": pin_Code
 }
 console.log(modifyinformation);
 
@@ -74,6 +74,7 @@ const url = "https://aacd9391-7b8b-4ac4-b12c-6b785e540ced-bluemix.cloudantnosqld
 axios.post(url, modifyinformation,{ headers: {'Authorization': basicAuth }}).then(res => {
     console.log(modifyinformation);
     alert("successfull")
+    window.location.href="listapplication.html";
   }).catch(err => alert("error "))
 
 }
