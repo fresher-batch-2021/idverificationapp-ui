@@ -12,17 +12,17 @@ function pan() {
         return false;
     }
     const mother_name = document.querySelector("#mathername").value;
-    if (mother_name == "") {
+    if (mother_name == "" || mother_name == null) {
         alert("Enter_Your_Mothername")
         return false;
     }
     const mobile = document.querySelector("#mobilenumber").value;
-    if (mobile == "") {
+    if (mobile == "" || mobile == null) {
         alert("Enter_Mobile_number")
         return false;
     }
     const email = document.querySelector("#Email").value;
-    if (email == "") {
+    if (email == "" || email == null) {
         alert("Enter_mailID")
         return false;
     }
@@ -91,6 +91,7 @@ function pan() {
     const url = "https://aacd9391-7b8b-4ac4-b12c-6b785e540ced-bluemix.cloudantnosqldb.appdomain.cloud/idproof_personaldetails";
     axios.post(url, userobj, { headers: { 'Authorization': basicAuth } }).then(res => console.log(res.data))
     console.log(userobj);
+    window
     alert("verified");
 }
 
