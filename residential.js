@@ -1,7 +1,7 @@
 function residential() {
     event.preventDefault();
     const homenumber = document.querySelector("#no").value;
-    if (homenumber == "") {
+    if (homenumber == null) {
         alert("Enter the Door Number")
         return false;
     }

@@ -27,39 +27,39 @@ function pan() {
         return false;
     }
     const dob = document.querySelector("#dob").value;
-    if (dob == "") {
+    if (dob == "" || dob == null) {
         alert("Enter_date_if_birth")
         return false;
     }
     const aadharnumber = document.querySelector("#aadharnumber").value;
-    if (aadharnumber == "") {
+    if (aadharnumber == ""|| aadharnumber == null) {
         alert("Enter_your_Aadhar_number")
         return false;
     }
     const gender = document.querySelector("#gender").value;
     const homenumber = document.querySelector("#no").value;
-    if (homenumber == "") {
+    if (homenumber == "" || homenumber == null) {
         alert("Enter the Door Number")
         return false;
     }
 
     const arearoad = document.querySelector("#area").value;
-    if (arearoad == "") {
+    if (arearoad == "" || arearoad==null ) {
         alert("Enter street Name")
         return false;
     }
     const citydown = document.querySelector("#city").value;
-    if (citydown == "") {
+    if (citydown == "" || citydown==null) {
         alert("Enter the city name")
         return false;
     }
     const state = document.querySelector("#state").value;
-    if (state == "") {
+    if (state == "" || state==null) {
         alert("Enter the state")
         return false;
     }
     const pinnumber = document.querySelector("#pin").value;
-    if (pinnumber == "") {
+    if (pinnumber == "" || pinnumber==null) {
         alert("Enter the pin number")
         return false;
     }
