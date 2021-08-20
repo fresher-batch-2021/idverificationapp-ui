@@ -7,9 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LISTAPPLICATION</title>
     <style>
+        h3{
+            text-align: center;
+            padding: 2%;
+        }
+        body{
+            background-color: rgb(221,217,192);
+        }
+        #searchBox{
+            border-radius: 8px;
+            padding: 0.5%;
+            text-align: center;
+            box-shadow: 5px;
+            margin-left: 20%;
+            color:darkred;
+        }
         table {
             margin-left: 5%;
-            margin-top: 10%;
+            margin-top: 3%;
             border-radius: 1px solid;
             border: 1px;
         }
@@ -22,7 +37,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
         </script>
     <script src="listapplication.js"></script>
-    <table border="1">
+    <h3>LIST OF APPLICATION</h3>
+    <input type="text " id="searchBox" class="searchBox" placeholder="Search For Name" onkeyup="searchName()" autocomplete="off">
+    <table border="1" id="myTable">
         <caption></caption>
         <thead>
             <tr>
@@ -32,6 +49,7 @@
                 <th scope="col" id="emailid">EMAILID</th>
                 <th scope="col" id="adharnumber">AADHARNUMBER</th>
                 <th scope="col" id="gender">GENDER</th>
+                <th scope="col" id="gender">STATE</th>
                 <th scope="col">ACTION</th>
             </tr>
         </thead>

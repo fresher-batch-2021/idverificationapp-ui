@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MODIFYDETAILS</title>
     <style>
+        .submitbutton{
+opacity: 0.5;
+}
+.submitbutton:hover {
+  opacity: 1.0;
+}
          table {
             width: 850px;
             height: 580px;
@@ -29,6 +35,7 @@
     </style>
 </head>
 <body>
+
 <div class="editpage">
     <table>
         <caption></caption>
@@ -111,7 +118,7 @@
                         </td>
                     </tr>
                 </table>
-            <div class="submitbutton">    <input type="submit"  onclick="modifyInformation()"  value="DONE">
+            <div class="submitbutton">    <input type="submit"  onclick="modifyInformation(id)"  value="DONE">
                 <button onclick="window.print()">Print this page</button>
             </div>
             </div>

@@ -1,9 +1,10 @@
 function loginpage() {
   event.preventDefault();
-
+  
   const user = document.querySelector("#username").value;
    const password = document.querySelector("#password").value;
-  if (user == "" || user == null || user.trim == "") {
+  
+   if (user == "" || user == null || user.trim == "") {
     alert("Enter_User_Name");
     return false;
   }

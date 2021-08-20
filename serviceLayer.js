@@ -1,5 +1,5 @@
-class userLogin {
-    static login(loginData) {
+class userServise {
+    static login(login) {
         const loginData = {
             selector: {
                 username: user,

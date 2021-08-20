@@ -12,11 +12,11 @@ const password2 = document.querySelector("#confirmpassword").value;
 console.log("Details", name, dateofbirth, emailid, mobilenumber, user_name, password1);
 
     try {
-        Validator.isValidString(name, "Enther_Your_Name");
-        Validator.isValidString(dateofbirth, "Enter_date_of_birth");
-        Validator.isValidString(emailid, "Enter_your_mailID");
-        Validator.isValidString(user_name, "Enter_User_name");
-        Validator.isValidString(mobilenumber, "Enter_User_Mobile_numbe");
+        validator.isValidString(name, "Enther_Your_Name");
+        validator.isValidString(dateofbirth, "Enter_date_of_birth");
+        validator.isValidString(emailid, "Enter_your_mailID");
+        validator.isValidString(user_name, "Enter_User_name");
+        validator.isValidString(mobilenumber, "Enter_User_Mobile_numbe");
         Password.isValidPassword(password1, "Enter_password");
         Password.isValidPassword(password2, "Dose_Not_Match_Password")
 
@@ -38,7 +38,8 @@ console.log("Details", name, dateofbirth, emailid, mobilenumber, user_name, pass
         const url = "https://aacd9391-7b8b-4ac4-b12c-6b785e540ced-bluemix.cloudantnosqldb.appdomain.cloud/idproofapplication_user";
        
        
-        axios.post(url, registerData, { headers: { 'Authorization': basicAuth } }).then(res => {
+     //   axios.post(url, registerData, { headers: { 'Authorization': basicAuth } })
+        userServise.register(registerData).then(res => {
             console.log(res.data);
             alert("successfull")
          window.location.href = "loginpage.html";
@@ -50,13 +51,13 @@ console.log("Details", name, dateofbirth, emailid, mobilenumber, user_name, pass
         }
     }
 
-    function setDate() {
-        let todayObj = new Date();
-        let previousDay = dayjs().subtract(1, 'day').toDate();
-        let today = previousDay.toJSON().substr(0, 10);
-        document.querySelector("#dob").setAttribute("max", today);
-     }
-    setDate()
+    // function setDate() {
+    //     let todayObj = new Date();
+    //     let previousDay = dayjs().subtract(1, 'day').toDate();
+    //     let today = previousDay.toJSON().substr(0, 10);
+    //     document.querySelector("#dob").setAttribute("max", today);
+    //  }
+    // setDate()
 
 
 
