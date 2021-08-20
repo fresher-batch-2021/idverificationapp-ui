@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LOGINPAGE</title>
+  
 </head>
 
 <body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.6/dayjs.min.js"
+    integrity="sha512-bwD3VD/j6ypSSnyjuaURidZksoVx3L1RPvTkleC48SbHCZsemT3VKMD39KknPnH728LLXVMTisESIBOAb5/W0Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
-        integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
+    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
     </script>
   <link rel="stylesheet" href="loginpage.css">
   <h2>Login Form</h2>
@@ -23,12 +28,14 @@
         <label for="uname"><strong>Username</strong></label>
         <input type="text" id="username" placeholder="Enter Username" name="uname">
         <label for="psw"><strong>Password</strong></label>
-        <input type="password" minlength="6" id="password" placeholder="Enter Password" >
+        <input type="password" minlength="6" id="password" placeholder="Enter Password">
         <button type="submit">Login</button>
-         </div>  
+      </div>
     </form>
-    <script src="loginpage.js"> 
+    <script src="serviceLayer.js"></script>
+    <script src="loginpage.js">
     </script>
   </div>
 </body>
+
 </html>

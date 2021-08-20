@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MODIFYDETAILS</title>
     <style>
-        .submitbutton{
-opacity: 0.5;
-}
-.submitbutton:hover {
-  opacity: 1.0;
-}
-         table {
+        .submitbutton {
+            opacity: 0.5;
+        }
+
+        .submitbutton:hover {
+            opacity: 1.0;
+        }
+
+        table {
             width: 850px;
             height: 580px;
             margin: auto;
@@ -20,12 +23,14 @@ opacity: 0.5;
             border-radius: 20px;
             border-style: solid;
         }
-        .submitbutton{
+
+        .submitbutton {
             margin-top: 1%;
-    margin-bottom: 2%;
-    text-align: center;
+            margin-bottom: 2%;
+            text-align: center;
         }
-        .editpage{
+
+        .editpage {
             box-shadow: 1px;
             margin-left: 5%;
             margin-top: 2%;
@@ -34,98 +39,107 @@ opacity: 0.5;
         }
     </style>
 </head>
+
 <body>
 
-<div class="editpage">
-    <table>
-        <caption></caption>
-                    <tr>
-                      <strong> <th scope="row"> NAME:</th>
-                        <td >
-                            <input type="text" id="username"></strong> 
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row"> FATHERNAME:</th>
-                        <td>
-                            <input type="text" id="fathername">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row"> MOTHERNAME:</th>
-                        <td>
-                            <input type="text" id="mothername">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row"> MOBILENUMBER:</th>
-                        <td>
-                            <input type="text" id="mobilenumber">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row"> EMAILID:</th>
-                        <td>
-                            <input type="text" id="emailid">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row"> DATEOFBIRTH:</th>
-                        <td>
-                            <input type="text" id="dateofbirth">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row"> AADHARNUMBER:</th>
-                        <td>
-                            <input type="text" id="aadharnumber">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row"> GENDER:</th>
-                        <td>
-                            <input type="text" id="gender">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">HOUSENUMBER :</th>
-                        <td>
-                            <input type="text" id="housenumber">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row"> STREET NAME:</th>
-                        <td>
-                            <input type="text" id="streetname">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row"> CITY :</th>
-                        <td>
-                            <input type="text" id="cityname">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row"> STATE:</th>
-                        <td>
-                            <input type="text" id="state">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row"> PINCODE:</th>
-                        <td>
-                            <input type="text" id="pincode">
-                        </td>
-                    </tr>
-                </table>
-            <div class="submitbutton">    <input type="submit"  onclick="modifyInformation(id)"  value="DONE">
-                <button onclick="window.print()">Print this page</button>
-            </div>
-            </div>
+    <div class="editpage">
+        <table>
+            <caption></caption>
+            <tr>
+                <strong>
+                    <th scope="row"> NAME:</th>
+                    <td>
+                        <input type="text" id="username">
+                </strong>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"> FATHERNAME:</th>
+                <td>
+                    <input type="text" id="fathername">
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"> MOTHERNAME:</th>
+                <td>
+                    <input type="text" id="mothername">
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"> MOBILENUMBER:</th>
+                <td>
+                    <input type="text" id="mobilenumber">
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"> EMAILID:</th>
+                <td>
+                    <input type="text" id="emailid">
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"> DATEOFBIRTH:</th>
+                <td>
+                    <input type="text" id="dateofbirth">
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"> AADHARNUMBER:</th>
+                <td>
+                    <input type="text" id="aadharnumber">
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"> GENDER:</th>
+                <td>
+                    <input type="text" id="gender">
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">HOUSENUMBER :</th>
+                <td>
+                    <input type="text" id="housenumber">
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"> STREET NAME:</th>
+                <td>
+                    <input type="text" id="streetname">
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"> CITY :</th>
+                <td>
+                    <input type="text" id="cityname">
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"> STATE:</th>
+                <td>
+                    <input type="text" id="state">
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"> PINCODE:</th>
+                <td>
+                    <input type="text" id="pincode">
+                </td>
+            </tr>
+        </table>
+        <div class="submitbutton"> <input type="submit" onclick="modifyInformation(id)" value="DONE">
+            <button onclick="window.print()">Print this page</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.6/dayjs.min.js"
+    integrity="sha512-bwD3VD/j6ypSSnyjuaURidZksoVx3L1RPvTkleC48SbHCZsemT3VKMD39KknPnH728LLXVMTisESIBOAb5/W0Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
-    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer">
-    </script>
-     <script src="edit.js"></script>
+        integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <script src="edit.js"></script>
+    <script src="serviceLayer.js"></script>
 </body>
+
 </html>
