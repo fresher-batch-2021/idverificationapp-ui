@@ -1,5 +1,5 @@
 .container{
-    background-image: url(image/e.jpg);
+background-color: lightsalmon;
 border: 1px solid;
 margin-left: 5%;
 margin-right: 5%;
@@ -7,16 +7,20 @@ text-align: left;
 box-shadow: 0 0 5px 1px ;
 padding: 2%;
 }
-body{
-    background-image: url(image/c.jpg);
-}
 .overall{
     
-    margin-top: 8%;
+    margin-top: 2%;
     border: 1px solid;
     margin-left: 5%;
     margin-right: 5%;
     box-shadow: 0 0 5px 1px ;
     text-align: center;
  }
+ .navbar{
+            background-color: brown;
+           color: whitesmoke;
+            text-align: center;
+            padding:40px;
+            text-decoration: none;
+        }
     

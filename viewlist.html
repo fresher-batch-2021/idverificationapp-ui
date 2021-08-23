@@ -6,19 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LISTAPPLICATION</title>
+    <header id="header"></header>
+      <script src="jquery.min.js"></script>
+      <script>
+            $("#header").load("header.html")
+      </script>
     <style>
+        .navbar{
+            background-color: brown;
+           color: whitesmoke;
+            text-align: center;
+            padding:40px;
+            text-decoration: none;
+        }
         #table {
         
             background-color: burlywood
 
         }
-
-        body {
-            background-color: burlywood;
-        }
-
         table {
-            margin-left: 10%;
+            margin-left: 6%;
             border-radius: 5px solid;
             border: 1px;
         }
@@ -26,14 +33,20 @@
         .searchBar {
             background-color: #f1f1c1;
             margin: auto;
-            margin-top: 100px;
+            margin-top: 30px;
             width: 80%;
-            border: 3px solid #73AD21;
+            border: 3px solid #8a1818;
             padding: 10px;
+        }
+        td{
+            padding:8px;
+        }
+        th{
+            padding:8px;
+            background-color: white;
         }
 
         h1 {
-            background-color: brown;
             text-align: center;
         }
     </style>
@@ -42,7 +55,7 @@
 <body>
 
     <div class="searchBar">
-        <h1><strong>LIST OF APPLICATION </strong></h1>
+        <h1><strong>VIEW APPLICATION </strong></h1>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.6/dayjs.min.js"
             integrity="sha512-bwD3VD/j6ypSSnyjuaURidZksoVx3L1RPvTkleC48SbHCZsemT3VKMD39KknPnH728LLXVMTisESIBOAb5/W0Q=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>

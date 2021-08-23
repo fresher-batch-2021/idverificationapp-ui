@@ -1,9 +1,3 @@
-
-.change{
-            margin-left: 75%;
-            width: 250px;
-            
-        }
         h1{
             color:orangered;
             text-align: center;
@@ -17,12 +11,11 @@
             background-size: cover;    
         }
         img{
-        margin-left: 10%;
-        display: block;
-        width:400px;
-        padding-top: 20px;
+            align-items: center;
+            width:400px;
+            padding-top: 20px;
         }
-        .hi1{
+        .total{
             background-color: rosybrown;
         }
         .pan{
@@ -39,9 +32,10 @@
             text-decoration: none;
         }
         .overall{
+            width: 60%;
             box-shadow: 3px;
             border-radius: 20px;
-             margin-left: 10%;
+             margin-left: 20%;
              margin-right: 30%;
              border:3px solid;
              margin-top: 1%;
@@ -84,6 +78,9 @@
             text-align: center;
             width: 90%;
             color: blue;
+      }
+      input{
+          padding: 5px;
       }
       #collectingdata,
       table,
