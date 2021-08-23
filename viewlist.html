@@ -7,40 +7,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LISTAPPLICATION</title>
     <style>
-        table {
-            margin-left: 5%;
-            margin-top: 10%;
-            border-radius: 1px solid;
-            border: 1px;
+        #table {
+        
+            background-color: burlywood
 
+        }
+
+        body {
+            background-color: burlywood;
+        }
+
+        table {
+            margin-left: 10%;
+            border-radius: 5px solid;
+            border: 1px;
+        }
+
+        .searchBar {
+            background-color: #f1f1c1;
+            margin: auto;
+            margin-top: 100px;
+            width: 80%;
+            border: 3px solid #73AD21;
+            padding: 10px;
+        }
+
+        h1 {
+            background-color: brown;
+            text-align: center;
         }
     </style>
 </head>
 
 <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.6/dayjs.min.js"
-    integrity="sha512-bwD3VD/j6ypSSnyjuaURidZksoVx3L1RPvTkleC48SbHCZsemT3VKMD39KknPnH728LLXVMTisESIBOAb5/W0Q=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="serviceLayer.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
-        integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-        </script>
-    <script src="viewlist.js"></script>
-    <table border="1">
-        <caption></caption>
-        <thead>
-            <tr>
-                <th scope="col" id="serialnumber">ID</th>
-                <th scope="col" id="name">NAME</th>
-                <th scope="col" id="mobilenumber">MOBILENUMBER</th>
-                <th scope="col" id="emailid">EMAILID</th>
-                <th scope="col" id="adharnumber">AADHARNUMBER</th>
-                <th scope="col" id="gender">GENDER</th>
-            </tr>
-        </thead>
-        <tbody id="applicationTable"></tbody>
-    </table>
+
+    <div class="searchBar">
+        <h1><strong>LIST OF APPLICATION </strong></h1>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.6/dayjs.min.js"
+            integrity="sha512-bwD3VD/j6ypSSnyjuaURidZksoVx3L1RPvTkleC48SbHCZsemT3VKMD39KknPnH728LLXVMTisESIBOAb5/W0Q=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="serviceLayer.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+            integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+            </script>
+        <script src="viewlist.js"></script>
+        <table border="5" id="table">
+            <caption></caption>
+            <thead>
+                <tr>
+                    <th scope="col" id="serialnumber">ID</th>
+                    <th scope="col" id="name">NAME</th>
+                    <th scope="col" id="mobilenumber">MOBILENUMBER</th>
+                    <th scope="col" id="emailid">EMAILID</th>
+                    <th scope="col" id="adharnumber">AADHARNUMBER</th>
+                    <th scope="col" id="gender">GENDER</th>
+                </tr>
+            </thead>
+            <tbody id="applicationTable"></tbody>
+        </table>
+    </div>
 </body>
 
 </html>
