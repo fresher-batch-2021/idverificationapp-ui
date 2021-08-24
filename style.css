@@ -62,6 +62,7 @@
         .submit{
             background: rgb(96, 160, 44);
             color:black; 
+            align-items: center;
             margin-left: 30%;
             width: 20%;
             height: 20px;

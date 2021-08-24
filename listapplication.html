@@ -7,83 +7,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LISTAPPLICATION</title>
     <header id="header"></header>
-      <script src="jquery.min.js"></script>
-      <script>
-            $("#header").load("header.html")
-      </script>
-    <style>
-        .navbar{
-            background-color: brown;
-           color: whitesmoke;
-            text-align: center;
-            padding:40px;
-            text-decoration: none;
-        }
-        h3{
-            text-align: center;
-            padding: 2%;
-        }
-        body{
-            background-color: rgb(221,217,192);
-        }
-        #searchBox{
-            border-radius: 10px;
-            padding: 0.5%;
-            text-align: center;
-            box-shadow: 5px;
-            margin-left: 10%;
-            color:lightcoral;
-        }
-        .searchBar {
-            background-color: #f1f1c1;
-            margin: auto;
-            margin-top: 40px;
-            width: 80%;
-            border: 5px solid #73AD21;
-            padding: 10px;
-        }
-        th{
-            padding: 8px;
-        }
-        table {
-            margin-left: 0.5%;
-            margin-top: 3%;
-            border-radius: 1px solid;
-            border: 1px;
-        }
-    </style>
+    <script src="jquery.min.js"></script>
+    <script>
+        $("#header").load("header.html")
+    </script>
+    <link rel="stylesheet" href="listapplication.css">
 </head>
 
 <body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.6/dayjs.min.js"
-    integrity="sha512-bwD3VD/j6ypSSnyjuaURidZksoVx3L1RPvTkleC48SbHCZsemT3VKMD39KknPnH728LLXVMTisESIBOAb5/W0Q=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        integrity="sha512-bwD3VD/j6ypSSnyjuaURidZksoVx3L1RPvTkleC48SbHCZsemT3VKMD39KknPnH728LLXVMTisESIBOAb5/W0Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="serviceLayer.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
         integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
         </script>
-        <div class="searchBar">
-    <script src="listapplication.js"></script>
-    <h3>LIST OF APPLICATION</h3>
-    <input type="text " id="searchBox" class="searchBox" placeholder="Search For Name" onkeyup="searchName()" autocomplete="off">
-    <table border="1" id="myTable">
-        <caption></caption>
-        <thead>
-            <tr>
-                <th scope="col" id="serialnumber">ID</th>
-                <th scope="col" id="name">NAME</th>
-                <th scope="col" id="mobilenumber">MOBILENUMBER</th>
-                <th scope="col" id="emailid">EMAILID</th>
-                <th scope="col" id="adharnumber">AADHARNUMBER</th>
-                <th scope="col" id="gender">GENDER</th>
-                <th scope="col" id="gender">STATE</th>
-                <th scope="col">ACTION</th>
-            </tr>
-        </thead>
-        <tbody id="applicationTable"></tbody>
-    </table>
-</div>
+    <div class="searchBar">
+        <script src="listapplication.js"></script>
+        <h3>LIST OF APPLICATION</h3>
+        <input type="text " id="searchBox" class="searchBox" placeholder="Search For Name" onkeyup="searchName()"
+            autocomplete="off">
+        <table border="1" id="myTable">
+            <caption></caption>
+            <thead>
+                <tr>
+                    <th scope="col" id="serialnumber">ID</th>
+                    <th scope="col" id="name">NAME</th>
+                    <th scope="col" id="mobilenumber">MOBILENUMBER</th>
+                    <th scope="col" id="emailid">EMAILID</th>
+                    <th scope="col" id="adharnumber">AADHARNUMBER</th>
+                    <th scope="col" id="gender">GENDER</th>
+                    <th scope="col" id="gender">STATE</th>
+                    <th scope="col">ACTION</th>
+                </tr>
+            </thead>
+            <tbody id="applicationTable"></tbody>
+        </table>
+    </div>
 </body>
 
 </html>

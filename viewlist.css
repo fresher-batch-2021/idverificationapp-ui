@@ -1,0 +1,40 @@
+.navbar{
+    background-color: brown;
+   color: whitesmoke;
+    text-align: center;
+    padding:40px;
+    text-decoration: none;
+}
+*{
+margin:0px;
+}
+#table {
+
+    background-color: burlywood
+
+}
+table {
+    margin-left: 6%;
+    border-radius: 5px solid;
+    border: 1px;
+}
+
+.searchBar {
+    background-color: #f1f1c1;
+    margin: auto;
+    margin-top: 30px;
+    width: 80%;
+    border: 3px solid #8a1818;
+    padding: 10px;
+}
+td{
+    padding:8px;
+}
+th{
+    padding:8px;
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+}
