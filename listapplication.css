@@ -1,51 +1,46 @@
 .navbar {
-    background-color: brown;
+    background-color: rgb(0,119,144);
     color: whitesmoke;
     text-align: center;
     padding: 40px;
     text-decoration: none;
 }
-
-h3 {
+a{
+    text-decoration: none;
+}
+h2 {
     text-align: center;
     padding: 2%;
 }
-
-body {
-    background-color: rgb(221, 217, 192);
-}
-
 #searchBox {
     border-radius: 10px;
     padding: 0.5%;
     text-align: center;
     box-shadow: 5px;
     margin-left: 10%;
-    color: lightcoral;
 }
-
-.searchBar {
-    background-color: #f1f1c1;
-    margin: auto;
-    margin-top: 40px;
-    width: 80%;
-    border: 5px solid #73AD21;
-    padding: 40px;
-}
-
+tr:nth-child(even) {
+    background-color: #F2F2F2;
+  }
 * {
     margin: 0px;
 }
 td{
-    padding: 4px;
+    text-align: center;
+    padding: 15px;
 }
 
 th {
-    padding: 8px;
+    color: white;
+    background-color: #C0C0C0;
+    padding: 19px;
 }
 
 table {
+    display:block ;
+    margin:auto 8%;
+    border-collapse: collapse;
     margin-top: 3%;
-    border-radius: 1px solid;
-    border: 1px;
+    border-radius: 3px solid;
+    border: 5px;
 }

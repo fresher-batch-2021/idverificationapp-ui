@@ -25,7 +25,7 @@
             color:sienna;
         }
         .navbar{
-            background-color: brown;
+            background-color: rgb(0,119,144);
            color: whitesmoke;
             text-align: center;
             padding:40px;
@@ -66,9 +66,6 @@
             margin-left: 30%;
             width: 20%;
             height: 20px;
-            
-        }
-        .submit{
             border: 80%;
             outline: 80px;
             height: 20px;
