@@ -3,12 +3,19 @@
     background-color: rgb(0,119,144);
    color: whitesmoke;
     text-align:center;
-    padding: 7px 65px;
+    padding: 7px 63.5px;
     text-decoration: none;
     list-style-type: none;
 }
 *{
 margin:0px;
+}
+img{
+    display: inline;
+   margin-left: 30px;
+    width:250px;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 table {
 
