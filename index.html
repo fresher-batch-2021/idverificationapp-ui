@@ -12,17 +12,19 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
             integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="index.css">
 
       <img src="asset/image/PANCardLogo.png" alt="pancard">
+      <label>  <a  class="logout" href="logoutpage.html">LOGOUT</a></label>
       <br>
-      <h1>ONLINE APPLY PAN CARD</h1>
-
       <header id="header"></header>
       <script src="jquery.min.js"></script>
       <script>
             $("#header").load("header.html")
       </script>
+      <h1>ONLINE APPLY PAN CARD</h1>
+
+      
 
       <div class="total">
             <marquee> On account of COVID-19 pandemic and subsequent Govt. advisories there will be delays in processing
@@ -34,9 +36,6 @@
       </div>
       <div class="overall">
             <div class="personal">
-                  <div class="pan">
-                        <p> <strong> NEW PAN INDIA </strong> </p>
-                  </div>
                   <div class="h2">
                         <h2> <strong>PERSONAL INFORMATION </strong> </h2>
                   </div>
@@ -66,7 +65,7 @@
                               <br>
                               <label> <strong> Email ID </strong> </label><br>
                               <input type="email" name="email" id="Email" placeholder="Email"
-                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                                    pattern="[a-z._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                               <br>
 
                               <label> <strong>Date Of Birth *</strong> </label><br>

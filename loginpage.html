@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LOGINPAGE</title>
-  
+
 </head>
 
 <body>
@@ -18,22 +18,16 @@
     crossorigin="anonymous" referrerpolicy="no-referrer">
     </script>
   <link rel="stylesheet" href="loginpage.css">
-  <h2>Login Form</h2>
+  <h1>LOGIN FORM</h1>
   <div class="overall">
+    <img src="asset/image/icons8-user-60.png" alt="loginlogo">
     <form onsubmit="loginpage()">
-      <div class="imgcontainer">
-      </div>
-      <div class="container">
-        <div class="userbox">
-        <label for="username"><strong>Username</strong></label>
-        <input type="text" id="username" placeholder="Enter Username" name="uname">
-      </div>
-      <div class="passwordbox">
-        <label for="password"><strong>Password</strong></label>
-        <input type="password" minlength="6" id="password" placeholder="Enter Password">
-      </div>
-        <button type="submit">Login</button>
-      </div>
+      <label for="username"><strong>Username</strong></label>
+      <input type="text" id="username" placeholder="Enter Username" name="uname">
+      <label for="password"><strong>Password</strong></label>
+      <input type="password" minlength="6" id="password" placeholder="Enter Password">
+      <button type="submit">Login</button>
+
     </form>
     <script src="serviceLayer.js"></script>
     <script src="loginpage.js">
