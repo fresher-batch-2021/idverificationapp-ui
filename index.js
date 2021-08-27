@@ -7,7 +7,7 @@ function pan() {
         return false;
     }
     const father_name = document.querySelector("#fathername").value;
-    if (father_name == "" || father_name == null || father_name.trim == "") {
+     if (father_name == "" || father_name == null || father_name.trim == "") {
         alert("Enter_Your_Fathername")
         return false;
     }
