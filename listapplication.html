@@ -25,12 +25,14 @@
         integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
         </script>
-    <div class="searchBar">
         <script src="listapplication.js"></script>
-        <h2>LIST OF APPLICATION</h2>
-        <input type="text " id="searchBox" class="searchBox" placeholder="Search For Name" onkeyup="searchName()"
-            autocomplete="off">
-        <table id="myTable">
+        <h2>LIST OF APPLICATION</h2>       
+            <div class="searchbar">
+              <div class="search__container">
+             <input class="search__input" type="text" id="searchBox" placeholder="Search"  onkeyup="searchName()" autocomplete="off">
+              </div>
+            </div>
+                <table id="myTable">
             <caption></caption>
             <thead>
                 <tr>

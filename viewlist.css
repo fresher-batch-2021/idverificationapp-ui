@@ -3,7 +3,7 @@
     background-color: rgb(0,119,144);
    color: whitesmoke;
     text-align:center;
-    padding: 7px 63.5px;
+    padding: 9px 63.6px;
     text-decoration: none;
     list-style-type: none;
 }
@@ -28,7 +28,7 @@ table {
 tr:nth-child(even) {
     background-color: #F2F2F2;
   }
-.searchBar {
+.viewBar {
     margin: auto;
     margin-top: 10px;
     width: 80%;
