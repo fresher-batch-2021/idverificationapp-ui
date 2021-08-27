@@ -65,7 +65,6 @@ background-position: 95% ;
 background-color:#F2F2F2 ;
 border-radius: 50px;
 border: 1px solid #575756;
-transition: 250ms ;
 }
 
 .searchbar .search__input::placeholder {
@@ -80,4 +79,5 @@ transition: 250ms ;
     border: 1px solid transparent;
     border-bottom: 1px solid #575756;
     border-radius: 50px;
+    transition: 250ms
 } 

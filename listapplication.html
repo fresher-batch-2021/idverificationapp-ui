@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LISTAPPLICATION</title>
-   
+
     <link rel="stylesheet" href="listapplication.css">
 </head>
 
@@ -25,29 +25,30 @@
         integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
         </script>
-        <script src="listapplication.js"></script>
-        <h2>LIST OF APPLICATION</h2>       
-            <div class="searchbar">
-              <div class="search__container">
-             <input class="search__input" type="text" id="searchBox" placeholder="Search"  onkeyup="searchName()" autocomplete="off">
-              </div>
-            </div>
-                <table id="myTable">
-            <caption></caption>
-            <thead>
-                <tr>
-                    <th scope="col" id="serialnumber">Id</th>
-                    <th scope="col" id="name">Name</th>
-                    <th scope="col" id="mobilenumber">Mobilenumber</th>
-                    <th scope="col" id="emailid">Emailid</th>
-                    <th scope="col" id="adharnumber">Aadharnumber</th>
-                    <th scope="col" id="gender">Gender</th>
-                    <th scope="col" id="gender">State</th>
-                    <th scope="col">Action</th>
-                </tr>
-            </thead>
-            <tbody id="applicationTable"></tbody>
-        </table>
+    <script src="listapplication.js"></script>
+    <h2>LIST OF APPLICATION</h2>
+    <div class="searchbar">
+        <div class="search__container">
+            <input class="search__input" type="text" id="searchBox" placeholder="Search" onkeyup="searchName()"
+                autocomplete="off">
+        </div>
+    </div>
+    <table id="myTable">
+        <caption></caption>
+        <thead>
+            <tr>
+                <th scope="col" id="serialnumber">Id</th>
+                <th scope="col" id="name">Name</th>
+                <th scope="col" id="mobilenumber">Mobilenumber</th>
+                <th scope="col" id="emailid">Emailid</th>
+                <th scope="col" id="adharnumber">Aadharnumber</th>
+                <th scope="col" id="gender">Gender</th>
+                <th scope="col" id="gender">State</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody id="applicationTable"></tbody>
+    </table>
     </div>
 </body>
 
