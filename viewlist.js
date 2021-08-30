@@ -13,7 +13,7 @@ let application=[];
             for (let userObj of application) {
                 content =
                     content +
-                    `<tr><td>${userObj.doc._id}</td><td>${userObj.doc.Name}</td><td>${userObj.doc.MobileNumber}
+                    `<tr><td>${userObj.doc.Name}</td><td>${userObj.doc.MobileNumber}
                         </td><td>${userObj.doc.EmailID}</td><td>${userObj.doc.AadharNumber}</td><td>${userObj.doc.Gender}</td>
                         </tr>`; 
                 console.log(content);

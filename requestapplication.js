@@ -18,7 +18,7 @@ function requesttable(requestapplication) {
     for (let requestObj of requestapplication) {
         content =
             content +
-            `<tr><td>${requestObj.doc._id}</td><td>${requestObj.doc.name}</td><td>${requestObj.doc.idnumber}<td>${requestObj.doc.aadharnumber}</td>
+            `<tr><td>${requestObj.doc.name}</td><td>${requestObj.doc.idnumber}<td>${requestObj.doc.aadharnumber}</td>
                     </td><td>${requestObj.doc.oldNumber}</td><td>${requestObj.doc.newNumber}</td><td>${requestObj.doc.oldAddress}</td><td>${requestObj.doc.changeNumber}</td>
                     <td><button><a href="listapplication.html">View</a></button></td> </tr>`;
         console.log(content);
