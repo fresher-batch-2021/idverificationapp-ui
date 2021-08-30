@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USERLIST</title>   
+  <link rel="stylesheet" href="userlist.css">
+</head>
+
+<body>
+    <img src="asset/image/PANCardLogo.png" alt="pancard">
+    <header id="header"></header>
+    <script src="jquery.min.js"></script>
+    <script>
+        $("#header").load("header.html")
+    </script>
+    <h2><strong>USER LIST </strong></h1>
+    <div class="viewBar">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+            integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+            </script>
+        <script src="userlist.js"></script>
+        <table id="tableData">
+            <caption></caption>
+            <thead>
+                <tr>
+                    <th scope="row" id="yourName">Your Name</th>
+                    <th scope="row" id="dateOfBirth">Date Of Birth </th>
+                    <th scope="row" id="emailId">Email Id</th>
+                    <th scope="row" id="mobileNumber">Mobile Number</th>
+                    <th scope="row" id="userName">User Name</th>
+                </tr>
+            </thead>
+            <tbody id="userTable"></tbody>
+        </table>
+    </div>
+</body>
+
+</html>

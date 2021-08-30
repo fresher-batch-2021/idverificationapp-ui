@@ -1,5 +1,6 @@
 *{
-    margin:0px;
+    margin: 0;
+    padding: 0;
 }
 img{
     display: inline;
@@ -8,21 +9,29 @@ img{
     padding-top: 10px;
     padding-bottom: 5px;
 }
-.container{
-    border:1px solid #ccc;
-background-color: #f2f2f2;
-margin-left: 36%;
-margin-right: 36%;
-text-align: left;
-padding: 3% 3% 3% 3%;
-border-radius: 5px;
-margin-bottom: 10px;
+#tableData {
+    margin-left: 300px;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    border-radius: 5px solid;
 }
+td{
+    border: 1px solid #ccc;
+    padding:10px;
+}
+th{
+    border: 1px solid #ccc;
+    color: white;
+    background-color: #A9A9A9;
+    padding:15px;
+}
+
+tr:nth-child(even) {
+    background-color: #F2F2F2;
+  }
 h2{
     padding: 20px;
-}
-label{
-    color: #2F4F4F;
+    text-align: center;
 }
 input{
     border: 1px solid #ccc;
@@ -32,18 +41,6 @@ input{
      width: 100%;
      padding: 12px 20px;
 }
-button{
-    border-radius: 5px; 
-    background-color: #04AA6D;
-    color: white;
-    padding: 14px 20px;
-    margin-top: 15px;
-    border: none;
-    width: 100%;
-}
-.overall{
-    text-align: center;
- }
  .navbar{
 margin-top: 5px;
 margin-bottom: 5px;
@@ -52,7 +49,7 @@ margin-bottom: 5px;
     background-color: rgb(0,119,144);
    color: whitesmoke;
     text-align:center;
-    padding: 7px 44.2px;
+    padding: 7px 46.7px;
     text-decoration: none;
     list-style-type: none;
 }
