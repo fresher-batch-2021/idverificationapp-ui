@@ -25,7 +25,20 @@ margin: 10px auto 20px;
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
-.button {
+a{
+    text-decoration: none;
+    color: white;
+}
+button{
+    border-radius: 5px; 
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 15px;
+    border: none;
+    width: 100%;
+}
+.submit {
     border-radius: 5px; 
     background-color: #04AA6D;
     color: white;
