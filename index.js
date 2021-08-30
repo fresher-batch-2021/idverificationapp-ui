@@ -86,6 +86,7 @@ function pan() {
     };
     userServise.indexdata(userobj).then(res => console.log(res.data))
     console.log(userobj);
+    window.location.href="viewlist.html";
     alert("verified");
 }
 

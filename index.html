@@ -15,7 +15,7 @@
       <link rel="stylesheet" href="index.css">
 
       <img src="asset/image/PANCardLogo.png" alt="pancard">
-      <div class="logout"><button> <a   href="logoutpage.html">LOGOUT</a></button> </div>
+      <div class="logout"><button> <a href="logoutpage.html">LOGOUT</a></button> </div>
       <br>
       <header id="header"></header>
       <script src="jquery.min.js"></script>
@@ -24,8 +24,8 @@
       </script>
       <h1>ONLINE APPLY PAN CARD</h1>
       <div class="usernametopview">
-         <strong>   <label>USERNAME :</label>
-            <label id="userNameView"></label></strong>
+            <strong> <label>USERNAME :</label>
+                  <label id="userNameView"></label></strong>
       </div>
       <div class="overall">
             <div class="personal">
@@ -42,14 +42,14 @@
                               <br>
                               <label> <strong> Father Name * </strong> </label><br>
                               <span class="fatherfirstname">
-                                    <input type="text" id="fathername" pattern="[A-Za-z]{3,15}"
-                                          placeholder="FatherName" name="father first name">
+                                    <input type="text" id="fathername" pattern="[A-Za-z]{3,15}" placeholder="FatherName"
+                                          name="father first name">
                               </span>
                               <br>
                               <label> <strong> Mother Name </strong> </label><br>
                               <span class="motherfirstname">
-                                    <input type="text" id="mathername" pattern="[A-Za-z]{3,15}"
-                                          placeholder="MotherName" name="Mother_Name">
+                                    <input type="text" id="mathername" pattern="[A-Za-z]{3,15}" placeholder="MotherName"
+                                          name="Mother_Name">
                               </span>
                               <br>
                               <label> <strong> Mobile No * </strong> </label><br>
@@ -83,9 +83,9 @@
                               <input class="state" id="state" type="text" name="State" placeholder="State">
                               <br>
                               <label> <strong> Pin Code *</strong> </label><br>
-                              <input class="pin" id="pin" type="text" name="Pin Code" placeholder="Pin Code">
+                              <input class="pin" id="pin" type="text" name="Pin Code" pattern="[6][0-9]{6}"
+                                    placeholder="Pin Code">
                               <br>
-
                               <label> <strong> Gender *</strong> </label>
                               <br>
                               <select id="gender" name="gender">
@@ -110,7 +110,7 @@
                         crossorigin="anonymous" referrerpolicy="no-referrer">
                         </script>
                   <script src="index.js"> </script>
-                 <script>
+                  <script>
                         let nameFile = JSON.parse(localStorage.getItem('nameform'));
                         console.log(nameFile);
                         document.querySelector("#userNameView").innerHTML = nameFile.userName;
