@@ -81,3 +81,7 @@ border: 1px solid #575756;
     border-radius: 50px;
     transition: 250ms
 } 
+button{
+    color: white;
+    padding: 6px;
+}
