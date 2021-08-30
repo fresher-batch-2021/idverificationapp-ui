@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADMIN</title>
+
+</head>
+
+<body>
+  <link rel="stylesheet" href="admin.css">
+  <h1>ADMIN</h1>
+  <div class="overall">
+    <form onsubmit="adminpage()">
+      <label for="username"><strong>User Name</strong></label>
+      <input type="text" id="userName" placeholder="Enter User Name" name="uname">
+      <label for="password"><strong>Password</strong></label>
+      <input type="password" minlength="6" id="password" placeholder="Enter Password">
+      <button type="submit">Login</button>
+    </form>
+    <script src="admin.js">
+    </script>
+  </div>
+</body>
+
+</html>
