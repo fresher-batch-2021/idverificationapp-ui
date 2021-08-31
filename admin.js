@@ -2,16 +2,21 @@ function adminpage() {
     event.preventDefault();
     const userName = document.querySelector("#userName").value;
     const password = document.querySelector("#password").value;
+    const email = "Ganesh1011";
+    const password1 = "ganesh1011";
     let userObj = {
         "userName": userName,
         "password": password
     };
-    if (userName == "Ganesh1011") {
+    if (userName == "") {
         alert("UserName Cannot Be Blank");
-        return true;
-    } else if (password == "ganesh1011" ) {
+        return false;
+    } else if (password == "") {
         alert("Password Contain Atleast 6 Characters");
-        return true;
+        return false;
+    } else if (userName != email || password != password1) {
+        alert("Invalid details");
+        return false;
     } else {
         console.log(userObj);
         alert("Login Successfull");
