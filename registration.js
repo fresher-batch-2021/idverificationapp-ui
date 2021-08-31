@@ -44,6 +44,15 @@ console.log("Details", name, dateofbirth, emailid, mobilenumber, user_name, pass
         }
     }
 
+
+
+
+
+
+
+
+
+    
     /* function setDate() {
          let todayObj = new Date();
          let previousDay = dayjs().subtract(1, 'day').toDate();

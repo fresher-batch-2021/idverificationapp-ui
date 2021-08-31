@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>USERLIST</title>   
-  <link rel="stylesheet" href="userlist.css">
+    <title>REQUESTAPPLICATION</title>   
+  <link rel="stylesheet" href="adminrequestapplication.css">
 </head>
 
 <body>
@@ -26,25 +26,29 @@
             </ul>
         </nav>
     </header>
-    <h2><strong>USER LIST </strong></h1>
+    <h2><strong>REQUEST APPLICATION </strong></h1>
     <div class="viewBar">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
             integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
             crossorigin="anonymous" referrerpolicy="no-referrer">
             </script>
-        <script src="userlist.js"></script>
-        <table id="tableData">
+        <script src="adminrequestapplication.js"></script>
+        <table id="table">
             <caption></caption>
             <thead>
                 <tr>
-                    <th scope="row" id="yourName">Your Name</th>
-                    <th scope="row" id="dateOfBirth">Date Of Birth </th>
-                    <th scope="row" id="emailId">Email Id</th>
-                    <th scope="row" id="mobileNumber">Mobile Number</th>
-                    <th scope="row" id="userName">User Name</th>
+                    <th scope="row" id="name">Name</th>
+                    <th scope="row" id="idNumber">Id Number</th>
+                    <th scope="row" id="aadharNumber">Aadhar Number</th>
+                    <th scope="row" id="oldNumber">Old Number</th>
+                    <th scope="row" id="newNumber">New Number</th>
+                    <th scope="row" id="oldAddress">Old Address</th>
+                    <th scope="row" id="newAddress">New Address</th>
+                    <th scope="row" id="status">Status</th>
+                    <th scope="row" id="status">View</th>
                 </tr>
             </thead>
-            <tbody id="userTable"></tbody>
+            <tbody id="requestTable"></tbody>
         </table>
     </div>
 </body>

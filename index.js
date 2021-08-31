@@ -36,7 +36,7 @@ function pan() {
         alert("Enter_your_Aadhar_number")
         return false;
     }
-    const gender = document.querySelector("#gender").value;
+    
     const homenumber = document.querySelector("#no").value;
     if (homenumber == "" || homenumber == null) {
         alert("Enter the Door Number")
@@ -63,7 +63,7 @@ function pan() {
         alert("Enter the pin number")
         return false;
     }
-
+    const gender = document.querySelector("#gender").value;
     if (gender == "") {
         alert("Please_Select_Gender")
         return false;
@@ -84,12 +84,18 @@ function pan() {
         "State": state,
         "pinNumber": pinnumber,
     };
-    userServise.indexdata(userobj).then(res => console.log(res.data))
     console.log(userobj);
+    const dbUsername = 'apikey-v2-2q4ay3thu4r9w4i4o1vr74ypzd4tyr1lzxlt9916cky2';
+    const dbPassword = 'bd763fb0b51e2d8e968a8154ae9b7869';
+    const basicAuth = 'Basic ' + btoa(dbUsername + ':' + dbPassword);
+ 
+     const url = "https://aacd9391-7b8b-4ac4-b12c-6b785e540ced-bluemix.cloudantnosqldb.appdomain.cloud/idproof_personaldetails";
+     axios.post(url, userobj, { headers: { 'Authorization': basicAuth }}).then(res => {
+        console.log(userobj);
+        alert("verified")
     window.location.href="viewlist.html";
-    alert("verified");
+   }).catch(err => alert("Error"))
 }
-
 
 function setDate() {
     let todayObj = new Date();

@@ -7,16 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LISTAPPLICATION</title>
 
-    <link rel="stylesheet" href="listapplication.css">
+    <link rel="stylesheet" href="adminlistapplication.css">
 </head>
 
 <body>
-    <img src="asset/image/PANCardLogo.png" alt="pancard">
-    <header id="header"></header>
-    <script src="jquery.min.js"></script>
-    <script>
-        $("#header").load("header.html")
-    </script>
+    <img src="PANCardLogo.png" alt="pancard">
+    <header>
+        <nav class="menubar">
+            <ul>
+                <a  href="userlist.html">
+                    <li>List Of User</li>
+                </a>
+                <a  href="adminrequestapplication.html">
+                    <li>Request Application</li>
+                </a>
+                <a  href="adminlistapplication.html">
+                    <li>Edit Application</li>
+                </a>
+                
+            </ul>
+        </nav>
+    </header>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.6/dayjs.min.js"
         integrity="sha512-bwD3VD/j6ypSSnyjuaURidZksoVx3L1RPvTkleC48SbHCZsemT3VKMD39KknPnH728LLXVMTisESIBOAb5/W0Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -25,7 +36,7 @@
         integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
         </script>
-    <script src="listapplication.js"></script>
+    <script src="adminlistapplication.js"></script>
     <h2>LIST OF APPLICATION</h2>
     <div class="searchbar">
         <div class="search__container">
@@ -44,6 +55,7 @@
                 <th scope="col" id="gender">Gender</th>
                 <th scope="col" id="gender">State</th>
                 <th scope="col">Action</th>
+                <th scope="col">Status</th>
             </tr>
         </thead>
         <tbody id="applicationTable"></tbody>

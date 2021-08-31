@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APPLICANTDETAILS</title>
+    <style>
+*{
+    margin: 0%;
+    padding: 0;
+}
+button{
+    margin-left: 470px;
+    border-radius: 5px; 
+            background-color: #04AA6D;
+            color: white;
+            margin-top: 10px;
+            border: none;
+            padding: 10px;
+            width: 30%;
+            margin-bottom: 10px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+table{
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+    width: 500px;
+    height: 550px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 20px;
+    border:1px solid;
+}
+h2{
+    padding: 15px;
+    text-align: center;
+}
+ </style>
+</head>
+
+<body>
+    <div class="containerOfDetails">
+        <h2>REQUESTDETAILS</h2>
+    <table>
+        <caption></caption>
+        <tr>
+            <th scope="row"> NAME:</th>
+            <td id="username"></td>
+        </tr>
+        <tr>
+            <th scope="row"> ID NUMBER:</th>
+            <td id="idNumber"></td>
+        </tr>
+        <tr>
+            <th scope="row"> AADHAR NUMBER:</th>
+            <td id="aadharNumber"></td>
+        </tr>
+        <tr>
+            <th scope="row">OLD MOBILE NUMBER:</th>
+            <td id="oldNumber"></td>
+        </tr>
+        <tr>
+            <th scope="row"> CHANGE MOBILE NUMBER:</th>
+            <td id="newNumber"></td>
+        </tr>
+        <tr>
+            <th scope="row"> OLD ADDRESS:</th>
+            <td id="oldAadress"></td>
+        </tr>
+        <tr>
+            <th scope="row"> CHANGE ADDRESS:</th>
+            <td id="newAadress"></td>
+        </tr>
+        <tr>
+            <th scope="row"> STATUS:</th>
+            <td id="status"></td>
+        </tr>
+        </table>
+        <button type="button"> <a href="requestapplication.html"> Back </a></button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+        integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <script src="details.js"></script>
+    
+</body>
+</html>

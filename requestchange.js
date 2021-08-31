@@ -35,6 +35,11 @@ function requestChange() {
         alert("Enter_New_Aadress")
         return false;
     }
+    const statusCard= document.querySelector("#status").value;
+    if (statusCard == "") {
+        alert("Please_Select_Status")
+        return false;
+    }
     let requestObj = {
         "name": applicant_Name,
         "idnumber": idNumbers,
@@ -42,10 +47,11 @@ function requestChange() {
         "oldNumber": old_Mobile,
         "newNumber": new_Mobile,
         "oldAddress": oldAddress,
-        "changeNumber": newAddress,
+        "changeAddress": newAddress,
+        "status":statusCard,
     };
     console.log(requestObj);
-    alert("Done");
+   
 
     const dbUsername = 'apikey-v2-2q4ay3thu4r9w4i4o1vr74ypzd4tyr1lzxlt9916cky2';
     const dbPassword = 'bd763fb0b51e2d8e968a8154ae9b7869';
@@ -56,6 +62,7 @@ function requestChange() {
     axios.post(url, requestObj, { headers: { 'Authorization': basicAuth } }).then(res => {
         console.log(requestObj);
         alert("successfull")
+        window.location.href="requestapplication.html";
     }).catch(err => alert("error "))
 
 }

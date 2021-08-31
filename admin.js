@@ -6,15 +6,15 @@ function adminpage() {
         "userName": userName,
         "password": password
     };
-    if (userName == "" || userName == null) {
-        alert("UserName Cannot be Blank");
-        return false;
-    } else if (password == "" || password == null || password.location < 6) {
-        alert("Password contain atleast 6 Characters");
-        return false;
+    if (userName == "Ganesh1011") {
+        alert("UserName Cannot Be Blank");
+        return true;
+    } else if (password == "ganesh1011" ) {
+        alert("Password Contain Atleast 6 Characters");
+        return true;
     } else {
         console.log(userObj);
         alert("Login Successfull");
-        window.location.href = "requestapplication.html";
+        window.location.href = "userlist.html";
     }
 }
