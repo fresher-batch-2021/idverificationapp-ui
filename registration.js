@@ -43,20 +43,11 @@ console.log("Details", name, dateofbirth, emailid, mobilenumber, user_name, pass
             alert("Unable to register");
         }
     }
-
-
-
-
-
-
-
-
-
+    // function setDateofbirth() {
+    //     let todayObj = new Date();
+    //     let previousDay = dayjs().subtract(15, 'year').toDate();
+    //     let today = previousDay.toJSON().substr(0, 10);
+    //     document.querySelector("#datebirth").setAttribute("max", today);
     
-    /* function setDate() {
-         let todayObj = new Date();
-         let previousDay = dayjs().subtract(1, 'day').toDate();
-         let today = previousDay.toJSON().substr(0, 10);
-         document.querySelector("#dob").setAttribute("max", today);
-      }
-     setDate()*/
+    // }
+    // setDateofbirth()
