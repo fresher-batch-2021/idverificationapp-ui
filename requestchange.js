@@ -2,37 +2,63 @@ function requestChange() {
     event.preventDefault();
     const applicant_Name = document.querySelector("#applicantname").value;
     if (applicant_Name == "" || applicant_Name == null || applicant_Name.trim == "") {
-        alert("Enter_Name")
+        toastr.error("Enter_Name");
+        console.log("toastr completed");
+        setTimeout(function () {
+        }, 3000);
         return false;
     }
     const aadhar_Number = document.querySelector("#aadharNumber").value;
     if (aadhar_Number == "" || aadhar_Number == null) {
-        alert("Enter_Your_AadharNumber")
+        toastr.error("Enter_Your_AadharNumber");
+        console.log("toastr completed");
+        setTimeout(function () {
+        }, 3000);
+        // alert("Enter_Your_AadharNumber")
         return false;
     }
     const old_Mobile = document.querySelector("#mobileNumber").value;
     if (old_Mobile == "" || old_Mobile == null) {
-        alert("Enter_Old_Mobile_number")
+        toastr.error("Enter_Old_Mobile_number");
+        console.log("toastr completed");
+        setTimeout(function () {
+        }, 3000);
         return false;
     }
     const new_Mobile = document.querySelector("#changeNumber").value;
     if (new_Mobile == "" || new_Mobile == null) {
-        alert("Enter_New_Mobile_number")
+        toastr.error("Enter_New_Mobile_number");
+        console.log("toastr completed");
+        setTimeout(function () {
+        }, 3000);
+        // alert("Enter_New_Mobile_number")
         return false;
     }
     const oldAddress = document.querySelector("#oldAddress").value;
     if (oldAddress == "" || oldAddress == null) {
-        alert("Enter_Old_Aadress")
+        toastr.error("Enter_Old_Aadress");
+        console.log("toastr completed");
+        setTimeout(function () {
+        }, 3000);
+        // alert("Enter_Old_Aadress")
         return false;
     }
     const newAddress = document.querySelector("#changeAddress").value;
     if (newAddress == "" || newAddress == null) {
-        alert("Enter_New_Aadress")
+        toastr.error("Enter_New_Aadress");
+        console.log("toastr completed");
+        setTimeout(function () {
+        }, 3000);
+        // alert("Enter_New_Aadress")
         return false;
     }
     const statusCard= document.querySelector("#status").value;
     if (statusCard == "") {
-        alert("Please_Select_Status")
+        toastr.error("Please_Select_Status");
+        console.log("toastr completed");
+        setTimeout(function () {
+        }, 3000);
+        // alert("Please_Select_Status")
         return false;
     }
     let requestObj = {
@@ -55,8 +81,12 @@ function requestChange() {
 
     axios.post(url, requestObj, { headers: { 'Authorization': basicAuth } }).then(res => {
         console.log(requestObj);
-        alert("successfull")
-        window.location.href="requestapplication.html";
+        toastr.success("successfull");
+        console.log("toastr completed");
+        setTimeout(function () {
+            window.location.href="requestapplication.html";
+        }, 2000);
+        // alert("successfull")
     }).catch(err => alert("error "))
 
 }

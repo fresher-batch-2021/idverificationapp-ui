@@ -8,10 +8,10 @@ const routes = [
     { path: 'editpage.html', role: ["user"] },
     { path: 'details.html', role: ["user"] },
     { path: 'requestapplication.html', role: ["user"] },
+    { path: 'admin.html', role: ["admin"] },
     { path: 'userlist.html', role: ["admin"] },
     { path: 'adminlistapplication.html', role: ["admin"] },
-    { path: 'adminrequestapplication.html', role: ["admin"] },
-   
+    { path: 'adminrequestapplication.html', role: ["admin"] } 
 ];
 
 
@@ -28,7 +28,6 @@ function checkAccess(pageName, role) {
             }
         }
     }
-    //Need to write logic
     return isAllowed;
 }
 (function(){

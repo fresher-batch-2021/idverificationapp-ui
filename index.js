@@ -10,69 +10,108 @@ function pan() {
     console.log(userData)
     const name = document.querySelector("#applicantnames").value;
     if (name == "" || name == null || name.trim == "") {
-        alert("Enter_Your_Name")
+        toastr.error("Enter_Your_Name");
+        console.log("toastr completed");
+        setTimeout(function () {
+        }, 3000);
         return false;
     }
     const father_name = document.querySelector("#fathername").value;
      if (father_name == "" || father_name == null || father_name.trim == "") {
-        alert("Enter_Your_Fathername")
+        toastr.error("Enter_Your_Fathername");
+        console.log("toastr completed");
+        setTimeout(function () {
+        }, 3000);
         return false;
     }
     const mother_name = document.querySelector("#mathername").value;
     if (mother_name == "" || mother_name == null) {
-        alert("Enter_Your_Mothername")
+        toastr.error("Enter_Your_Mothername");
+        console.log("toastr completed");
+        setTimeout(function () {
+        }, 3000);
         return false;
     }
     const mobile = document.querySelector("#mobilenumber").value;
     if (mobile == "" || mobile == null) {
-        alert("Enter_Mobile_number")
+        toastr.error("Enter_Mobile_number");
+        console.log("toastr completed");
+        setTimeout(function () {
+        }, 3000);
         return false;
     }
     const email = document.querySelector("#Email").value;
     if (email == "" || email == null) {
-        alert("Enter_mailID")
+        toastr.error("Enter_mailID");
+        console.log("toastr completed");
+        setTimeout(function () {
+        }, 3000);
         return false;
     }
     const dob = document.querySelector("#dob").value;
     if (dob == "" || dob == null) {
-        alert("Enter_date_if_birth")
+        toastr.error("Enter_DateOfBirth");
+        console.log("toastr completed");
+        setTimeout(function () {
+        }, 3000);
         return false;
     }
     const aadharnumber = document.querySelector("#aadharnumber").value;
     if (aadharnumber == ""|| aadharnumber == null) {
-        alert("Enter_your_Aadhar_number")
+        toastr.error("Enter_your_Aadhar_number");
+        console.log("toastr completed");
+        setTimeout(function () {
+        }, 3000);
         return false;
     }
     
     const homenumber = document.querySelector("#no").value;
     if (homenumber == "" || homenumber == null) {
-        alert("Enter the Door Number")
+        toastr.error("Enter_the_Door_Number");
+        console.log("toastr completed");
+        setTimeout(function () {
+        }, 3000);
         return false;
     }
 
     const arearoad = document.querySelector("#area").value;
     if (arearoad == "" || arearoad==null ) {
-        alert("Enter street Name")
+        toastr.error("Enter_street_Name");
+        console.log("toastr completed");
+        setTimeout(function () {
+        }, 3000);
         return false;
     }
     const citydown = document.querySelector("#city").value;
     if (citydown == "" || citydown==null) {
-        alert("Enter the city name")
+        toastr.error("Enter_the_city_name");
+        console.log("toastr completed");
+        setTimeout(function () {
+        }, 3000);
         return false;
     }
     const state = document.querySelector("#state").value;
     if (state == "" || state==null) {
-        alert("Enter the state")
+        toastr.error("Enter_the_state");
+        console.log("toastr completed");
+        setTimeout(function () {
+        }, 3000);
         return false;
     }
     const pinnumber = document.querySelector("#pin").value;
     if (pinnumber == "" || pinnumber==null) {
-        alert("Enter the pin number")
+        toastr.error("Enter_the_pin_number");
+        console.log("toastr completed");
+        setTimeout(function () {
+        }, 3000);
         return false;
     }
     const gender = document.querySelector("#gender").value;
     if (gender == "") {
-        alert("Please_Select_Gender")
+        toastr.error("Please_Select_Gender");
+        console.log("toastr completed");
+        setTimeout(function () {
+        }, 3000);
         return false;
     }
 
@@ -101,9 +140,14 @@ function pan() {
      const url = "https://aacd9391-7b8b-4ac4-b12c-6b785e540ced-bluemix.cloudantnosqldb.appdomain.cloud/idproof_personaldetails";
      axios.post(url, userobj, { headers: { 'Authorization': basicAuth }}).then(res => {
         console.log(userobj);
-        alert("verified")
-    window.location.href="listapplication.html";
-   }).catch(err => alert("Error"))
+        toastr.success("verified");
+        console.log("toastr completed");
+        setTimeout(function () {
+            window.location.href="listapplication.html";
+        }, 2000);
+    
+   }).catch(err => alert("Error")
+   )
 }
 
 function setDate() {
