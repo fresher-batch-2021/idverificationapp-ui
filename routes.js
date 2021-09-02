@@ -1,19 +1,17 @@
 const routes = [
     { path: '', redirectTo: 'index.html', pathMatch: 'full'},
     { path: 'index.html' },
-    { path: 'login.html' },
-    { path: 'register.html' },
+    { path: 'loginpage.html' },
+    { path: 'registration.html' },
     { path: 'listapplication.html', role: ["user"] },
-    { path: 'requestchamge.html', role: ["user"] },
-    { path: 'passenger_details.html', role: ["user"] },
-    { path: 'ticket.html', role: ["user"] },
-    { path: 'mybooking.html', role: ["user"] },
-    { path: 'flightlist.html', role: ["admin"] },
-    { path: 'all_flights.html', role: ["admin"] },
-    { path: 'add_flight.html', role: ["admin"] },
-    { path: 'booking_details.html', role: ["admin"] },
-    { path: 'passenger_list.html', role: ["admin"] },
+    { path: 'requestchange.html', role: ["user"] },
+    { path: 'editpage.html', role: ["user"] },
+    { path: 'details.html', role: ["user"] },
+    { path: 'requestapplication.html', role: ["user"] },
     { path: 'userlist.html', role: ["admin"] },
+    { path: 'adminlistapplication.html', role: ["admin"] },
+    { path: 'adminrequestapplication.html', role: ["admin"] },
+   
 ];
 
 
@@ -35,16 +33,22 @@ function checkAccess(pageName, role) {
 }
 (function(){
 console.log("Routes initializing")
-let user = JSON.parse(localStorage.getItem("logged_in_users"));
-let role = user != null ? user.role : null;
+let user = JSON.parse(localStorage.getItem("LOGGED_IN_USER"));
+console.log("ABC:" ,user);
+for( let x of user){
+    console.log(x.role);
+
+
+let role = user != null ? x.role : null;
 let pathName = window.location.pathname.substr(1);
-console.log("Path Name:", pathName, ",role=", role);
-let allowedAccess = checkAccess(pathName, role);
+console.log("Path Name:", pathName, ",role=", x.role);
+let allowedAccess = checkAccess(pathName, x.role);
 
 console.log("Access :", allowedAccess);
 
 if (!allowedAccess) {
-    alert("You are not authorized to access this page. Redirecting to login page  rejesh");
-    window.location.href = "login.html";
+    alert("You are not authorized to access this page. Redirecting to login page");
+    window.location.href = "loginpage.html";
+}
 }
 }) ();

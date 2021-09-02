@@ -20,7 +20,7 @@ function requesttable(requestapplication) {
             content +
             `<tr><td>${requestObj.doc.name}</td><td>${requestObj.doc.aadharnumber}</td>
                     </td><td>${requestObj.doc.oldNumber}</td><td>${requestObj.doc.newNumber}</td><td>${requestObj.doc.oldAddress}</td><td>${requestObj.doc.changeAddress}</td><td>${requestObj.doc.status}</td>
-                    <td><button><a href="details.html?id=${requestObj.doc._id}?rev=${requestObj.doc._rev}">View</a></button></td> </tr>`;
+                     </tr>`;
         console.log(content);
         document.querySelector("#requestTable").innerHTML = content;
     }
