@@ -14,7 +14,6 @@ function viewDetails(id) {
         const requestObj = res.data
 
         document.querySelector("#username").innerHTML = requestObj.name;
-        document.querySelector("#idNumber").innerHTML = requestObj.idnumber;
         document.querySelector("#aadharNumber").innerHTML = requestObj.aadharnumber;
         document.querySelector("#oldNumber").innerHTML = requestObj.oldNumber;
         document.querySelector("#newNumber").innerHTML = requestObj.newNumber;

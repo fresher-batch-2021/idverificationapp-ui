@@ -5,11 +5,6 @@ function requestChange() {
         alert("Enter_Name")
         return false;
     }
-    const idNumbers = document.querySelector("#applicantIdNumber").value;
-    if (idNumbers == "" || idNumbers == null || idNumbers.trim == "") {
-        alert("Enter_Your_ID_Number")
-        return false;
-    }
     const aadhar_Number = document.querySelector("#aadharNumber").value;
     if (aadhar_Number == "" || aadhar_Number == null) {
         alert("Enter_Your_AadharNumber")
@@ -42,7 +37,6 @@ function requestChange() {
     }
     let requestObj = {
         "name": applicant_Name,
-        "idnumber": idNumbers,
         "aadharnumber": aadhar_Number,
         "oldNumber": old_Mobile,
         "newNumber": new_Mobile,

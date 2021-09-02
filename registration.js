@@ -8,6 +8,7 @@ const user_name = document.querySelector("#username").value;
 const mobilenumber = document.querySelector("#mobileNo").value;
 const password1 = document.querySelector("#password").value;
 const password2 = document.querySelector("#confirmpassword").value;
+const role="user";
 
 console.log("Details", name, dateofbirth, emailid, mobilenumber, user_name, password1);
 
@@ -28,7 +29,8 @@ console.log("Details", name, dateofbirth, emailid, mobilenumber, user_name, pass
                 username: user_name,
                 mobileNo: mobilenumber,
                 password: password1,
-                confirmpassword:password2
+                confirmpassword:password2,
+                role:role
         };
         console.log(registerData);
       
@@ -43,6 +45,13 @@ console.log("Details", name, dateofbirth, emailid, mobilenumber, user_name, pass
             alert("Unable to register");
         }
     }
+
+
+
+
+
+
+    
     // function setDateofbirth() {
     //     let todayObj = new Date();
     //     let previousDay = dayjs().subtract(15, 'year').toDate();

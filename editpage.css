@@ -5,13 +5,20 @@ table {
     padding: 20px 20px 20px 20px;
     border-radius: 5px;
 }
-input {
+input  {
     margin: 10px auto 20px;
       width: 100%;
       border-radius: 5px;
       padding: 12px 20px;
       border: 1px solid #ccc;
       box-sizing: border-box;
+    }
+    #gender{
+        margin: 10px auto 20px;
+      width: 100%;
+      border-radius: 5px;
+      padding: 12px 20px;
+      border: 1px solid #ccc;
     }
     h2{
         text-align: center;

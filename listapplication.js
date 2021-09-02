@@ -11,13 +11,27 @@ let application=[];
           function displaytable(application) {
             let content = "";
             for (let userObj of application) {
-                content =
+                let user=localStorage.getItem('LOGGED_IN_USER')
+                let userData=JSON.parse(user)
+                let userdetail=userData.map(e=>e._id).toString()
+                console.log(userObj.doc)
+                if(userdetail===userObj.doc.userid){
+                    content =
                     content +
-                    `<tr><td>${userObj.doc.Name}</td><td>${userObj.doc.MobileNumber}
-                        </td><td>${userObj.doc.EmailID}</td><td>${userObj.doc.AadharNumber}</td><td>${userObj.doc.Gender}</td><td>${userObj.doc.State}</td><td><button><a href="editpage.html?id=${userObj.doc._id}?rev=${userObj.doc._rev}">Edit</a></button></td>
-                        </tr>`; 
+                        `<tr><td>${userObj.doc.Name}</td>
+                        <td>${userObj.doc.MobileNumber}
+                        </td><td>${userObj.doc.EmailID}</td>
+                        <td>${userObj.doc.AadharNumber}</td>
+                        <td>${userObj.doc.Gender}</td
+                        ><td>${userObj.doc.State}</td>
+                        <td>${userObj.doc.userStatus}</td>
+                        <td><button><a href="editpage.html?id=${userObj.doc._id}?rev=${userObj.doc._rev}">Edit</a></button></td></tr>`; 
                 console.log(content);
                 document.querySelector("#applicationTable").innerHTML = content;
+                }else{
+                    console.log('not applied')
+                }
+                
             }
         }
         

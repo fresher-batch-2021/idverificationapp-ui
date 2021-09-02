@@ -17,18 +17,17 @@ function loginpage() {
       selector:{
         username: user,
         password: passWord
-      },fields:['id','username']
+      },fields:['_id','username']
        
     }
      const usernameobj={
        "userName":user
      }
      console.log(loginData);
-     localStorage.setItem('nameform' , JSON.stringify(usernameobj));
-     console.log(usernameobj);
  userServise.login(loginData).then(res => {
        let data = res.data.docs;
        console.log(data);
+       localStorage.setItem('LOGGED_IN_USER' , JSON.stringify(data));
        if (data.length ==0){
        alert("invalid Login credentials");
       }else{

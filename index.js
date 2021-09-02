@@ -1,6 +1,13 @@
 
 function pan() {
     event.preventDefault();
+    let user=localStorage.getItem('LOGGED_IN_USER')
+    console.log(user)
+    let userData=JSON.parse(user)
+    let loggedin=userData.map(e=>e._id)
+    let userss=loggedin.toString()
+    console.log(userss)
+    console.log(userData)
     const name = document.querySelector("#applicantnames").value;
     if (name == "" || name == null || name.trim == "") {
         alert("Enter_Your_Name")
@@ -83,6 +90,8 @@ function pan() {
         "CityName": citydown,
         "State": state,
         "pinNumber": pinnumber,
+        "userStatus":"pending",
+        "userid":userss
     };
     console.log(userobj);
     const dbUsername = 'apikey-v2-2q4ay3thu4r9w4i4o1vr74ypzd4tyr1lzxlt9916cky2';
@@ -93,7 +102,7 @@ function pan() {
      axios.post(url, userobj, { headers: { 'Authorization': basicAuth }}).then(res => {
         console.log(userobj);
         alert("verified")
-    window.location.href="viewlist.html";
+    window.location.href="listapplication.html";
    }).catch(err => alert("Error"))
 }
 

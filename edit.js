@@ -41,6 +41,13 @@ const id = urlParams.get('id');
 const rev=urlParams.get('rev')
 console.log(rev)
     console.log(id)
+    let user=localStorage.getItem('LOGGED_IN_USER')
+    console.log(user)
+    let userData=JSON.parse(user)
+    let loggedin=userData.map(e=>e._id)
+    let userss=loggedin.toString()
+    console.log(userss)
+    console.log(userData)
 
 let applicantName = document.querySelector("#username").value;
 let father_Name = document.querySelector("#fathername").value;
@@ -69,7 +76,10 @@ let modifyinformation = {
     "StreetName": street_Name,
     "CityName": city_Name,
     "State": statename,
-    "pinNumber": pin_Code
+    "pinNumber": pin_Code,
+    "userid":userss,
+    "userStatus":"pending"
+        
 }
 console.log(modifyinformation);
 
