@@ -5,6 +5,7 @@ function requestChange() {
         toastr.error("Enter_Name");
         console.log("toastr completed");
         setTimeout(function () {
+            console.log(Timeoutfunction);
         }, 3000);
         return false;
     }
@@ -13,8 +14,8 @@ function requestChange() {
         toastr.error("Enter_Your_AadharNumber");
         console.log("toastr completed");
         setTimeout(function () {
+            console.log(Timeoutfunction);
         }, 3000);
-        // alert("Enter_Your_AadharNumber")
         return false;
     }
     const old_Mobile = document.querySelector("#mobileNumber").value;
@@ -22,6 +23,7 @@ function requestChange() {
         toastr.error("Enter_Old_Mobile_number");
         console.log("toastr completed");
         setTimeout(function () {
+            console.log(Timeoutfunction);
         }, 3000);
         return false;
     }
@@ -29,9 +31,9 @@ function requestChange() {
     if (new_Mobile == "" || new_Mobile == null) {
         toastr.error("Enter_New_Mobile_number");
         console.log("toastr completed");
-        setTimeout(function () {
+        setTimeout(function () {console.log(Timeoutfunction);
         }, 3000);
-        // alert("Enter_New_Mobile_number")
+      
         return false;
     }
     const oldAddress = document.querySelector("#oldAddress").value;
@@ -39,17 +41,18 @@ function requestChange() {
         toastr.error("Enter_Old_Aadress");
         console.log("toastr completed");
         setTimeout(function () {
+            console.log(Timeoutfunction);
         }, 3000);
-        // alert("Enter_Old_Aadress")
+
         return false;
     }
     const newAddress = document.querySelector("#changeAddress").value;
     if (newAddress == "" || newAddress == null) {
         toastr.error("Enter_New_Aadress");
         console.log("toastr completed");
-        setTimeout(function () {
+        setTimeout(function () {console.log(Timeoutfunction);
         }, 3000);
-        // alert("Enter_New_Aadress")
+      
         return false;
     }
     const statusCard= document.querySelector("#status").value;
@@ -57,8 +60,9 @@ function requestChange() {
         toastr.error("Please_Select_Status");
         console.log("toastr completed");
         setTimeout(function () {
+            console.log(Timeoutfunction);
         }, 3000);
-        // alert("Please_Select_Status")
+      
         return false;
     }
     let requestObj = {

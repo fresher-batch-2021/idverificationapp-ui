@@ -13,6 +13,7 @@ function pan() {
         toastr.error("Enter_Your_Name");
         console.log("toastr completed");
         setTimeout(function () {
+            console.log(Timeoutfunction);
         }, 3000);
         return false;
     }
@@ -21,6 +22,7 @@ function pan() {
         toastr.error("Enter_Your_Fathername");
         console.log("toastr completed");
         setTimeout(function () {
+            console.log(Timeoutfunction);
         }, 3000);
         return false;
     }
@@ -29,6 +31,7 @@ function pan() {
         toastr.error("Enter_Your_Mothername");
         console.log("toastr completed");
         setTimeout(function () {
+            console.log(Timeoutfunction);
         }, 3000);
         return false;
     }
@@ -37,6 +40,7 @@ function pan() {
         toastr.error("Enter_Mobile_number");
         console.log("toastr completed");
         setTimeout(function () {
+            console.log(Timeoutfunction);
         }, 3000);
         return false;
     }
@@ -45,6 +49,7 @@ function pan() {
         toastr.error("Enter_mailID");
         console.log("toastr completed");
         setTimeout(function () {
+            console.log(Timeoutfunction);
         }, 3000);
         return false;
     }
@@ -53,6 +58,7 @@ function pan() {
         toastr.error("Enter_DateOfBirth");
         console.log("toastr completed");
         setTimeout(function () {
+            console.log(Timeoutfunction);
         }, 3000);
         return false;
     }
@@ -61,6 +67,7 @@ function pan() {
         toastr.error("Enter_your_Aadhar_number");
         console.log("toastr completed");
         setTimeout(function () {
+            console.log(Timeoutfunction);
         }, 3000);
         return false;
     }
@@ -70,6 +77,7 @@ function pan() {
         toastr.error("Enter_the_Door_Number");
         console.log("toastr completed");
         setTimeout(function () {
+            console.log(Timeoutfunction);
         }, 3000);
         return false;
     }
@@ -79,6 +87,7 @@ function pan() {
         toastr.error("Enter_street_Name");
         console.log("toastr completed");
         setTimeout(function () {
+            console.log(Timeoutfunction);
         }, 3000);
         return false;
     }
@@ -87,6 +96,7 @@ function pan() {
         toastr.error("Enter_the_city_name");
         console.log("toastr completed");
         setTimeout(function () {
+            console.log(Timeoutfunction);
         }, 3000);
         return false;
     }
@@ -95,6 +105,7 @@ function pan() {
         toastr.error("Enter_the_state");
         console.log("toastr completed");
         setTimeout(function () {
+            console.log(Timeoutfunction);
         }, 3000);
         return false;
     }
@@ -103,6 +114,7 @@ function pan() {
         toastr.error("Enter_the_pin_number");
         console.log("toastr completed");
         setTimeout(function () {
+            console.log(Timeoutfunction);
         }, 3000);
         return false;
     }
@@ -111,6 +123,7 @@ function pan() {
         toastr.error("Please_Select_Gender");
         console.log("toastr completed");
         setTimeout(function () {
+            console.log(Timeoutfunction);
         }, 3000);
         return false;
     }
