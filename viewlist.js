@@ -22,7 +22,6 @@ console.log(emailId);
                     `<tr><td>${userObj.doc.Name}</td><td>${userObj.doc.MobileNumber}
                         </td><td>${userObj.doc.EmailID}</td><td>${userObj.doc.AadharNumber}</td><td>${userObj.doc.Gender}</td>
                         </tr>`; 
-                //console.log(content);
                 document.querySelector("#applicationTable").innerHTML = content;
             }
         }
