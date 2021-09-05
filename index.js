@@ -165,7 +165,7 @@ function pan() {
 
 function setDate() {
     let todayObj = new Date();
-    let previousDay = dayjs().subtract(15, 'year').toDate();
+    let previousDay = dayjs().subtract(18, 'year').toDate();
     let today = previousDay.toJSON().substr(0, 10);
     document.querySelector("#dob").setAttribute("max", today);
 

@@ -4,12 +4,20 @@ function loginpage() {
  const passWord = $("#password").val();
   
    if (user == "" || user == null || user.trim == "") {
-    alert("Enter_User_Name");
+    toastr.error("Enter_User_Name");
+        console.log("toastr completed");
+        setTimeout(function () {
+            console.log(Timeoutfunction);
+        }, 3000);
     return false;
   }
  
   else if (passWord == " " || password == null) {
-    alert("invalid_password");
+    toastr.error("invalid_password");
+        console.log("toastr completed");
+        setTimeout(function () {
+            console.log(Timeoutfunction);
+        }, 3000);
     return false;
   }
   else{

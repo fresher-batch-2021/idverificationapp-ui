@@ -41,24 +41,24 @@
                               <label> <strong> Applicacnt Name *</strong> </label><br>
                               <span class="firstname">
                                     <input type="text" id="applicantnames" placeholder="First Name"
-                                          pattern="[A-Za-z]{3,15}" name="first_name">
+                                          pattern="[A-Za-z]{3,15}" name="first_name" required>
                               </span>
                               <br>
                               <label> <strong> Father Name * </strong> </label><br>
                               <span class="fatherfirstname">
                                     <input type="text" id="fathername" pattern="[A-Za-z]{3,15}" placeholder="Father Name"
-                                          name="father first name">
+                                          name="father first name" required>
                               </span>
                               <br>
                               <label> <strong> Mother Name </strong> </label><br>
                               <span class="motherfirstname">
                                     <input type="text" id="mathername" pattern="[A-Za-z]{3,15}" placeholder="Mother Name"
-                                          name="Mother_Name">
+                                          name="Mother_Name"required>
                               </span>
                               <br>
                               <label> <strong> Mobile No * </strong> </label><br>
                               <input type="tel" name="Mobile Number" id="mobilenumber" minlength="10" maxlength="10" pattern="[6789][0-9]{9}"
-                                    placeholder="Mobile Number">
+                                    placeholder="Mobile Number" required>
                               <br>
                               <label> <strong> Email ID </strong> </label><br>
                               <input type="email" name="email" id="Email" placeholder="Email"
@@ -70,28 +70,28 @@
                                     placeholder="date of birth"> <br>
                               <label> <strong> Aadhar Number </strong> </label><br>
                               <input type="tel" name="number" id="aadharnumber" pattern="[0-9]{12}"
-                                    placeholder="Aadhar Number"><br>
+                                    placeholder="Aadhar Number" required><br>
 
                               <label> <strong> No./ Building / Village *</strong> </label><br>
-                              <input class="no" id="no" type="text" placeholder="No./ Building / Village">
+                              <input class="no" id="no" type="text" placeholder="No./ Building / Village" required>
                               <br>
                               <label> <strong> Area/ Road/ P.O. *</strong> </label><br>
-                              <input class="area" id="area" type="text" name="Area" placeholder="Area/ Road/ P.O.">
+                              <input class="area" id="area" type="text" name="Area" placeholder="Area/ Road/ P.O." required>
                               <br>
                               <label> <strong> City/ Town/ District *</strong> </label><br>
                               <input class="city" id="city" type="text" name=" City"
-                                    placeholder=" City/ Town/ District">
+                                    placeholder=" City/ Town/ District" required>
                               <br>
                               <label> <strong> State *</strong> </label><br>
-                              <input class="state" id="state" type="text" name="State" placeholder="State">
+                              <input class="state" id="state" type="text" name="State" placeholder="State" required>
                               <br>
                               <label> <strong> Pin Code *</strong> </label><br>
                               <input class="pin" id="pin" type="text" name="Pin Code" pattern="[6][0-9]{5}"
-                                    placeholder="Pin Code">
+                                    placeholder="Pin Code" required>
                               <br>
                               <label> <strong> Gender *</strong> </label>
                               <br>
-                              <select id="gender" name="gender">
+                              <select id="gender" name="gender" required> 
                                     <option value="">Please Select</option>
                                     <option value="male">Male</option>
                                     <option value="Female">Female</option>

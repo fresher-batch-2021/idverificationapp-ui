@@ -29,7 +29,7 @@ let application=[];
                 console.log(content);
                 document.querySelector("#applicationTable").innerHTML = content;
                 }else{
-                    console.log('not applied')
+                    console.log('Not applied')
                 }
                 
             }

@@ -13,7 +13,6 @@
         integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
         </script>
-
     <link rel="stylesheet" href="registration.css">
 </head>
 
@@ -25,22 +24,22 @@
             <label> <strong> Your Name *</strong> </label>
             <input type="text" id="yourname" placeholder="Your Name" autocomplete="off" required> <br>
             <label> <strong> Date of birth </strong> </label>
-            <input type="date" id="datebirth" placeholder="Date Of Birth">
+            <input type="date" id="datebirth" placeholder="Date Of Birth" pattern="(0[1-9]|1[0-9]|2[0-9]|3[01]).(0[1-9]|1[012]).[0-9]{4}" required>
 
             <label> <strong> Email Id </strong> </label>
-            <input type="email" id="email1" placeholder="Email ID" required>
+            <input type="email" id="email1" placeholder="Email ID"  autocomplete="off" required>
             
             <label> <strong>Mobile Number *</strong> </label>
-            <input type="tel" id="mobileNo" pattern="[0-9]{10}" placeholder="Mobile Number" required>
+            <input type="tel" id="mobileNo" pattern="[6789][0-9]{9}" autocomplete="off" placeholder="Mobile Number" required>
            
             <label> <strong>User Name</strong> </label>
-            <input type="text" id="username" placeholder="User Name" required>
+            <input type="text" id="username" placeholder="User Name" autocomplete="off" required>
            
             <label> <strong>Create Password</strong> </label>
-            <input type="password" id="password" name="password" placeholder="Password" required>
+            <input type="password" id="password" name="password" autocomplete="off" minlength="6" placeholder="Password" required>
           
             <label> <strong>Confirm Password </strong> </label>
-            <input type="password" id="confirmpassword" name="confirmpassword" placeholder="Confirm Password">
+            <input type="password" id="confirmpassword" name="confirmpassword" minlength="6" autocomplete="off" placeholder="Confirm Password">
            
             <button class="submit" type="submit">Submit</button>
             <button><a href="loginpage.html">Already login</a></button>
@@ -50,7 +49,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.6/dayjs.min.js"
     integrity="sha512-bwD3VD/j6ypSSnyjuaURidZksoVx3L1RPvTkleC48SbHCZsemT3VKMD39KknPnH728LLXVMTisESIBOAb5/W0Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
     <script src="serviceLayer.js"></script>
 </body>
 
