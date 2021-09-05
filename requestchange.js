@@ -1,6 +1,6 @@
 function requestChange() {
     event.preventDefault();
-    const applicant_Name = document.querySelector("#applicantname").value;
+    const applicant_Name =$("#applicantname").val();
     if (applicant_Name == "" || applicant_Name == null || applicant_Name.trim == "") {
         toastr.error("Enter_Name");
         console.log("toastr completed");
@@ -9,7 +9,7 @@ function requestChange() {
         }, 3000);
         return false;
     }
-    const aadhar_Number = document.querySelector("#aadharNumber").value;
+    const aadhar_Number = $("#aadharNumber").val();
     if (aadhar_Number == "" || aadhar_Number == null) {
         toastr.error("Enter_Your_AadharNumber");
         console.log("toastr completed");
@@ -18,7 +18,7 @@ function requestChange() {
         }, 3000);
         return false;
     }
-    const old_Mobile = document.querySelector("#mobileNumber").value;
+    const old_Mobile = $("#mobileNumber").val();
     if (old_Mobile == "" || old_Mobile == null) {
         toastr.error("Enter_Old_Mobile_number");
         console.log("toastr completed");
@@ -27,7 +27,7 @@ function requestChange() {
         }, 3000);
         return false;
     }
-    const new_Mobile = document.querySelector("#changeNumber").value;
+    const new_Mobile = $("#changeNumber").val();
     if (new_Mobile == "" || new_Mobile == null) {
         toastr.error("Enter_New_Mobile_number");
         console.log("toastr completed");
@@ -36,7 +36,7 @@ function requestChange() {
       
         return false;
     }
-    const oldAddress = document.querySelector("#oldAddress").value;
+    const oldAddress = $("#oldAddress").val();
     if (oldAddress == "" || oldAddress == null) {
         toastr.error("Enter_Old_Aadress");
         console.log("toastr completed");
@@ -46,7 +46,7 @@ function requestChange() {
 
         return false;
     }
-    const newAddress = document.querySelector("#changeAddress").value;
+    const newAddress = $("#changeAddress").val();
     if (newAddress == "" || newAddress == null) {
         toastr.error("Enter_New_Aadress");
         console.log("toastr completed");
@@ -55,7 +55,7 @@ function requestChange() {
       
         return false;
     }
-    const statusCard= document.querySelector("#status").value;
+    const statusCard= $("#status").val();
     if (statusCard == "") {
         toastr.error("Please_Select_Status");
         console.log("toastr completed");
@@ -90,7 +90,6 @@ function requestChange() {
         setTimeout(function () {
             window.location.href="requestapplication.html";
         }, 2000);
-        // alert("successfull")
     }).catch(err => alert("error "))
 
 }

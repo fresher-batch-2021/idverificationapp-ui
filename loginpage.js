@@ -1,7 +1,7 @@
 function loginpage() {
   event.preventDefault();
-  const user = document.querySelector("#username").value;
- const passWord = document.querySelector("#password").value;
+  const user = $("#username").val();
+ const passWord = $("#password").val();
   
    if (user == "" || user == null || user.trim == "") {
     alert("Enter_User_Name");
@@ -27,7 +27,7 @@ function loginpage() {
  userServise.login(loginData).then(res => {
        let data = res.data.docs;
        console.log(data);
-       
+
        localStorage.setItem('LOGGED_IN_USER' , JSON.stringify(data));
        if (data.length ==0){
        alert("invalid Login credentials");

@@ -1,13 +1,13 @@
 
 function registration() {
     event.preventDefault();
-const name = document.querySelector("#yourname").value;
-const dateofbirth = document.querySelector("#datebirth").value;
-const emailid = document.querySelector("#email1").value;
-const user_name = document.querySelector("#username").value;
-const mobilenumber = document.querySelector("#mobileNo").value;
-const password1 = document.querySelector("#password").value;
-const password2 = document.querySelector("#confirmpassword").value;
+const name = $("#yourname").val();
+const dateofbirth = $("#datebirth").val();
+const emailid = $("#email1").val();
+const user_name = $("#username").val();
+const mobilenumber = $("#mobileNo").val();
+const password1 =$("#password").val();
+const password2 =$("#confirmpassword").val();
 const role="user";
 
 console.log("Details", name, dateofbirth, emailid, mobilenumber, user_name, password1);
@@ -45,18 +45,3 @@ console.log("Details", name, dateofbirth, emailid, mobilenumber, user_name, pass
             alert("Unable to register");
         }
     }
-
-
-
-
-
-
-    
-    // function setDateofbirth() {
-    //     let todayObj = new Date();
-    //     let previousDay = dayjs().subtract(15, 'year').toDate();
-    //     let today = previousDay.toJSON().substr(0, 10);
-    //     document.querySelector("#datebirth").setAttribute("max", today);
-    
-    // }
-    // setDateofbirth()

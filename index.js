@@ -8,7 +8,7 @@ function pan() {
     let userss=loggedin.toString()
     console.log(userss)
     console.log(userData)
-    const name = document.querySelector("#applicantnames").value;
+    const name =$("#applicantnames").val();
     if (name == "" || name == null || name.trim == "") {
         toastr.error("Enter_Your_Name");
         console.log("toastr completed");
@@ -17,7 +17,7 @@ function pan() {
         }, 3000);
         return false;
     }
-    const father_name = document.querySelector("#fathername").value;
+    const father_name = $("#fathername").val();
      if (father_name == "" || father_name == null || father_name.trim == "") {
         toastr.error("Enter_Your_Fathername");
         console.log("toastr completed");
@@ -26,7 +26,7 @@ function pan() {
         }, 3000);
         return false;
     }
-    const mother_name = document.querySelector("#mathername").value;
+    const mother_name = $("#mathername").val();
     if (mother_name == "" || mother_name == null) {
         toastr.error("Enter_Your_Mothername");
         console.log("toastr completed");
@@ -35,7 +35,7 @@ function pan() {
         }, 3000);
         return false;
     }
-    const mobile = document.querySelector("#mobilenumber").value;
+    const mobile = $("#mobilenumber").val();
     if (mobile == "" || mobile == null) {
         toastr.error("Enter_Mobile_number");
         console.log("toastr completed");
@@ -44,7 +44,7 @@ function pan() {
         }, 3000);
         return false;
     }
-    const email = document.querySelector("#Email").value;
+    const email = $("#Email").val();
     if (email == "" || email == null) {
         toastr.error("Enter_mailID");
         console.log("toastr completed");
@@ -53,7 +53,7 @@ function pan() {
         }, 3000);
         return false;
     }
-    const dob = document.querySelector("#dob").value;
+    const dob = $("#dob").val();
     if (dob == "" || dob == null) {
         toastr.error("Enter_DateOfBirth");
         console.log("toastr completed");
@@ -62,7 +62,7 @@ function pan() {
         }, 3000);
         return false;
     }
-    const aadharnumber = document.querySelector("#aadharnumber").value;
+    const aadharnumber = $("#aadharnumber").val();
     if (aadharnumber == ""|| aadharnumber == null) {
         toastr.error("Enter_your_Aadhar_number");
         console.log("toastr completed");
@@ -72,7 +72,7 @@ function pan() {
         return false;
     }
     
-    const homenumber = document.querySelector("#no").value;
+    const homenumber = $("#no").val();
     if (homenumber == "" || homenumber == null) {
         toastr.error("Enter_the_Door_Number");
         console.log("toastr completed");
@@ -82,7 +82,7 @@ function pan() {
         return false;
     }
 
-    const arearoad = document.querySelector("#area").value;
+    const arearoad = $("#area").val();
     if (arearoad == "" || arearoad==null ) {
         toastr.error("Enter_street_Name");
         console.log("toastr completed");
@@ -91,7 +91,7 @@ function pan() {
         }, 3000);
         return false;
     }
-    const citydown = document.querySelector("#city").value;
+    const citydown = $("#city").val();
     if (citydown == "" || citydown==null) {
         toastr.error("Enter_the_city_name");
         console.log("toastr completed");
@@ -100,7 +100,7 @@ function pan() {
         }, 3000);
         return false;
     }
-    const state = document.querySelector("#state").value;
+    const state = $("#state").val();
     if (state == "" || state==null) {
         toastr.error("Enter_the_state");
         console.log("toastr completed");
@@ -109,7 +109,7 @@ function pan() {
         }, 3000);
         return false;
     }
-    const pinnumber = document.querySelector("#pin").value;
+    const pinnumber = $("#pin").val();
     if (pinnumber == "" || pinnumber==null) {
         toastr.error("Enter_the_pin_number");
         console.log("toastr completed");
@@ -118,7 +118,7 @@ function pan() {
         }, 3000);
         return false;
     }
-    const gender = document.querySelector("#gender").value;
+    const gender = $("#gender").val();
     if (gender == "") {
         toastr.error("Please_Select_Gender");
         console.log("toastr completed");

@@ -49,19 +49,19 @@ console.log(rev)
     console.log(userss)
     console.log(userData)
 
-let applicantName = document.querySelector("#username").value;
-let father_Name = document.querySelector("#fathername").value;
-let mother_Name = document.querySelector("#mothername").value;
-let mobile_Number = document.querySelector("#mobilenumber").value;
-let emaid_Id = document.querySelector("#emailid").value;
-let dateOfBirth = document.querySelector("#dateofbirth").value;
-let aadhar_Number = document.querySelector("#aadharnumber").value;
-let genderSelect = document.querySelector("#gender").value
-let house_Number = document.querySelector("#housenumber").value;
-let street_Name = document.querySelector("#streetname").value;
-let city_Name = document.querySelector("#cityname").value;
-let statename = document.querySelector("#state").value;
-let pin_Code = document.querySelector("#pincode").value;
+let applicantName = $("#username").val();
+let father_Name = $("#fathername").val();
+let mother_Name = $("#mothername").val();
+let mobile_Number =$("#mobilenumber").val();
+let emaid_Id = $("#emailid").val();
+let dateOfBirth = $("#dateofbirth").val();
+let aadhar_Number = $("#aadharnumber").val();
+let genderSelect = $("#gender").val();
+let house_Number = $("#housenumber").val();
+let street_Name = $("#streetname").val();
+let city_Name = $("#cityname").val();
+let statename = $("#state").val();
+let pin_Code = $("#pincode").val();
 
 let modifyinformation = {
     "Name": applicantName,
