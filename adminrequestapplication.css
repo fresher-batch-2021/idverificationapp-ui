@@ -40,6 +40,7 @@ tr:nth-child(even) {
     padding: 10px;
 }
 td{
+    text-align: center;
     border: 1px solid #ccc;
     padding: 10px;
 }
