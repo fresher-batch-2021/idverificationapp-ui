@@ -41,8 +41,7 @@ function delete_data(id, rev) {
     const dbUsername = "apikey-v2-2q4ay3thu4r9w4i4o1vr74ypzd4tyr1lzxlt9916cky2";
     const dbPassword = "bd763fb0b51e2d8e968a8154ae9b7869";
     const basicAuth = "Basic " + btoa(dbUsername + ":" + dbPassword);
-    axios
-      .delete(url + id + "?rev=" + rev, {
+    axios.delete(url + id + "?rev=" + rev, {
         headers: { Authorization: basicAuth },
       })
       .then((res) => {

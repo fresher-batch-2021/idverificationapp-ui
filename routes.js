@@ -34,15 +34,15 @@ function checkAccess(pageName, role) {
 (function(){
 console.log("Routes initializing")
 let user = JSON.parse(localStorage.getItem("LOGGED_IN_USER"));
-console.log("ABC:" ,user);
-for( let x of user){
-    console.log(x.role);
+console.log("role:" ,user);
+for( let uesrRole of user){
+    console.log(uesrRole.role);
 
 
-let role = user != null ? x.role : null;
+let role = user != null ? uesrRole.role : null;
 let pathName = window.location.pathname.substr(1);
-console.log("Path Name:", pathName, ",role=", x.role);
-let allowedAccess = checkAccess(pathName, x.role);
+console.log("Path Name:", pathName, ",role=", uesrRole.role);
+let allowedAccess = checkAccess(pathName, uesrRole.role);
 
 console.log("Access :", allowedAccess);
 
