@@ -159,7 +159,12 @@ function pan() {
             window.location.href="listapplication.html";
         }, 2000);
     
-   }).catch(err => alert("Error")
+   }).catch(err =>{
+    toastr.error("Invalid Login Credentials");
+    setTimeout(function () {
+        console.log(Timeoutfunction);
+    }, 2000);}
+    //  alert("Error")
    )
 }
 

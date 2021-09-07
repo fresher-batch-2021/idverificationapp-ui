@@ -14,11 +14,11 @@ console.log("Details", name, dateofbirth, emailid, mobilenumber, user_name, pass
 
     try {
         validator.isValidString(name, "Enther_Your_Name");
-        validator.isValidString(dateofbirth, "Enter_date_of_birth");
-        validator.isValidString(emailid, "Enter_your_mailID");
-        validator.isValidString(user_name, "Enter_User_name");
-        validator.isValidString(mobilenumber, "Enter_User_Mobile_numbe");
-        Password.isValidPassword(password1, "Enter_password");
+        validator.isValidString(dateofbirth, "Enter_Date_Of_Birth");
+        validator.isValidString(emailid, "Enter_Your_MailID");
+        validator.isValidString(user_name, "Enter_User_Name");
+        validator.isValidString(mobilenumber, "Enter_User_Mobile_Numbe");
+        Password.isValidPassword(password1, "Enter_Password");
         Password.isValidPassword(password2, "Dose_Not_Match_Password")
 
         alert("Registration_Done");
@@ -40,9 +40,10 @@ console.log("Details", name, dateofbirth, emailid, mobilenumber, user_name, pass
          window.location.href = "loginpage.html";
         })
      } catch(err)  {
-            console.error(err.message);
-            alert(err.message);
-            alert("Unable to register");
+        toastr.error("Unable to register");
+        setTimeout(function () {
+            console.log(Timeoutfunction);
+        }, 3000);
         }
     }
     function setDates() {

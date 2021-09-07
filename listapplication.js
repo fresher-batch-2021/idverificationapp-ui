@@ -6,7 +6,14 @@ let application=[];
         application=data.rows;
         console.log("tablelist:", application);
     displaytable(application);
-          }).catch(err => alert("error "))
+          }).catch(err =>{
+            toastr.error("Invalid Error Credentials");
+            setTimeout(function () {
+                console.log(Timeoutfunction);
+            }, 2000);
+          }
+            //  alert("error ")
+             )
 
           function displaytable(application) {
             let content = "";
@@ -27,7 +34,7 @@ let application=[];
                         <td>${userObj.doc.userStatus}</td>
                         <td><button><a href="editpage.html?id=${userObj.doc._id}?rev=${userObj.doc._rev}">Edit</a></button></td></tr>`; 
                 console.log(content);
-                document.querySelector("#applicationTable").innerHTML = content;
+                $("#applicationTable").html(content);
                 }else{
                     console.log('Not applied')
                 }
@@ -36,7 +43,7 @@ let application=[];
         }
         
         function searchName() {
-            let searchName = document.getElementById("searchBox").value;
+            let searchName = $("#searchBox").val();
             let myTable = document.getElementById("myTable");
             let tableRow = myTable.getElementsByTagName("tr");
             for (var i = 0; i < tableRow.length; i++) {

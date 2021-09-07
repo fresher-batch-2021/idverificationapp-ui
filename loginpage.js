@@ -38,16 +38,27 @@ function loginpage() {
 
        localStorage.setItem('LOGGED_IN_USER' , JSON.stringify(data));
        if (data.length ==0){
-       alert("invalid Login credentials");
+        toastr.error("Invalid Login Credentials");
+        setTimeout(function () {
+            console.log(Timeoutfunction);
+        }, 2000);
       }else{
         const users = data[0];
-        console.log(loginData);
-        alert("successfull")
-       window.location.href = "index.html";
+        toastr.success("successfull");
+        setTimeout(function () {
+          window.location.href = "index.html";
+            console.log(Timeoutfunction);
+           
+        }, 2000);
+        console.log(loginData);      
       }
       }).catch(err => {
-        console.log(err.response.data)
-        alert("invalid")
+        toastr.error("invalid");
+        setTimeout(function () {
+            console.log(Timeoutfunction);
+        }, 2000);
+        console.log(err.response.data);
+        // alert("invalid")
       }
         )
     }

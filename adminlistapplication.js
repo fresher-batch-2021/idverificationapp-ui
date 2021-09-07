@@ -22,13 +22,12 @@ function displaytable(applicationValue) {
             <td>${userObj.doc.Gender}</td>
             <td>${userObj.doc.State}</td>
             <td>${userObj.doc.userStatus}</td>
-            <td><div class="edit"><button><a href="editpage.html?id=${userObj.doc._id}?rev=${userObj.doc._rev}">Edit</a></button></div></td>
             <td><div class="dalete"><button type='button' onclick="delete_data('${userObj.doc._id}','${userObj.doc._rev}')">Delete</button></div></td>
             <td><button type='button' onclick="updateStatus('${userObj.doc._id}','ACCEPTED')">Accept
             </button>&nbsp;&nbsp;&nbsp;<button type='button' onclick="updateStatus('${userObj.doc._id}','REJECTED')">Reject</button></td>
                         </tr>`;
     console.log(content);
-    document.querySelector("#applicationTable").innerHTML = content;
+    $("#applicationTable").html(content);
   }
 }
 function delete_data(id, rev) {
@@ -53,7 +52,7 @@ function delete_data(id, rev) {
   }
 }
 function searchName() {
-  let searchNames = document.getElementById("searchBox").value;
+  let searchNames = $("#searchBox").val();
   let myTable = document.getElementById("myTable");
   let tableRow = myTable.getElementsByTagName("tr");
   for (var i = 0; i < tableRow.length; i++) {

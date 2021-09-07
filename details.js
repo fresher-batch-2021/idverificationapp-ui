@@ -13,13 +13,13 @@ function viewDetails(id) {
         console.log(res.data)
         const requestObj = res.data
 
-        document.querySelector("#username").innerHTML = requestObj.name;
-        document.querySelector("#aadharNumber").innerHTML = requestObj.aadharnumber;
-        document.querySelector("#oldNumber").innerHTML = requestObj.oldNumber;
-        document.querySelector("#newNumber").innerHTML = requestObj.newNumber;
-        document.querySelector("#oldAadress").innerHTML = requestObj.oldAddress;
-        document.querySelector("#newAadress").innerHTML = requestObj.changeAddress;
-        document.querySelector("#status").innerHTML = requestObj.status;
+        $("#username").html(requestObj.name);
+        $("#aadharNumber").html(requestObj.aadharnumber);
+        $("#oldNumber").html(requestObj.oldNumber);
+        $("#newNumber").html(requestObj.newNumber);
+        $("#oldAadress").html(requestObj.oldAddress);
+        $("#newAadress").html( requestObj.changeAddress);
+        $("#status").html(requestObj.status);
     })
         .catch(err => console.error(err))
 }

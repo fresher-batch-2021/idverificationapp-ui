@@ -13,6 +13,7 @@ body {
     margin-right:36%;
     padding:3% 3% 3% 3%;
 }
+
 label{
     color: #2F4F4F;
 }
@@ -28,6 +29,7 @@ a{
     text-decoration: none;
     color: white;
 }
+
 button{
     border-radius: 5px; 
     background-color: #04AA6D;

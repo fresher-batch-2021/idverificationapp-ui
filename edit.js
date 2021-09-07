@@ -16,19 +16,19 @@ function editDetails(id) {
         console.log(res.data)
         const details = res.data
 
-        document.querySelector("#username").value = details.Name;
-        document.querySelector("#fathername").value = details.FatherName;
-        document.querySelector("#mothername").value = details.MotherName;
-        document.querySelector("#mobilenumber").value = details.MobileNumber;
-        document.querySelector("#emailid").value = details.EmailID;
-        document.querySelector("#dateofbirth").value = details.DateOfBirth;
-        document.querySelector("#aadharnumber").value = details.AadharNumber;
-        document.querySelector("#gender").value = details.Gender;
-        document.querySelector("#housenumber").value = details.HouseNumber;
-        document.querySelector("#streetname").value = details.StreetName;
-        document.querySelector("#cityname").value = details.CityName;
-        document.querySelector("#state").value = details.State;
-        document.querySelector("#pincode").value = details.pinNumber;
+        $("#username").val(details.Name);
+        $("#fathername").val(details.FatherName);
+        $("#mothername").val(details.MotherName);
+        $("#mobilenumber").val(details.MobileNumber);
+        $("#emailid").val(details.EmailID);
+        $("#dateofbirth").val(details.DateOfBirth);
+        $("#aadharnumber").val( details.AadharNumber);
+        $("#gender").val(details.Gender);
+        $("#housenumber").val(details.HouseNumber);
+        $("#streetname").val(details.StreetName);
+        $("#cityname").val(details.CityName);
+        $("#state").val(details.State);
+        $("#pincode").val(details.pinNumber);
 
     })
         .catch(err => console.error(err))

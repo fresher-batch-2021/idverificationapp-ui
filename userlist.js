@@ -17,9 +17,13 @@ function userlist(userapplication) {
     for (let userObj of userapplication) {
         content =
             content +
-            `<tr><td>${userObj.doc.name}</td><td>${userObj.doc.dob}</td><td>${userObj.doc.email}</td>
-            <td>${userObj.doc.mobileNo}</td></td><td>${userObj.doc.username}</td></tr>`;
+            `<tr><td>${userObj.doc.name}</td>
+            <td>${userObj.doc.dob}</td>
+            <td>${userObj.doc.email}</td>
+            <td>${userObj.doc.mobileNo}</td>
+            </td><td>${userObj.doc.username}</td>
+            </tr>`;
         console.log(content);
-        document.querySelector("#userTable").innerHTML = content;
+        $("#userTable").html(content);
     }
 }

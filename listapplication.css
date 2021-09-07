@@ -8,7 +8,7 @@
     background-color: rgb(0,119,144);
    color: #f5f5f5;
     text-align:center;
-    padding: 7px 63.2px;
+    padding: 7px 64.9px;
     text-decoration: none;
     list-style-type: none;
 }
@@ -54,7 +54,7 @@ table {
     border-radius: 3px solid;
 }
 .searchbar .search__input {
-    margin-left: 8%;
+    margin-left: 13%;
         width: 20%;
         padding: 12px 24px;
         font-size: 14px;
@@ -84,4 +84,35 @@ border: 1px solid #575756;
 button{
     color: white;
     padding: 6px;
+}
+/* Footer CSS */
+
+*{
+    margin: 0%;
+    padding:0%;
+}
+.footerpage{
+    background-color: #808080;
+    height: 80px;
+}
+.footerpage .social a{
+    font-size:20px;
+        width:36px;
+        height:36px;
+        line-height:36px;
+        display:inline-block;
+        text-align:center;
+        border-radius:50%;
+        box-shadow:0 0 0 2px rgba(255,255,255,0.4);
+        margin-left: 20px;
+        color:#fff;
+}
+.item{
+    margin-left: 500px;
+    padding-top: 10px; 
+}
+p{
+    margin-top: 11px;
+    color: white;
+    text-align: center;
 }

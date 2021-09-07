@@ -1,7 +1,7 @@
 function adminpage() {
     event.preventDefault();
-    const userName = document.querySelector("#userName").value;
-    const password = document.querySelector("#password").value;
+    const userName = $("#userName").val();
+    const password = $("#password").val();
     const email = "rajesh123";
     const password1 = "rajesh";
     let userObj = {

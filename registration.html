@@ -23,7 +23,7 @@
         <form onsubmit="registration()">
             <label> <strong> Your Name *</strong> </label>
             <input type="text" id="yourname" placeholder="Your Name" autocomplete="off" required> <br>
-            <label> <strong> Date of birth </strong> </label>
+            <label> <strong> Date of Birth </strong> </label>
             <input type="date" id="datebirth" placeholder="Date Of Birth" pattern="(0[1-9]|1[0-9]|2[0-9]|3[01]).(0[1-9]|1[012]).[0-9]{4}" required>
 
             <label> <strong> Email Id </strong> </label>
@@ -32,7 +32,7 @@
             <label> <strong>Mobile Number *</strong> </label>
             <input type="tel" id="mobileNo" pattern="[6789][0-9]{9}" autocomplete="off" placeholder="Mobile Number" required>
            
-            <label> <strong>User Name</strong> </label>
+            <label> <strong>User Name *</strong> </label>
             <input type="text" id="username" placeholder="User Name" autocomplete="off" required>
            
             <label> <strong>Create Password</strong> </label>
@@ -44,8 +44,11 @@
             <button class="submit" type="submit">Submit</button>
             <button><a href="loginpage.html">Already login</a></button>
             <button><a href="admin.html">Admin</a></button>
-        </form>
+         </form>
     </div>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.6/dayjs.min.js"
     integrity="sha512-bwD3VD/j6ypSSnyjuaURidZksoVx3L1RPvTkleC48SbHCZsemT3VKMD39KknPnH728LLXVMTisESIBOAb5/W0Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
