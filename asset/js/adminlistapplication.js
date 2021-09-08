@@ -1,6 +1,5 @@
 let application = [];
-userServise
-  .listOfApplication()
+userServise.listOfApplication()
   .then((res) => {
     let data = res.data;
     console.log("response : ", data);
@@ -35,20 +34,10 @@ function delete_data(id, rev) {
   if (cfm) {
     console.log(id);
     console.log(rev);
-    let url =
-      "https://aacd9391-7b8b-4ac4-b12c-6b785e540ced-bluemix.cloudantnosqldb.appdomain.cloud/idproof_personaldetails/";
-    const dbUsername = "apikey-v2-2q4ay3thu4r9w4i4o1vr74ypzd4tyr1lzxlt9916cky2";
-    const dbPassword = "bd763fb0b51e2d8e968a8154ae9b7869";
-    const basicAuth = "Basic " + btoa(dbUsername + ":" + dbPassword);
-    axios.delete(url + id + "?rev=" + rev, {
-        headers: { Authorization: basicAuth },
-      })
-      .then((res) => {
-        alert("Delete Succesfull");
-        window.location.reload().catch((err) => {
-          alert("Error Is Deleting");
-        });
-      });
+userServise.adminlist(id,rev).then(res=>
+ window.location.reload());
+alert("Deleted")
+.catch(err=>console.log(err.message))
   }
 }
 function searchName() {
@@ -77,8 +66,7 @@ function updateStatus(id, status) {
     "https://aacd9391-7b8b-4ac4-b12c-6b785e540ced-bluemix.cloudantnosqldb.appdomain.cloud/idproof_personaldetails/" +
     id;
   axios
-    .get(url, { headers: { Authorization: basicAuth } })
-    .then((result) => {
+    .get(url, { headers: { Authorization: basicAuth } }).then((result) => {
       const applicationObj = result.data;
 
       applicationObj.userStatus = status;
