@@ -25,5 +25,6 @@ function userlist(userapplication) {
             </tr>`;
         console.log(content);
         $("#userTable").html(content);
+
     }
 }
