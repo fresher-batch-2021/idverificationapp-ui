@@ -2,7 +2,7 @@
 margin:0px;
 }
 table {
-    margin-left: 90px;
+    margin-left: 145px;
     border-collapse: collapse;
     border: 1px solid #ccc;
     border-radius: 5px solid;
@@ -59,4 +59,49 @@ img{
     width:250px;
     padding-top: 10px;
     padding-bottom: 15px;
+}.footerpage{
+    background-color: #808080;
+    height: 80px;
+    margin-top:100px;
 }
+.footerpage .social em{
+    font-size:20px;
+    width:36px;
+    height:36px;
+    line-height:36px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    box-shadow:0 0 0 2px rgba(255,255,255,0.4);
+    margin-left: 20px;
+    color:#fff;
+}
+.item{
+    margin-left: 515px;
+    padding-top: 10px; 
+}
+p{
+    margin-top: 11px;
+    text-align: center;
+    color: #f2f2f2;
+}
+/*----------------tooltip------------------------- */
+.tooltip {
+    position: relative;
+    display: inline-block;
+      }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 100px;
+    background-color: #f2f2f2;
+    color: black;
+    text-align: center;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  } 

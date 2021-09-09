@@ -46,6 +46,21 @@ input  {
     color: white;
     border: none;
 }
+.breadcrumbs{
+    list-style: none;
+}
+.breadcrumbs ul li{
+    display: inline;
+    
+}.breadcrumbs ul li a{
+    padding: 5px;
+    color: blueviolet;
+    text-decoration: none;
+}
+.breadcrumbs ul li+li:before {
+    color: black;
+    content: "/\00a0";
+  }
 
 .editpage {
     margin-left: 2%;

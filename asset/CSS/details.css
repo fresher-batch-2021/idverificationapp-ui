@@ -1,0 +1,49 @@
+*{
+    margin: 0%;
+    padding: 0;
+}
+button{
+    margin-left: 470px;
+    border-radius: 5px; 
+            background-color: #04AA6D;
+            color: white;
+            margin-top: 10px;
+            border: none;
+            padding: 10px;
+            width: 30%;
+            margin-bottom: 10px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+table{
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+    width: 500px;
+    height: 550px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 20px;
+}
+.breadcrumbs{
+    margin-left:10px;
+    margin-top: 10px;
+    list-style: none;
+}
+.breadcrumbs ul li{
+    display: inline;
+    
+}.breadcrumbs ul li a{
+    padding: 5px;
+    color: blueviolet;
+    text-decoration: none;
+}
+.breadcrumbs ul li+li:before {
+    color: black;
+    content: "/\00a0";
+  }
+h2{
+    padding: 15px;
+    text-align: center;
+}
