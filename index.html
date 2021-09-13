@@ -17,6 +17,9 @@
 
 </head>
 <body>
+      <body onload="myFunction()">
+            <div id="loader"></div>
+            <div style="display: none" id="myDiv" class="animate-bottom">
       
       <img src="asset/image/PANCardLogo.png" alt="pancard">
       <br>
@@ -92,8 +95,9 @@
                               
                               <button class="submit">Submit</button>
                               <br>
-                        </form>
+                        </form>  
                   </div>
+                  
 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.6/dayjs.min.js"
         integrity="sha512-bwD3VD/j6ypSSnyjuaURidZksoVx3L1RPvTkleC48SbHCZsemT3VKMD39KknPnH728LLXVMTisESIBOAb5/W0Q=="
@@ -107,6 +111,10 @@
                                            
    </div>
  </div>
+ <div id="Progress_Status">
+      <div id="myprogressBar">
+            <h4>Complete20%</h4></div>
+      </div>
       <footer id="footer"></footer>
       <script src="asset/js/jquery.min.js"></script>
       <script src="asset/js/index.js"> </script>
@@ -115,6 +123,7 @@
            $("#header").load("header.html")
            $("#footer").load("footer.html")
     </script>
+    </div>
 </body>
 
 </html>

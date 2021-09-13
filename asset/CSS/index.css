@@ -155,3 +155,48 @@
       .tooltip:hover .tooltiptext {
         visibility: visible;
       } 
+       /* Spinner Css */
+  #loader {
+    margin-left: 580px;
+    margin-top: 190px;
+  border: 16px solid white;
+  border-radius: 50%;
+  border-top: 16px solid #F49046;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+   50% { -webkit-transform: rotate(180deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  50% { -webkit-transform: rotate(180deg); }
+  
+}
+/*  Progressbar  */
+#Progress_Status {
+    margin-left:500px ;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 25%;
+    background-color: #ddd;
+    }
+    #myprogressBar h4{
+        margin-left: 130px;
+        text-align: center;
+       
+    }
+    
+    #myprogressBar {
+       
+    width: 10%;
+    height: 20px;
+    background-color: #4CAF50;
+    color: black;
+    }

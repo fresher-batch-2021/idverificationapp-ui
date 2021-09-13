@@ -1,4 +1,11 @@
-
+function myFunction() {
+    var myVar = setTimeout(showPage, 2000);
+   }
+   
+   function showPage() {
+     document.querySelector("#loader").style.display = "none";
+     document.querySelector("#myDiv").style.display = "block";
+   }
 function pan() {
     event.preventDefault();
     let user=localStorage.getItem('LOGGED_IN_USER')
@@ -157,8 +164,9 @@ function pan() {
         toastr.success("verified");
         console.log("toastr completed");
         setTimeout(function () {
-            window.location.href="listapplication.html";
-        }, 2000);
+            progressBar();
+            
+        }, 1000);
     
    }).catch(err =>{
     toastr.error("Invalid Login Credentials");
@@ -177,3 +185,19 @@ function setDate() {
 
 }
 setDate()
+
+function progressBar() {
+    var element = document.getElementById("myprogressBar");
+    var width = 1;
+    var identity = setInterval(scene, 20);
+    function scene() {
+        if (width >= 90) {
+        clearInterval(identity),
+        window.location.href="listapplication.html";
+        } else {
+        width++;
+        element.style.width = width + '%';
+        element.innerHTML = width * 1 + '%';
+        }
+    }
+    }

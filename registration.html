@@ -6,19 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REGISTRATION</title>
-    <script src="asset/js/validator.js"></script>
-    <script src="asset/js/password.js"></script>
-    <script src="asset/js/registration.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
-        integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-        </script>
+   
     <link rel="stylesheet" href="asset/CSS/registration.css">
     <link rel="icon" href="asset/image/panfavicon (2).png">
 </head>
 
 <body>
-    <script src="asset/js/jquery.min.js"></script>
+    <figure class="admin_login">
+       <a href="loginpage.html">Already login</a>
+        <img src="/asset/image/user.png" alt="adminlogo"> 
+
+       <a href="adminlogin.html">Admin</a>
+        <img src="/asset/image/user (1).png" alt="loginlogo">
+    </figure>
+    
     <h1>REGISTRATION</h1>
     <div class="overall">
         <form onsubmit="registration()">
@@ -43,16 +44,32 @@
             <input type="password" id="confirmpassword" name="confirmpassword" minlength="6" autocomplete="off" placeholder="Confirm Password">
            
             <button class="submit" type="submit">Submit</button>
-            <button><a href="loginpage.html">Already login</a></button>
-            <button><a href="adminlogin.html">Admin</a></button>
          </form>
+        
     </div>
+    <div id="Progress_Status">
+        <div id="myprogressBar">
+            <h4>Complete1%</h4>
+        </div>
+        </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+
+    <script src="asset/js/jquery.min.js"></script>
+    <script src="asset/js/validator.js"></script>
+    <script src="asset/js/password.js"></script>
+    <script src="asset/js/registration.js"></script>
+    <script src="asset/js/serviceLayer.js"></script>
+
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.6/dayjs.min.js"
     integrity="sha512-bwD3VD/j6ypSSnyjuaURidZksoVx3L1RPvTkleC48SbHCZsemT3VKMD39KknPnH728LLXVMTisESIBOAb5/W0Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="asset/js/serviceLayer.js"></script>
+
+   
 </body>
 </html>

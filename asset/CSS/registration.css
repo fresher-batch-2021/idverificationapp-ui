@@ -1,19 +1,41 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
 h1 {
+    padding-top: 20px;
     color: black;
     text-align: center;
+    margin-left: 220px;
 }
 body {
     box-sizing: border-box;
 }
 .overall {
+    margin-top: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #f2f2f2;
     margin-left:36%;
+    margin-bottom: 20px;
     margin-right:36%;
     padding:3% 3% 3% 3%;
 }
+ img{
 
+    width: 30px;
+    float: right;
+    padding-top:10px ;
+
+}
+.admin_login a{
+    margin-right: 20px;
+    margin-left: 5px;
+    float: right;
+    margin-top: 20px;
+   color: #0645AD;
+
+}
 label{
     color: #2F4F4F;
 }
@@ -48,3 +70,24 @@ button{
     border: none;
     width: 100%;
 }
+/*  Progressbar  */
+#Progress_Status {
+    margin-left:500px ;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 25%;
+    background-color: #ddd;
+    }
+    #myprogressBar h4{
+        margin-left: 130px;
+        text-align: center;
+       
+    }
+    
+    #myprogressBar {
+       
+    width: 1%;
+    height: 20px;
+    background-color: #4CAF50;
+    color: black;
+    }

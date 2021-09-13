@@ -1,48 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOGINPAGE</title>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="icon" href="asset/image/panfavicon (2).png" />
+    <link rel="stylesheet" href="asset/CSS/loginpage.css" />
+  </head>
+      <h1>LOGIN FORM</h1>
+      <img src="asset/image/pan-card.png" alt="loginsideimage" />
+      <div class="overall">
+        <form onsubmit="loginpage()">
+          <label for="username"><strong>User Name</strong></label>
+          <input
+            type="text"
+            id="username"
+            placeholder="Enter User Name"
+            name="uname"
+          />
+          <label for="password"><strong>Password</strong></label>
+          <input
+            type="password"
+            minlength="6"
+            id="password"
+            placeholder="Enter Password"
+          />
+          <button type="submit">Login</button>
+          <button><a href="registration.html">Registration</a></button>
+        </form>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LOGINPAGE</title>
-  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <link rel="icon" href="asset/image/panfavicon (2).png">
-  <link rel="stylesheet" href="asset/CSS/loginpage.css">
-</head>
-<body>
-  
-  <h1>LOGIN FORM</h1>
-<img src="asset/image/pan-card.png" alt="loginsideimage">
-  <div class="overall">
-    <form onsubmit="loginpage()">
-      <label for="username"><strong>User Name</strong></label>
-      <input type="text" id="username" placeholder="Enter User Name" name="uname" >
-      <label for="password"><strong>Password</strong></label>
-      <input type="password" minlength="6" id="password" placeholder="Enter Password" >
-      <button type="submit">Login</button>
-      <button><a href="registration.html">Registration</a></button>
-    </form>
-
-    <script src="asset/js/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.6/dayjs.min.js"
-    integrity="sha512-bwD3VD/j6ypSSnyjuaURidZksoVx3L1RPvTkleC48SbHCZsemT3VKMD39KknPnH728LLXVMTisESIBOAb5/W0Q=="
-    crossorigin="anonymous"
-     referrerpolicy="no-referrer">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
-    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
-    crossorigin="anonymous"
-     referrerpolicy="no-referrer">
-    </script>
-    <script src="asset/js/serviceLayer.js"></script>
-    <script src="asset/js/loginpage.js">
-    </script>
-     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
-     <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-
-  </div>
- 
-</body>
-
+        <script src="asset/js/jquery.min.js"></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.6/dayjs.min.js"
+          integrity="sha512-bwD3VD/j6ypSSnyjuaURidZksoVx3L1RPvTkleC48SbHCZsemT3VKMD39KknPnH728LLXVMTisESIBOAb5/W0Q=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        ></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+          integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer">
+        </script>
+        <script src="asset/js/serviceLayer.js"></script>
+        <script src="asset/js/loginpage.js"></script>
+        <link
+          rel="stylesheet"
+          href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"/>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+      </div>
+    </div>
+  </body>
 </html>

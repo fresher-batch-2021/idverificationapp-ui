@@ -1,4 +1,5 @@
 
+
 function registration() {
     event.preventDefault();
 const name = $("#yourname").val();
@@ -21,7 +22,7 @@ console.log("Details", name, dateofbirth, emailid, mobilenumber, user_name, pass
         Password.isValidPassword(password1, "Enter_Password");
         Password.isValidPassword(password2, "Dose_Not_Match_Password")
 
-        alert("Registration_Done");
+        
         const registerData = { 
                 name: name,
                 dob: dateofbirth,
@@ -36,21 +37,36 @@ console.log("Details", name, dateofbirth, emailid, mobilenumber, user_name, pass
       
         userServise.register(registerData).then(res => {
             console.log(res.data);
-            alert("successfull")
-         window.location.href = "loginpage.html";
+            alert("successfull");
+            progressBar()
         })
      } catch(err)  {
         toastr.error("Unable to register");
         setTimeout(function () {
             console.log(Timeoutfunction);
-        }, 3000);
+        }, 1000);
         }
     }
+    setDates()
     function setDates() {
         let todayObj = new Date();
         let previousDay = dayjs().subtract(18, 'year').toDate();
         let today = previousDay.toJSON().substr(0, 10);
-        document.querySelector("#dob").setAttribute("max", today);
-    
+        document.querySelector("#dob").setAttribute("max", today);   
     }
-    setDates()
+    
+    function progressBar() {
+        var element = document.getElementById("myprogressBar");
+        var width = 1;
+        var identity = setInterval(scene, 15);
+        function scene() {
+            if (width >= 10) {
+            clearInterval(identity),
+            window.location.href = "loginpage.html";
+            } else {
+            width++;
+            element.style.width = width + '%';
+            element.innerHTML = width * 1 + '%';
+            }
+        }
+        }

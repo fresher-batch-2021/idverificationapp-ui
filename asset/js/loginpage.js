@@ -1,3 +1,4 @@
+
 function loginpage() {
   event.preventDefault();
   const user = $("#username").val();
@@ -41,7 +42,7 @@ function loginpage() {
         toastr.error("Invalid Login Credentials");
         setTimeout(function () {
             console.log(Timeoutfunction);
-        }, 2000);
+        }, 1000);
       }else{
         const users = data[0];
         toastr.success("successfull");
@@ -49,14 +50,14 @@ function loginpage() {
           window.location.href = "index.html";
             console.log(Timeoutfunction);
            
-        }, 2000);
+        }, 500);
         console.log(loginData);      
       }
       }).catch(err => {
         toastr.error("invalid");
         setTimeout(function () {
             console.log(Timeoutfunction);
-        }, 2000);
+        }, 1000);
         console.log(err.response.data);
         // alert("invalid")
       }
