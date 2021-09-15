@@ -29,6 +29,14 @@
         border-radius: 5px;
         font-size: 14px;
         }
+        .logo img{
+            display: inline;
+           margin-left: 30px;
+            width:250px;
+            padding-top: 15px;
+            padding-bottom: 5px;
+        }
+        /* Header CSS */
         .navbar {
             text-align:center;
             margin-top:15px;
@@ -40,19 +48,10 @@
             text-decoration: none;
             list-style-type: none;
         }
-        .logo img{
-            display: inline;
-           margin-left: 30px;
-            width:250px;
-            padding-top: 15px;
-            padding-bottom: 5px;
-        }
+        
         /* Footer CSS */
 
-      *{
-        margin: 0%;
-        padding:0%;
-    }
+    
     .footerpage{
         background-color: #808080;
         height: 80px;
@@ -87,7 +86,7 @@
         content: "/\00a0";
       }
     .item{
-        margin-left: 515px;
+        margin-left: 485px;
         padding-top: 10px; 
     }
     p{
@@ -96,6 +95,10 @@
         text-align: center;
     }
     /*----------------tooltip------------------------- */
+    .tooltip a{
+        color: white;
+        text-decoration: none;
+    }
     .tooltip {
         position: relative;
         display: inline-block;

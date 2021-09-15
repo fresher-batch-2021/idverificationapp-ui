@@ -37,13 +37,18 @@
             font-size: 10px;
         }
         img{
+            position:relative;
             display: inline;
            margin-left: 30px;
             width:250px;
             padding-top: 10px;
             padding-bottom: 10px;
         }
+        header{
+            position: relative;
+        }
         .navbar {
+           
             margin-top:5px;
             margin-bottom: 5px;
             align-items: center;
@@ -127,7 +132,7 @@
     }
     .item{
         
-        margin-left: 515px;
+        margin-left: 485px;
         padding-top: 10px; 
     }
     p{
@@ -136,6 +141,9 @@
         color: #f2f2f2;
     }
     /*----------------tooltip------------------------- */
+    .tooltip a{
+        color: white;
+    }
     .tooltip {
         position: relative;
         display: inline-block;
@@ -146,7 +154,7 @@
         width: 100px;
         background-color: #f2f2f2;
         color: black;
-        text-align: center;
+        text-align: centesr;
         border-radius: 4px;
         position: absolute;
         z-index: 1;

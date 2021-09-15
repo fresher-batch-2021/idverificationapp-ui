@@ -109,7 +109,7 @@ button{
         color:#fff;
 }
 .item{
-    margin-left: 515px;
+    margin-left: 485px;
     padding-top: 10px; 
 }
 .breadcrumbs{
@@ -133,6 +133,9 @@ p{
     text-align: center;
 }
 /*----------------tooltip------------------------- */
+.tooltip a{
+    color: white;
+}
 .tooltip {
     position: relative;
     display: inline-block;

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Modal</title>
+<style>
+    .modal {
+        border-radius: 3px;
+      display: none;
+      position: fixed; 
+      z-index: 1;
+      padding-top: 100px; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto;
+      /* background-color: rgb(0,0,0); */
+      background-color: rgba(0,0,0,0.4); 
+    }
+    
+    
+    .modal-content {
+      background-color: lightblue;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+    }
+    
+    
+    .close {
+      color: #aaaaaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <h2>e-tax Payment</h2>
+    <button id="myBotton">Open details </button>
+    
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Facility to pay tax online, wherein the taxpayer can fill up and submit the challan through Internet. The tax payer has to necessarily have a bank account with Net-banking/Debit card of the selected Bank.</p>
+      </div>
+    
+    </div>
+    
+    <script>
+    var modal = document.getElementById("myModal");
+    var modalbotton = document.getElementById("myBotton");
+    var modalspan = document.getElementsByClassName("close")[0];
+    
+    modalbotton.onclick = function() {
+      modal.style.display = "block";
+    }
+    modalspan.onclick = function() {
+      modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+    </body>

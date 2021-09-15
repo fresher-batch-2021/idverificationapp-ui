@@ -9,6 +9,7 @@ const routes = [
     { path: 'details.html', role: ["user"] },
     { path: 'service.html', role: ["user"] },
     { path: 'requestapplication.html', role: ["user"] },
+    { path: 'about.html', role: ["user"] },
     { path: 'admin.html', role: ["admin"] },
     { path: 'userlist.html', role: ["admin"] },
     { path: 'adminlistapplication.html', role: ["admin"] },
