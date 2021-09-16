@@ -8,8 +8,12 @@ h1 {
     text-align: center;
     margin-left: 220px;
 }
+@media screen and (min-width:700px) and (max-width:1000px)
+{
 body {
+    background-color: lightblue;
     box-sizing: border-box;
+}
 }
 .overall {
     margin-top: 20px;

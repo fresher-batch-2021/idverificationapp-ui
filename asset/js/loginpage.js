@@ -45,12 +45,13 @@ function loginpage() {
         }, 1000);
       }else{
         const users = data[0];
-        toastr.success("successfull");
-        setTimeout(function () {
-          window.location.href = "index.html";
-            console.log(Timeoutfunction);
+        alertmessage()
+        // toastr.success("successfull");
+        // setTimeout(function () {
+        //   window.location.href = "index.html";
+        //     console.log(Timeoutfunction);
            
-        }, 500);
+        // }, 500);
         console.log(loginData);      
       }
       }).catch(err => {
@@ -63,4 +64,9 @@ function loginpage() {
       }
         )
     }
+}
+function alertmessage(){
+  var alertbox=document.querySelector(".alert");
+  alertbox.style.display="block";
+  window.location.href="index.html";
 }

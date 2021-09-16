@@ -48,7 +48,7 @@
             position: relative;
         }
         .navbar {
-           
+           clear: both;
             margin-top:5px;
             margin-bottom: 5px;
             align-items: center;

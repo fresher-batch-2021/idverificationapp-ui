@@ -6,6 +6,7 @@
             margin-bottom: 20px;
         }
 .service{
+    clear: both;
     margin-bottom: 10px;
     margin-left: 90px;
     margin-right: 140px;
@@ -53,6 +54,7 @@
 
     
     .footerpage{
+        clear: both;
         background-color: #808080;
         height: 80px;
     }

@@ -20,6 +20,27 @@
         line-height: 32px;
         color: black;
         }
+        .alert {
+            display: none;
+      padding: 20px;
+      background-color: #f44336;
+      color: white;
+    }
+    
+    .closebtn {
+      margin-left: 15px;
+      color: white;
+      font-weight: bold;
+      float: right;
+      font-size: 22px;
+      line-height: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    
+    .closebtn:hover {
+      color: black;
+    }
         </style>
 </head>
 <body>
@@ -30,11 +51,26 @@
 <div id="Progress_Status">
 <div id="myprogressBar">1%</div>
 </div>
-
 <br>
 <button onclick="progressBar()">Start Download</button>
+    
+    <h2>Alert Messages</h2>
+    <div class="alert">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+      <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+    </div>
+<button type="button"onclick="alertmessage()">Done</button>
+    
+    </body>
+
+
+
 
 <script>
+    function alertmessage(){
+        var alertbox=document.querySelector(".alert");
+        alertbox.style.display="block";
+    }
 
 function progressBar() {
 var element = document.getElementById("myprogressBar");
@@ -42,8 +78,8 @@ var width = 1;
 var identity = setInterval(scene, 15);
 function scene() {
 	if (width >= 80) {
-	clearInterval(identity),
-window.location.href="listapplication.html";
+	clearInterval(identity)
+// window.location.href="listapplication.html";
 	} else {
 	width++;
 	element.style.width = width + '%';
