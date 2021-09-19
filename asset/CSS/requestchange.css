@@ -5,7 +5,7 @@
 img{
     display: inline;
    margin-left: 30px;
-    width:250px;
+    width:20vw;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -20,12 +20,16 @@ border-radius: 5px;
 margin-bottom: 30px;
 }
 h2{
+    font-size: 2vw;
     padding: 20px;
 }
 label{
+    font-size: 1vw;
     color: #2F4F4F;
 }
-#status{ border: 1px solid #ccc;
+#status{
+    font-size: 1vw;
+    border: 1px solid #ccc;
     border-radius: 5px; 
      box-sizing: border-box;
      margin: 10px auto 7px;
@@ -34,6 +38,7 @@ label{
 
 }
 input{
+    font-size: 1vw;
     border: 1px solid #ccc;
     border-radius: 5px; 
      box-sizing: border-box;
@@ -42,6 +47,7 @@ input{
      padding: 12px 20px;
 }
 button{
+    font-size: 1vw;
     border-radius: 5px; 
     background-color: #04AA6D;
     color: white;
@@ -54,6 +60,7 @@ button{
     text-align: center;
  }
  .navbar{
+     font-size: 1vw;
 margin-top: 5px;
 margin-bottom: 5px;
     align-items: center;
@@ -61,7 +68,7 @@ margin-bottom: 5px;
     background-color: rgb(0,119,144);
    color: whitesmoke;
     text-align:center;
-    padding: 7px 64.9px;
+    padding: 7px 69.4px;
     text-decoration: none;
     list-style-type: none;
 }
@@ -89,6 +96,7 @@ margin-bottom: 5px;
     list-style: none;
 }
 .breadcrumbs ul li{
+    font-size: 1vw;
     display: inline;
     float: left;
     

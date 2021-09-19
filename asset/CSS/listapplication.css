@@ -1,6 +1,9 @@
 *{
-    margin: 0px;
-}.navbar {
+    margin: 0%;
+    padding:0%;
+}
+.navbar {
+    font-size: 1.1vw;
     margin-top:5px;
     margin-bottom: 5px;
     align-items: center;
@@ -8,7 +11,7 @@
     background-color: rgb(0,119,144);
    color: #f5f5f5;
     text-align:center;
-    padding: 7px 64.9px;
+    padding: 7px 66.8px;
     text-decoration: none;
     list-style-type: none;
 }
@@ -16,7 +19,7 @@
 img{
     display: inline;
    margin-left: 30px;
-    width:250px;
+    width:20vw;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -25,10 +28,12 @@ a{
     text-decoration: none;
 }
  td button{ 
+     font-size: 1vw;
     border-radius: 5px;  
     background-color: #007790;
 }
 h2 {
+    font-size: 2vw;
     text-align: center;
     padding: 2%;
 }
@@ -36,12 +41,16 @@ tr:nth-child(odd) {
     background-color: #F2F2F2;
   }
 
-td{ border: 1px solid #ccc;
+td{
+    font-size: 1.1vw; 
+    border: 1px solid #ccc;
     text-align: center;
-    padding: 15px;
+    padding: 1.5vw;
 }
 
-th { border: 1px solid #ccc;
+th {
+    font-size: 1.3vw; 
+    border: 1px solid #ccc;
     color: white;
     background-color: #C0C0C0;
     padding: 19px;
@@ -57,7 +66,7 @@ table {
     margin-left: 13%;
         width: 20%;
         padding: 12px 24px;
-        font-size: 14px;
+        font-size: 1vw;
         color: #575756;
 background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
 background-repeat: no-repeat;
@@ -87,10 +96,7 @@ button{
 }
 /* Footer CSS */
 
-*{
-    margin: 0%;
-    padding:0%;
-}
+
 .footerpage{
     margin-top:150px ;
     background-color: #808080;
@@ -120,6 +126,7 @@ button{
     display: inline;
     
 }.breadcrumbs ul li a{
+    font-size: 1vw;
     padding: 5px;
     color: blueviolet;
 }

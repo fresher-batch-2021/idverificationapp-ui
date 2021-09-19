@@ -3,6 +3,7 @@
     margin: 0%;
 }
 h1 {
+    font-size: 2vw;
     padding-top: 20px;
     color: black;
     text-align: center;
@@ -27,7 +28,7 @@ body {
 }
  img{
 
-    width: 20px;
+    width: 2vw;
     float: right;
     padding-top:10px ;
 
@@ -41,39 +42,35 @@ body {
 
 }
 label{
+    font-size: 1vw;
     color: #2F4F4F;
 }
 input {
 margin: 10px auto 20px;
   width: 100%;
   border-radius: 5px;
-  padding: 12px 20px;
+  padding: 0.8vw 0.8vw;
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
 a{
+    font-size: 1vw;
     text-decoration: none;
     color: white;
 }
 
-button{
-    border-radius: 5px; 
-    background-color: #04AA6D;
-    color: white;
-    padding: 14px 20px;
-    margin-top: 15px;
-    border: none;
-    width: 100%;
-}
+
 .submit {
+    font-size: 1vw; ;
     border-radius: 5px; 
     background-color: #04AA6D;
     color: white;
-    padding: 14px 20px;
+    padding: 1vw 1vw;
     margin-top: 15px;
     border: none;
     width: 100%;
 }
+
 /*  Progressbar  */
 #Progress_Status {
     margin-left:500px ;

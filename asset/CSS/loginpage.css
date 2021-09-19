@@ -1,16 +1,17 @@
 
   input[type=text],
   input[type=password] {
+
   margin: 10px auto 20px;
     width: 100%;
     border-radius: 5px;
-    padding: 12px 20px;
+    padding: 1vw 1vw;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
 .sideimage img{
-  width: 100%;
+ 
   margin-right: 282px;
 float: right;
 width: 29vw;
@@ -21,6 +22,7 @@ margin-top: 20px;
 }
 
 label{
+  font-size: 1vw;
   color: #2F4F4F;
   }
   .overall {
@@ -32,6 +34,7 @@ label{
     margin-right: 50%;
   }
   h1 {
+    font-size: 2vw;
     text-align: center;
     color: black;
   }
@@ -40,10 +43,11 @@ label{
     color: white;
   }
   button {
+    font-size: 1vw;
     border-radius: 5px;
     background-color: #04AA6D;
     color: white;
-    padding: 14px 20px;
+    padding: 1vw 1vw;
     margin-top: 25px;
     border: none;
     width: 100%;
@@ -62,7 +66,7 @@ label{
     display: none;
     float: right;
     width: 20%;
-padding: 10px;
+padding:2vw;
 background-color: #04AA6D;
 color: white;
 }
